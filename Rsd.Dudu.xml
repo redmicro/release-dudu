@@ -15232,7 +15232,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.ChechReference(System.String@,System.String@)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.CheckReference(System.String@,System.String@)">
             <summary>
             
             </summary>
