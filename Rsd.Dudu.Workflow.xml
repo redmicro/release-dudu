@@ -1,0 +1,3935 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rsd.Dudu.Workflow</name>
+    </assembly>
+    <members>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute">
+            <summary>
+            工作流Action类特性标注，通过WfEntityType属性，指定工作流引擎实体持久化类
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute.WfEntityType">
+            <summary>
+            工作流引擎实体持久化类
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute.#ctor(System.Type,System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute.#ctor(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="actionClass"></param>
+            <param name="wfEntityType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute.#ctor(System.Type)">
+            <summary>
+            不指定ActionClass,ActionClass未被标注类自身
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntityAttribute.#ctor">
+            <summary>
+            不指定ActionClass,ActionClass未被标注类自身
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.IActionEntity`1">
+            <summary>
+             包含多个Action的实体控制类的实现接口
+            </summary>
+            <typeparam name="T">业务类</typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IActionEntity`1.ActionInSelf">
+            <summary>
+            Action实现类 和 业务对象类（T）是同一个类
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IActionEntity`1.IsService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IActionEntity`1.ActionClass">
+            <summary>
+            Action实现类
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IActionEntity`1.GetAllActions(System.Boolean)">
+            <summary>
+            获取所有Action
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfActionEntity">
+            <summary>
+            Action 实体控制类入口，一个Action实体存储了多个Action
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity.BuildActionEntity``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity.BuildActionEntity``1(System.Type)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="actionClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity.BuildActionEntity(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="modelType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity.BuildActionEntity(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="modelType"></param>
+            <param name="actionClass"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfActionEntity`1">
+            <summary>
+            Action 实体控制类，一个Action实体中有多个Action
+            </summary>
+            <typeparam name="T">业务类</typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfActionEntity`1.ActionInSelf">
+            <summary>
+            Action实现类 和 业务对象类（T）是同一个类
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfActionEntity`1.IsService">
+            <summary>
+            是服务类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfActionEntity`1.ActionClass">
+            <summary>
+            Action实现类 和
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity`1.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="actionClass">action所在类</param>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Action.WfActionEntity`1._list">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity`1.GetAllActions(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="inherit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionEntity`1.GetAction(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="actionName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.AfterActionAttribute">
+            <summary>
+            作用范围，当前对象
+            仅限在当前对象内动作执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.AfterActionAttribute.MethodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.AfterActionAttribute.IsService">
+            <summary>
+            ActionClass是服务接口
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.AfterActionAttribute.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.AfterActionAttribute.#ctor(System.String)">
+            <summary>
+            默认模型类 默认参数为 主对象
+            </summary>
+            <param name="methodName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.AfterActionAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            方法不在业务实体类中，方法必须是静态方法
+            </summary>
+            <param name="type">指定方法所在类或所在服务</param>
+            <param name="methodName">必须是静态方法</param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.BeforeActionAttribute">
+            <summary>
+            作用范围，当前对象
+            仅限在当前对象内动作执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.BeforeActionAttribute.IsService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.BeforeActionAttribute.MethodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.BeforeActionAttribute.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.BeforeActionAttribute.#ctor(System.String)">
+            <summary>
+            默认模型类 默认参数为 主对象
+            </summary>
+            <param name="methodName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.BeforeActionAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type">方法所在类</param>
+            <param name="methodName">必须是静态方法</param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfAction">
+            <summary>
+            通过Action 实现对方法的【动态组织调配】，提高代码的使用（复用）效率。
+            Action执行 无对象类型限制， 无参数类型限制
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.GetActionData``1(System.String)">
+            <summary>
+            在静态方法(Action)中，通过该方法获取Action.Load方法加载的数据。
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.BuildAction``1(System.Reflection.MethodBase)">
+            <summary>
+            工厂模式创建IWfAction
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.BuildAction(System.Reflection.MethodBase)">
+            <summary>
+            工厂模式创建IWfAction
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.Name">
+            <summary>
+            接口名称，唯一代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.Data">
+            <summary>
+            通过Laod方法加载，会在事件中传递。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.ActionInSelf">
+            <summary>
+            Action 类和 业务模型类是同一个类
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.IsStatic">
+            <summary>
+            实现方法是静态 方法
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.ModelType">
+            <summary>
+            业务对象类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.ArgsType">
+            <summary>
+            Action 执行时，传入参数类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction.Handler">
+            <summary>
+            action 处理程序
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.Action.WfAction.BeforeActions">
+            <summary>
+            前置动作
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.Action.WfAction.AfterActions">
+            <summary>
+            后置动作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.OnBeforeActions(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            触发BeforeActions
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.OnAfterActions(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            触发AfterActions
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.Load(System.Object)">
+            <summary>
+            加载动作的业务对象
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.Execute">
+            <summary>
+            执行Action 的处理程序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction.Execute(System.Object[])">
+            <summary>
+            执行Action 的处理程序
+            </summary>
+            <param name="args">执行需要的参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfAction`1">
+            <summary>
+            通过Action 实现对方法的【动态组织调配】，提高代码的使用（复用）效率。
+            Action执行 有对象类型限制， 无参数类型限制
+            </summary>
+            <typeparam name="T">业务对象类型</typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfAction`1.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.Action.WfAction`1.BeforeActions">
+            <summary>
+            前置动作
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.Action.WfAction`1.AfterActions">
+            <summary>
+            后置动作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`1.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="actionInSelf"></param>
+            <param name="isStatic"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`1.OnBeforeActions(Rsd.Dudu.Workflow.Action.EventActionArgs{`0})">
+            <summary>
+            
+            </summary>
+            <param name="actionArgs"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`1.OnAfterActions(Rsd.Dudu.Workflow.Action.EventActionArgs{`0})">
+            <summary>
+            
+            </summary>
+            <param name="actionArgs"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`1.Load(`0)">
+            <summary>
+            
+            </summary>
+            <param name="obj">业务对象</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`1.Execute(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfAction`2">
+            <summary>
+            通过Action 实现对方法的【动态组织调配】，提高代码的使用（复用）效率。
+            Action执行 有对象类型限制， 有参数类型限制
+            </summary>
+            <typeparam name="T">业务对象类型</typeparam>
+            <typeparam name="T1">参数类型</typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`2.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfAction`2.Execute(`1)">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfActionAttribute">
+            <summary>
+            通过MyActionAttribute特性，将方法定义为WfAction的实现方法
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfActionAttribute.ModelType">
+            <summary>
+            Action操作的业务类
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionAttribute.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfActionAttribute.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.EventActionArgs`1">
+            <summary>
+            前(后)置动作参数
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.EventActionArgs`1.Success">
+            <summary>
+            状态标识true 继续执行动作，false 终止执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.EventActionArgs`1.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.EventActionArgs`1.#ctor(`0)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.EventActionHandler`1">
+            <summary>
+            前(后)置动作代理
+            </summary>
+            <typeparam name="T">对象</typeparam>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.ActionHandler`1">
+            <summary>
+            主动作代理
+            </summary>
+            <typeparam name="T">参数</typeparam>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.IWfAction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.Action.IWfAction.BeforeActions">
+            <summary>
+            前置动作
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.Action.IWfAction.AfterActions">
+            <summary>
+            后置动作
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IWfAction.IsStatic">
+            <summary>
+            实现方法是静态 方法
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IWfAction.Name">
+            <summary>
+            Action名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IWfAction.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IWfAction.ArgsType">
+            <summary>
+            Action参数类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IWfAction.Data">
+            <summary>
+            Action参数
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IWfAction.Load(System.Object)">
+            <summary>
+            加载业务对象
+            </summary>
+            <param name="obj">action处理的业务对象</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IWfAction.Execute">
+            <summary>
+            执行Action
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IWfAction.Execute(System.Object[])">
+            <summary>
+            执行Action
+            </summary>
+            <param name="args">Action参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.IWfAction`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T">action处理的业务对象</typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IWfAction`1.Load(`0)">
+            <summary>
+            加载业务对象
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.IWfAction`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="T">action处理的业务对象</typeparam>
+            <typeparam name="T1">Action参数</typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IWfAction`2.Load(`0)">
+            <summary>
+            加载业务对象
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.IWfAction`2.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.IWfAction`2.Execute(`1)">
+            <summary>
+            执行Action
+            </summary>
+            <param name="args">Action参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfApiConditionAction">
+            <summary>
+            通过WfAction 实现API调度
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfApiConditionAction.Success">
+            <summary>
+            状态标识true 继续执行动作，false 终止执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfApiConditionAction.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiConditionAction.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiConditionAction.SetHandler(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="method"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiConditionAction.Execute(Rsd.Dudu.BizModel.JsonObject)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Action.WfApiAction">
+            <summary>
+            【配置级】【开放】实现跨平台调度API
+            关于API Action的定义，必定是一个与平台无关的API接口
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfApiAction.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfApiAction.Method">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Action.WfApiAction.Handler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiAction.#ctor(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name">接口简称</param>
+            <param name="url">接口地址</param>
+            <param name="method"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiAction.AddBeforeAction(Rsd.Dudu.Workflow.Action.WfApiConditionAction)">
+            <summary>
+            
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiAction.AddAfterAction(Rsd.Dudu.Workflow.Action.WfApiConditionAction)">
+            <summary>
+            
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Action.WfApiAction.SetHandler(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.ApiDispatcher">
+            <summary>
+            API 调度
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.WfDataStorage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDataStorage.DBSession">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDataStorage.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            初始化数据库表
+            </summary>
+            <param name="_dbSession"></param>
+            <param name="drop"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="_dbSession"></param>
+            <param name="drop"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            
+            </summary>
+            <param name="drop"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="drop"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.#ctor(Rsd.Dudu.Core.IDBSession)">
+            <summary>
+            
+            </summary>
+            <param name="_dbSession"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.GetObject``1(System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.DBSession">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.#ctor(Rsd.Dudu.Core.IDBSession)">
+            <summary>
+            
+            </summary>
+            <param name="dBSession"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.AddStateEnterLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.AddStateExecuteLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.AddStateExitLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfStateLoggerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfStateLoggerService.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateLoggerService.AddStateEnterLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateLoggerService.AddStateExecuteLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateLoggerService.AddStateExitLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfStateLoggerService.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.IWfEngine`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEngine`1.IsAction">
+            <summary>
+            当前事件是否是以Action方式执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEngine`1.Entity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.AddEvent(Rsd.Dudu.Workflow.Path.IWfEvent[])">
+            <summary>
+            
+            </summary>
+            <param name="event"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.AddEvent``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.ContainsEvent(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.GetEvent(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.InvokeEvent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.InvokeEvent(System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{`0})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEngine`1.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.IsEndState(Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.IsStartState(Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.SetState(Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.Load(`0)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEngine`1.UpdateState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.IWfEntity">
+            <summary>
+            用于工作流持久化与重启
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.ParentId">
+            <summary>
+            父流程ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.TemplateCode">
+            <summary>
+            工作流模板,若为空 需要根据ModelType动态创建引擎
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.State">
+            <summary>
+            工作流引擎当前状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.LoadTime">
+            <summary>
+            工作流开始加载时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.StartTime">
+            <summary>
+            工作流开始启动时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.ProcessBeginTime">
+            <summary>
+            对象开始执行的时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.ProcessEndTime">
+            <summary>
+            对象开始执行的时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.HangupTime">
+            <summary>
+            工作流挂起时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.EndTime">
+            <summary>
+            工作流结束时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.StopTime">
+            <summary>
+            工作流中止时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.ModelType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEntity.SetModelType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="modelType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfEntity.Save">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.IWfTemplate`1">
+            <summary>
+            【流程定义类】工作流模板（状态图+路径+动作）
+            </summary>
+            <typeparam name="T">业务对象类</typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfTemplate`1.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfTemplate`1.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfTemplate`1.StateMachine">
+            <summary>
+            状态图 + 路径
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfTemplate`1.Actions">
+            <summary>
+            动作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfTemplate`1.AddAction(Rsd.Dudu.Workflow.Action.IWfAction{`0,System.Object[]}[])">
+            <summary>
+            
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfTemplate`1.GetAction(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfActionProxy">
+            <summary>
+            工作流AOP策略
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfActionProxy.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="serverType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfActionProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfEntityEngine">
+            <summary>
+            工作流 自身引擎
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityEngine.#ctor(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfEngine`1">
+            <summary>
+            【控制类】 
+            工作流事件触发过程:工作流引擎触发事件(InvokeEvent)->事件参数实体-(EventCode)->事件-(PathCode)->路径-(ActionCode)->Action->Execute()
+            一个业务可以有多个工作流协作 所以需要工作流调度
+            </summary>
+            <typeparam name="T">业务类型</typeparam>
+            <typeparam name="T1">状态类</typeparam>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEngine`1._events">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEngine`1.IsAction">
+            <summary>
+            当前事件是否是以Action方式执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEngine`1.State">
+            <summary>
+            工作流业务数据状态
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Workflow.Engine.WfEngine`1.Template" -->
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEngine`1.Entity">
+            <summary>
+            工作流业务数据
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.#ctor(Rsd.Dudu.Workflow.Engine.IWfTemplate{`0})">
+            <summary>
+            
+            </summary>
+            <param name="template"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.#ctor(Rsd.Dudu.Workflow.State.IWfStateInterpreter,Rsd.Dudu.Workflow.Action.IWfAction{`0,System.Object[]}[])">
+            <summary>
+            不会自动注册默认事件
+            </summary>
+            <param name="wfStateMachine"></param>
+            <param name="actions">不会自动注册默认事件</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.#ctor(Rsd.Dudu.Workflow.State.IWfStateInterpreter,Rsd.Dudu.Workflow.Action.IActionEntity{`0})">
+            <summary>
+            不会自动注册默认事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.Load(`0)">
+            <summary>
+            加载工作流业务数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.AddEvent(Rsd.Dudu.Workflow.Path.IWfEvent[])">
+            <summary>
+            通过事件对象注册
+            </summary>
+            <param name="pathCode"></param>
+            <param name="events"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.AddEvent``1">
+            <summary>
+            通过【事件参数类】注册事件
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.GetEvent(System.String)">
+            <summary>
+            获取注册事件定义（模板）
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.ContainsEvent(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.IsStartState(Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.IsEndState(Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.SetState(Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            设置业务流程状态
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.UpdateState">
+             <summary>
+            更新状态
+             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.InvokeEvent``1(``0)">
+            <summary>
+            【触发事件】 执行（状态机控制）流程步
+            </summary>
+            <param name="code"></param>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.InvokeEvent(System.String,System.Object[])">
+            <summary>
+            【触发事件】 执行（状态机控制）流程步，无参数
+            </summary>
+            <param name="eventCode"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEngine`1.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{`0})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfEntity">
+            <summary>
+            工作流 实例数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.Id">
+            <summary>
+            主键 
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.ParentId">
+            <summary>
+            父流程ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.TemplateCode">
+            <summary>
+            业务工作流模板Code
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.State">
+            <summary>
+            工作流当前状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.ModelType">
+            <summary>
+            业务对象类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.LoadTime">
+            <summary>
+            对像加载时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.StartTime">
+            <summary>
+            工作流开始时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.ProcessBeginTime">
+            <summary>
+            对象开始执行的时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.ProcessEndTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.HangupTime">
+            <summary>
+            工作流挂起时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.EndTime">
+            <summary>
+            工作流结束时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.StopTime">
+            <summary>
+            工作流中止时间
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntity.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntity.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="modelType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntity.SetModelType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="modelType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntity.Save">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfEntityActions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.Load(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.Start(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            启动流程（开始事件监听）
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.Restart(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.Hangup(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            挂起
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.Process(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            执行（状态机控制）流程步
+            </summary>
+            <param name="event"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.ProcessCompleted(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.Stop(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            终止
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEntityActions.End(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            结束
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.IWfStateLogger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfStateLogger.AddStateEnterLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfStateLogger.AddStateExitLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.IWfStateLogger.AddStateExecuteLog(System.Object,Rsd.Dudu.Workflow.State.IWfState)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="state"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfEntityStates">
+            <summary>
+            工作流本身生命周期,结束状态有：Stop，End
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.Initialized">
+            <summary>
+            已初始化（创建）
+            </summary> 
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.Loaded">
+            <summary>
+            已加载
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.Started">
+            <summary>
+            已启动，正在监听事件
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.Hangup">
+            <summary>
+            已挂起
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.Processing">
+            <summary>
+            办理中，处于某个Action执行中，在该Action执行完之前，阻塞其他事件的请求，Action执行完成后，重新进入已启动状态。
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.Stop">
+            <summary>
+            已中止
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Engine.WfEntityStates.End">
+            <summary>
+            已结束
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfEnumTemplate`2">
+            <summary>
+            【流程定义类】通过指定枚举类型状态机， 通过构造参数指定 ActionEntity类
+            </summary>
+            <typeparam name="T">业务表单类型</typeparam> 
+            <typeparam name="T1">枚举类型</typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfEnumTemplate`2.#ctor(Rsd.Dudu.Workflow.Action.IActionEntity{`0})">
+            <summary>
+            通过枚举类型 和 ActionEntity类
+            </summary>
+            <param name="actionEntity">ActionEntity类</param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Engine.WfTemplate`1">
+             <summary>
+            【流程定义类】 动态定义流程
+            在构造函数中指定状态机或所有状态以及状态变迁的路径，动态为路径注册Action。
+             </summary>
+             <typeparam name="T">业务员对象</typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfTemplate`1.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfTemplate`1.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfTemplate`1.Actions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfTemplate`1.StateMachine">
+            <summary>
+            状态机：描述工作流状态可变迁的路径
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfTemplate`1.ModelType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfTemplate`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfTemplate`1.#ctor(Rsd.Dudu.Workflow.State.IWfStateInterpreter,Rsd.Dudu.Workflow.Action.IWfAction{`0,System.Object[]}[])">
+             <summary>
+            指定状态机（IWfStateInterpreter）
+             </summary>
+             <param name="stateInterpreter"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfTemplate`1.AddAction(Rsd.Dudu.Workflow.Action.IWfAction{`0,System.Object[]}[])">
+            <summary>
+            动态定义行为Action
+            </summary>
+            <param name="pathCode"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Engine.WfTemplate`1.GetAction(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Core.IWfDispatcher">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.IsAction">
+            <summary>
+            当前事件正以Action方式执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.WfEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.Entity">
+            <summary>
+            工作流业务实体数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.EngineState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.SelfEngine">
+            <summary>
+            工作流自身引擎
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Load(System.Object)">
+            <summary>
+            加载工作流业务数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.End">
+            <summary>
+            流程正常结束
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Hangup">
+            <summary>
+            挂起流程
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Start">
+            <summary>
+            启动工作流，开始监听事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.ProcessBegin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.ProcessEnd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Stop">
+            <summary>
+            流程中止
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.DoAction(System.String,System.Object[])">
+            <summary>
+            执行后不主动更新状态
+            </summary>
+            <param name="actionName"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.UpdateState">
+            <summary>
+            更新状态
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.InvokeEvent(System.String,System.Object[])">
+            <summary>
+            执行触发事件
+            </summary>
+            <param name="eventCode"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.GetEntityKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Core.IWfDispatcher`1">
+            <summary>
+            工作流调度器
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.Entity">
+            <summary>
+            工作流业务实体数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.WfBizEngine">
+            <summary>
+            业务工作流引擎
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.Load(`0)">
+            <summary>
+            加载工作流业务数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{`0})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Core.IWfDataStorage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDataStorage.DBSession">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDataStorage.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            
+            </summary>
+            <param name="drop"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDataStorage.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="drop"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfModelBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfModelBase.Save">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfActionModel">
+            <summary>
+            【非编码级】Action的定义 ，一个Action容器， 存储系统中Action对象 ，系统初始化时，将Action存储到容器中
+            系统所有可用的Action
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.Text">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.MethodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.IsStatic">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.Enabled">
+            <summary>
+            可以否可用（以前存在，现已不存在，记为不可用）
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionModel.Version">
+            <summary>
+            当前版本
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfActionModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfEventModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.PathCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.ArgsTypeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.ActionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.Action">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEventModel.ArgsType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfEventModel.SetArgsType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="argsType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfEventModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfEventModel.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="name"></param>
+            <param name="action"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfPathModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfPathModel.TemplateId">
+            <summary>
+            所属模板
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfPathModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfPathModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfPathModel.SourceStateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfPathModel.TargetStateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfPathModel.ActionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfPathModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfStateConditionModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateConditionModel.StateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateConditionModel.Field">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateConditionModel.Group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateConditionModel.GroupLogicOp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateConditionModel.LogicOp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateConditionModel.Op">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfStateLogModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateLogModel.EntityType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateLogModel.EntityId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateLogModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateLogModel.Type">
+            <summary>
+            Enter|Exit
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateLogModel.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateLogModel.LogTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfStateLogModel.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.StateLogType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Model.StateLogType.Enter">
+            <summary>
+            进入
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Model.StateLogType.Exectue">
+            <summary>
+            执行 
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Model.StateLogType.Exit">
+            <summary>
+            退出
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfStateModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.ParentCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.Parent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.TemplateId">
+            <summary>
+            所属模板
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.Conditions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.ActionClass">
+            <summary>
+            Action 所在在类，需要编码开发
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.ExitAction">
+            <summary>
+            状态退出时Action
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.EnterAction">
+            <summary>
+            状态进入时Action
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfStateModel.ExecuteAction">
+            <summary>
+            状态中 Action
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfStateModel.Enter(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfStateModel.Exit(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfStateModel.Execute(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfStateModel.Validate(System.Object,System.Boolean)">
+            <summary>
+            需要根据逻辑运算符 组合验证，暂未实现
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfTemplateActionModel">
+            <summary>
+            模板定义时 使用的Action
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateActionModel.TemplateId">
+            <summary>
+            所属模板
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateActionModel.Code">
+            <summary>
+            模板内 Code
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateActionModel.ActionId">
+            <summary>
+            WfActionModel id 
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfTemplateActionModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfTemplateModel">
+            <summary>
+            模板对象
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateModel.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateModel.TypeTag">
+            <summary>
+            分类标志
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateModel.ModelType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfTemplateModel.ModelTypeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfTemplateModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfEntityModel">
+            <summary>
+            工作流实体持久化数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.ParentId">
+            <summary>
+            父流程ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.TemplateCode">
+            <summary>
+            业务工作流模板ID 
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.State">
+            <summary>
+            工作流当前状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.ModelType">
+            <summary>
+            业务对象类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.ModelTypeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.BizKey">
+            <summary>
+            业务对象主键
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.LoadTime">
+            <summary>
+            加载时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.ProcessBeginTime">
+            <summary>
+            对象开始执行的时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.ProcessEndTime">
+            <summary>
+            对象结束执行的时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.HangupTime">
+            <summary>
+            挂起时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfEntityModel.StopTime">
+            <summary>
+            中止时间
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfEntityModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfEntityModel.SetModelType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="modelType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfEntityModel.SetModelType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="modelTypeName"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Model.WfActionLogModel">
+            <summary>
+            Action 执行日志
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionLogModel.ActionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionLogModel.StartTime">
+             <summary>
+            执行开始时间
+             </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionLogModel.EndTime">
+            <summary>
+            执行结束时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Model.WfActionLogModel.Log">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfActionLogModel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Model.WfActionLogModel.#ctor(System.String,System.Int64,System.Int64,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="actionName"></param>
+            <param name="start">执行开始时间</param>
+            <param name="end">执行结束时间</param>
+            <param name="log"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddSubmitLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddPayLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddCancelLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddApplyRefundLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddRefundYesLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddRefundNoLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddDelivereLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddConfirmLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddCloseLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.AddCompletedLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderLoggerService.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Template.Order.ILoggerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddSubmitLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddApplyRefundLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddCancelLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddConfirmLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddDelivereLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddPayLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddRefundNoLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddRefundYesLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddCloseLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.ILoggerService.AddCompletedLog(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Template.Order.IPayApi">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IPayApi.ValidatePayResult(Rsd.Dudu.Workflow.Template.Order.IOrder)">
+            <summary>
+            主动验证第三方支付通道支付结果，防止回调伪造
+            </summary>
+            <param name="order"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Template.Order.IOrder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.BuyerId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.CancelText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.CancelTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.ConfirmTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.DeliveryCo">
+            <summary>
+            快递公司
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.DeliverySN">
+            <summary>
+            快递单号
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.DeliveryTime">
+            <summary>
+            发货时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.PaySN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.PayType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.PayTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.PayValidateTime">
+            <summary>
+            支付验证确认成功时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.RefundId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.RefundState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.RefundText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.RefundTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.IOrder.SN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoApplyRefund(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="refundId"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoApplyRefundAfterDelivered(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="refundId"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoCancel(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="reason"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoConfirm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoDelivere(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="deliveryCo"></param>
+            <param name="deliverySn"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoPay(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="payType"></param>
+            <param name="paySn"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoRefundNo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoRefundNoAfterDelivered">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.DoRefundYes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.GetKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.GetProjectId">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.IOrder.LogicDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.BuyerId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.CancelText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.CancelTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.ConfirmTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DeliveryCo">
+            <summary>
+            快递公司
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DeliverySN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DeliveryTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.PaySN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.PayType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.PayValidateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.PayTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.RefundId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.RefundState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.RefundText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.RefundTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.SN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoPay(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="payType"></param>
+            <param name="paySn"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoCancel(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="reason"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoDelivere(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="deliveryCo"></param>
+            <param name="deliverySn"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoApplyRefund(System.String)">
+            <summary>
+            申请退款
+            </summary>
+            <param name="refundId"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoApplyRefundAfterDelivered(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="refundId"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoRefundYes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoRefundNoAfterDelivered">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoRefundNo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.DoConfirm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.GetKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.Save">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.GetProjectId">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.LogicDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Template.Order.OrderState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Submit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Canceled">
+            <summary>
+            已取消
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Payed">
+            <summary>
+            已支付
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.RefundFail">
+            <summary>
+            退款-拒绝
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Delivered">
+             <summary>
+            已发货
+             </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.DeliveredRefundFail">
+            <summary>
+            退款-拒绝
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Refund">
+            <summary>
+            退款/退货中
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Closed">
+            <summary>
+            已关闭
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.Template.Order.OrderState.Completed">
+            <summary>
+            已完成
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.WfDispatcher">
+            <summary>
+            【控制类】 工作流调度控制器
+            通过流程【模板】定义流程状态机，流程【路径】标记流程【状态】的变迁过程，流程的内外部【事件】触发，引起相应流程路径上Action的执行，从而导致状态的改变。
+            工作流事件触发过程:工作流引擎触发事件(InvokeEvent)->事件参数实体-(EventCode)->事件-(PathCode)->路径-(ActionCode)->Action->Execute()
+            一个业务可以有多个工作流协作 所以需要工作流调度
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.WfDispatcher._cache">
+            <summary>
+            工作引擎换缓存
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.WfDispatcher._cache_entity">
+            <summary>
+            业务主键 与 工作流实体数据映射
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.WfDispatcher._entity_copies">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetWfEntityList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.ExistsWfEntity(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.AddWfEntity(System.String,Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            添加实体
+            </summary>
+            <param name="key">业务主键</param>
+            <param name="entity"></param> 
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetWfEntity(System.String)">
+            <summary>
+            获取工作实体
+            </summary>
+            <param name="key">业务主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.RemoveWfEntity(System.String)">
+            <summary>
+            删除缓存中工作流实体，释放内存
+            </summary>
+            <param name="key">业务主键</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.AddEngine(Rsd.Dudu.Workflow.Core.IWfDispatcher)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="dispatcher"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.RemoveEngine(System.String)">
+            <summary>
+            清除缓存中工作引擎和工作实体对象，释放内存
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetEngine``1(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            必须为T类型设置WfStateInterpreterAttribute特性和WfActionEntityAttribute特性
+            </summary>
+            <typeparam name="T">业务类</typeparam>
+            <param name="entity">工作流实体类</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetEngine(Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            
+            </summary>
+            <param name="entity">工作流实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetEngineByBizEntity(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="data">参数data必须继承ActionEntityBase</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetEngineByEntity``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T">业务实体类型</typeparam>
+            <param name="data">业务实体数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.GetBizEntity(System.String)">
+            <summary>
+            获取工作流业务实体对象
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.NewMemoryEngine``1">
+            <summary>
+            指定业务实体类型，启动一个新内存工作流，工作流实体数据不会被持久化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.NewEngine``1(Rsd.Dudu.Workflow.State.IWfStateInterpreter,Rsd.Dudu.Workflow.Action.IActionEntity{``0})">
+            <summary>
+            创建工作流
+            </summary>
+            <param name="template"></param>
+            <param name="actions"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher.NewEngine``2(Rsd.Dudu.Workflow.Action.IActionEntity{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1">枚举类</typeparam>
+            <param name="actions"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.WfDispatcher`1">
+            <summary>
+            【控制类】 工作流调度控制器
+            工作流事件触发过程:工作流引擎触发事件(InvokeEvent)->事件参数实体-(EventCode)->事件-(PathCode)->路径-(ActionCode)->Action->Execute()
+            一个业务可以有多个工作流协作 所以需要工作流调度
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.IsAction">
+            <summary>
+            当前事件是否是以Action方式执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.Key">
+            <summary>
+            实体唯一值
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.Entity">
+            <summary>
+            业务实体
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.WfEntity">
+            <summary>
+            工作流实体
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.WfBizEngine">
+            <summary>
+            业务工作流引擎，用于监控业务数据状态，及事件发生
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.SelfEngine">
+            <summary>
+             业务工作流引擎自身 流程引擎，用于监控 业务工作流引擎的状态及事件的发生
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.State">
+            <summary>
+            业务对象当前状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.EngineState">
+            <summary>
+            工作流引擎状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.WfDispatcher`1.Rsd#Dudu#Workflow#Core#IWfDispatcher#Entity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.#ctor(Rsd.Dudu.Workflow.Engine.IWfEntity,Rsd.Dudu.Workflow.Engine.IWfTemplate{`0},Rsd.Dudu.Workflow.Path.IWfEvent[])">
+            <summary>
+            
+            </summary>
+            <param name="template"></param>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.#ctor(Rsd.Dudu.Workflow.State.IWfStateInterpreter,Rsd.Dudu.Workflow.Action.IActionEntity{`0},Rsd.Dudu.Workflow.Engine.IWfEntity)">
+            <summary>
+            初始化 工作流自身引擎
+            </summary>
+            <param name="wfStateMachine"></param>
+            <param name="actionEntity"></param>
+            <param name="entity">工作流实体数据</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.Load(`0)">
+            <summary>
+            加载流程表单数据
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.Start">
+            <summary>
+            工作流开始监听事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.ProcessBegin">
+            <summary>
+            流程正在被处理
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.ProcessEnd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.Hangup">
+            <summary>
+            挂起-需要持久化  流程实体数据
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.Stop">
+            <summary>
+            终止-需要持久化  流程实体数据
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.End">
+            <summary>
+            结束-需要持久化  流程实体数据
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.UpdateState">
+            <summary>
+            更新对象状态
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.DoAction(System.String,System.Object[])">
+            <summary>
+            执行后不主动更新状态
+            </summary>
+            <param name="actionName"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.Rsd#Dudu#Workflow#Core#IWfDispatcher#InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param> 
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{`0})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
+            <param name="inner"></param>    
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.InvokeEvent(System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.GetMonitor">
+            <summary>
+            获取工作流引擎实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.Rsd#Dudu#Workflow#Core#IWfDispatcher#Load(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfDispatcher`1.GetEntityKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.IWfEventArgs">
+            <summary>
+            
+            对工作流事件的封装 接口
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfEventArgs.Name">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfEventArgs.EventCode">
+            <summary>
+            事件代码
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.IWfEventArgs.GetEventData">
+            <summary>
+            事件数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.IWfEvent">
+            <summary>
+            事件：提供给工作流外部或内部触发的工作流action的接口
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfEvent.PathCode">
+            <summary>
+            所属Path
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfEvent.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfEvent.Code">
+            <summary>
+            事件唯一代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfEvent.Action">
+            <summary>
+            触发该事件要执行的Action
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.WfEnumPathAttribute">
+            <summary>
+             用于标记 通过枚举定义的状态机的变迁路径
+            【枚举特性设置路径】指定目标状态的枚举值和Action名称，完成现态到次态的路径设置。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEnumPathAttribute.Name">
+            <summary>
+            路径名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEnumPathAttribute.TargetEnum">
+            <summary>
+            次态枚举值
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEnumPathAttribute.ActionCode">
+            <summary>
+            动作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEnumPathAttribute.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name">路径名称</param>
+            <param name="target">次态枚举值</param>
+            <param name="actionCode">动作</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEnumPathAttribute.GetState``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.WfEvent">
+            <summary>
+            事件：提供给工作流外部或内部触发的工作流action的接口
+            多个事件可以对应到一个Action上
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEvent.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEvent.Code">
+            <summary>
+            事件唯一代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEvent.PathCode">
+            <summary>
+            所属Path
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEvent.ArgsType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEvent.Action">
+            <summary>
+            事件触发时 要执行的Action
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEvent.#ctor(System.String,System.String,System.String,System.Type,Rsd.Dudu.Workflow.Action.IWfAction)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="name"></param>
+            <param name="pathCode"></param>
+            <param name="argsType"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEvent.#ctor(System.String,System.String,System.Type,Rsd.Dudu.Workflow.Action.IWfAction)">
+            <summary>
+            默认：this.Code = argsType.GUID.ToString();
+            </summary>
+            <param name="name"></param>
+            <param name="pathCode"></param>
+            <param name="argsType"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEvent.GetAllEvents(System.Type)">
+            <summary>
+            获取actionClass中有【WfEventMethodAttribute】特性的方法
+            </summary>
+            <param name="actionClass"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.WfEventArgsAttribute">
+            <summary>
+            【事件注册方案 】 【事件参数类特性】
+            将类标注为事件参数类，并定义事件，事件实体类用于事件发生时，事件数据的转化与传递
+            可将外部复杂事件，通过实现IWfEventEntity接口，将数据转化为Action所需参数
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEventArgsAttribute.Name">
+            <summary>
+            事件名称（中文意义）
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEventArgsAttribute.PathCode">
+            <summary>
+            路径编码
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEventArgsAttribute.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name">事件名称（中文意义）</param>
+            <param name="pathCode"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute">
+            <summary>
+            【Event注册方案 】
+             通过该特性将方法注册为一个或多个路径上的事件，且该方法同时别注册为Action
+             事件在可工作流引擎中可以被外部通过事件触发的方式访问
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.Name">
+            <summary>
+            事件名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.Code">
+            <summary>
+            事件标识
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.PathCode">
+            <summary>
+            路径标识
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.ArgsType">
+            <summary>
+            参数类型
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.#ctor(System.String,System.Type,System.Type)">
+            <summary>
+            不设置Code 的事件，仅可以编码级调用
+            </summary>
+            <param name="pathCode">状态路径</param>
+            <param name="modelType"></param>
+            <param name="argsType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.#ctor(System.String,System.String,System.Type,System.Type)">
+            <summary>
+            不设置Code 的事件，仅可以编码级调用
+            </summary>
+            <param name="source">源状态</param>
+            <param name="target">目标状态</param>
+            <param name="modelType"></param>
+            <param name="argsType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.#ctor(System.String,System.String,System.String,System.String,System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="code">事件代码</param>
+            <param name="source"></param>
+            <param name="target"></param>
+            <param name="argsType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfEventMethodAttribute.#ctor(System.String,System.String,System.String,System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="code">事件代码</param>
+            <param name="pathCode"></param>
+            <param name="modelType"></param>
+            <param name="argsType">null 表示action无参数</param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.IWfPath">
+            <summary>
+            【流程定义类】 
+            流程步定义，不含Action 实现
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfPath.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfPath.Code">
+            <summary>
+            唯一编码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfPath.Source">
+            <summary>
+            现态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfPath.Target">
+            <summary>
+            次态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.IWfPath.ActionCode">
+            <summary>
+            Action标识
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Path.WfPath">
+            <summary>
+            流程步定义类：流程状态变迁路径
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfPath.Name">
+            <summary>
+            路径名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfPath.Code">
+            <summary>
+            路径标识代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfPath.Source">
+            <summary>
+            源状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfPath.Target">
+            <summary>
+            目标状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Path.WfPath.ActionCode">
+            <summary>
+            该路径状态变迁对应Action的代码
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Path.WfPath.#ctor(System.String,Rsd.Dudu.Workflow.State.IWfState,Rsd.Dudu.Workflow.State.IWfState,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="sourcse"></param>
+            <param name="target"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.IWfStateCondition">
+            <summary>
+            状态条件
+            对象处于某一状态的条件
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.IWfState">
+            <summary>
+            一定条件的集合，当对象满足所有条件时，即对象处于当前状态
+            每个状态的到达都需要一个事件的触发以及一个动作的执行，才能到达。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfState.ParentCode">
+            <summary>
+            父状态节点（如果包含子状态）
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfState.Code">
+            <summary>
+            标识代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfState.Name">
+            <summary>
+            文字说明
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfState.Value">
+            <summary>
+            代表该状态的值
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfState.Conditions">
+            <summary>
+            条件集合
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfState.Enter(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            状态进入时发生
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfState.Execute(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+             <summary>
+            处于该状态时需要不断执行的动作：对象进入该状态后，所标出来的行为。
+             如：检测程序处于监控状态
+             如：1、人进入【行走】状态后的走路动作；
+             2、状态机进入【已启动】状态后，执行监听的动作。
+             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfState.Exit(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            状态退出时发生
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfState.Validate(System.Object,System.Boolean)">
+            <summary>
+            验证状态
+            </summary>
+            <param name="data"></param>
+            <param name="isStart">是否市起始状态</param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.IWfState`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfState`1.Value">
+            <summary>
+            代表该状态的值
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.IWfStateInterpreter">
+            <summary>
+            状态机解释器接口
+            状态机：描述工作流状态可变迁的路径
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfStateInterpreter.StartState">
+            <summary>
+            起步
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfStateInterpreter.EndStates">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfStateInterpreter.Paths">
+            <summary>
+            路径集合
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.IWfStateInterpreter.States">
+            <summary>
+            状态集合
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.AddState(Rsd.Dudu.Workflow.State.IWfState[])">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.ContainsState(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.GetState(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.ComputeState(System.Object)">
+            <summary>
+            检测对象当前状态
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.AddPath(Rsd.Dudu.Workflow.Path.IWfPath[])">
+            <summary>
+            
+            </summary>
+            <param name="paths"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.GetPath(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.IWfStateInterpreter.ContainsPath(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfStateEnterActionAttribute">
+            <summary>
+            【枚举状态机】
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateEnterActionAttribute.MethodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateEnterActionAttribute.IsService">
+            <summary>
+            ActionClass是服务接口
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateEnterActionAttribute.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateEnterActionAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="actionClass"></param>
+            <param name="methodName"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfEnumState`1">
+            <summary>
+            通过【枚举】方式定义的状态解释器 
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.State.WfEnumState`1.EnterActions">
+            <summary>
+            状态进入时动作
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.State.WfEnumState`1.ExitActions">
+            <summary>
+            状态退出时动作
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Workflow.State.WfEnumState`1.ExecuteActions">
+            <summary>
+            处于状态下要执行的动作
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.ParentCode">
+            <summary>
+            父状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.Parent">
+            <summary>
+            父状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.Code">
+            <summary>
+            唯一编码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.Conditions">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.Value">
+            <summary>
+            状态值
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumState`1.Rsd#Dudu#Workflow#State#IWfState#Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumState`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumState`1.#ctor(System.String,`0,Rsd.Dudu.Workflow.State.IWfStateCondition[])">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumState`1.Enter(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            进入状态时要执行的动作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumState`1.Exit(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            退出状态时要执行的动作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumState`1.Execute(Rsd.Dudu.Workflow.Action.EventActionArgs{System.Object})">
+            <summary>
+            处于该状态时需要不断执行的动作：对象进入该状态后，所标出来的行为。
+            如：检测程序处于监控状态
+            如：1、人进入【行走】状态后的走路动作；
+            2、状态机进入【已启动】状态后，执行监听的动作。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumState`1.Validate(System.Object,System.Boolean)">
+            <summary>
+            需要根据逻辑运算符 组合验证，暂未实现
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfEnumStateInterpreter`1">
+            <summary>
+            【枚举】类型状态解释器
+            </summary>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumStateInterpreter`1.#ctor(System.Int32,System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="start"></param>
+            <param name="ends"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumStateInterpreter`1.#ctor(`0,`0[])">
+            <summary>
+            
+            </summary>
+            <param name="start"></param>
+            <param name="ends"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumStateInterpreter`1.LoadStates(System.Reflection.FieldInfo[])">
+            <summary>
+            添加枚举状态
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumStateInterpreter`1.GetState(`0)">
+            <summary>
+            
+            </summary>
+            <param name="enum"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfStateConditionAttribute">
+            <summary>
+            【枚举状态机】 状态条价值
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.Group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.GroupLogicOp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.LogicOp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.Field">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.Op">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.Values">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.#ctor(System.String,Rsd.Dudu.Core.OperatorType,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="field"></param>
+            <param name="op"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.#ctor(Rsd.Dudu.Core.LogicTypes,System.String,System.String,Rsd.Dudu.Core.OperatorType,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="gLogicOp"></param>
+            <param name="group"></param>
+            <param name="field"></param>
+            <param name="op"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.#ctor(Rsd.Dudu.Core.LogicTypes,System.String,System.String,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="gLogicOp"></param>
+            <param name="group"></param>
+            <param name="field"></param>
+            <param name="opType"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.#ctor(Rsd.Dudu.Core.LogicTypes,System.String,Rsd.Dudu.Core.LogicTypes,System.String,Rsd.Dudu.Core.OperatorType,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="gLogicOp"></param>
+            <param name="group"></param>
+            <param name="logicOp"></param>
+            <param name="field"></param>
+            <param name="op"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.ToString">
+            <summary>
+            /
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateConditionAttribute.Validate(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfStateExecuteActionAttribute">
+            <summary>
+            【枚举状态机】
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExecuteActionAttribute.MethodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExecuteActionAttribute.IsService">
+            <summary>
+            ActionClass是服务接口
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExecuteActionAttribute.IsStatic">
+            <summary>
+            要求方法必须是静态方法
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExecuteActionAttribute.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateExecuteActionAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="actionClass"></param>
+            <param name="methodName"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfStateExitActionAttribute">
+            <summary>
+            【枚举状态机】
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExitActionAttribute.MethodName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExitActionAttribute.IsService">
+            <summary>
+            ActionClass是服务接口
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateExitActionAttribute.ActionClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateExitActionAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="actionClass"></param>
+            <param name="methodName"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfStateInterpreter">
+            <summary>
+            【状态机】状态解释器
+            </summary>
+            <summary>
+            【状态机】 状态解释器：记录状态机的所有状态以及各状态变迁的路径
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.BuildInterpreter(System.String,Rsd.Dudu.Workflow.State.IWfState,Rsd.Dudu.Workflow.State.IWfState[])">
+            <summary>
+            动态构造状态机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.BuildEnumStateInterpreter``1">
+            <summary>
+            通过定义枚举定义状态机
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.BuildEnumStateInterpreter(System.Type)">
+            <summary>
+            通过定义枚举定义状态机
+            </summary>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Rsd.Dudu.Workflow.State.WfStateInterpreter._states">
+            <summary>
+            利用字典存储各种状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateInterpreter.States">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateInterpreter.Paths">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateInterpreter.StartState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateInterpreter.EndStates">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.#ctor(Rsd.Dudu.Workflow.State.IWfState,Rsd.Dudu.Workflow.State.IWfState[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.AddState(Rsd.Dudu.Workflow.State.IWfState[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="state"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.ContainsState(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.GetState(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.ContainsPath(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.AddPath(Rsd.Dudu.Workflow.Path.IWfPath[])">
+            <summary>
+            
+            </summary>
+            <param name="paths"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.GetPath(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreter.ComputeState(System.Object)">
+            <summary>
+            检车对象当前状态
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfEnumStateInterpreterAttribute">
+            <summary>
+            【枚举状态机】通过为枚举类型添加该特性， 实现枚举状态机的自动构建
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumStateInterpreterAttribute.StartState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfEnumStateInterpreterAttribute.EndStates">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfEnumStateInterpreterAttribute.#ctor(System.Int32,System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="start">起始状态</param>
+            <param name="ends">结束状态集合</param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfStateInterpreterAttribute">
+            <summary>
+            为业务对象类添加该特性，为业务类指定【枚举状态机】
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfStateInterpreterAttribute.EnumType">
+            <summary>
+            枚举类型
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreterAttribute.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfStateInterpreterAttribute.#ctor(System.Type,System.Object,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="enumType"></param>
+            <param name="start"></param>
+            <param name="ends"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.State.WfSubStateAttribute">
+            <summary>
+            【枚举状态机】将状态标注状态为子状态特性，并指定其父状态
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.State.WfSubStateAttribute.ParentState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.State.WfSubStateAttribute.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.WfSchedule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="interval"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(Rsd.Dudu.Core.ITimerSchedule,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="schedule"></param>
+            <param name="autoReset"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="second">秒</param>
+            <param name="minute">分钟</param>
+            <param name="hour">小时</param>
+            <param name="autoReset">是否周期执行</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="second">秒</param>
+            <param name="minute">分钟</param>
+            <param name="hour">小时</param>
+            <param name="day">天</param>
+            <param name="month">月</param>
+            <param name="year">年</param>
+            <param name="autoReset">是否周期执行</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="second">秒</param>
+            <param name="minute">分钟</param>
+            <param name="hour">小时</param>
+            <param name="day">星期</param>
+            <param name="month">月</param>
+            <param name="year">年</param>
+            <param name="autoReset">是否周期执行</param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.SetHandler(Rsd.Dudu.Workflow.WfHandler)">
+            <summary>
+            
+            </summary>
+            <param name="handler"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.Run">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

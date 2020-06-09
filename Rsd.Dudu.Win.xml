@@ -1,0 +1,1645 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rsd.Dudu.Win</name>
+    </assembly>
+    <members>
+        <member name="T:Rsd.Dudu.Win.DataControls.CompositionControl`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl`1.#ctor(Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32,System.String,System.Type[])">
+            <summary>
+            
+            </summary>
+            <param name="readAlignment"></param>
+            <param name="columnCount"></param>
+            <param name="text"></param>
+            <param name="types"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.CompositionControl.MajorType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl.#ctor(Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32,System.String,System.Type,System.Type[])">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="readAlignment"></param>
+            <param name="columnCount"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.CompositionControl.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl.GetCurrentObject``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl.GetObjectList``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl.SetDataSource``1(``0[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objList"></param>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.CompositionControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.CompositionControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.ControlDataBinding.Control">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.ControlDataBinding.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.ControlDataBinding.PropertyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.ControlDataBinding.DataMember">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataBinding.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataBinding.#ctor(System.Windows.Forms.Control,System.String,System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="propertyName"></param>
+            <param name="dataType"></param>
+            <param name="dataMember"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataBinding.BindingData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataBinding.ReadValue">
+            <summary>
+            将对象属性值，更新到控件属性中
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataBinding.WriteValue">
+            <summary>
+            将控件属性值，更新到对象属性中
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataSourceContainer.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataSourceContainer.AddDataSource(System.Type,Rsd.Dudu.Win.DataControls.GetDataSourceDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="tableName"></param>
+            <param name="columnName"></param>
+            <param name="displayMember"></param>
+            <param name="valueMember"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataSourceContainer.BindingDataSource(System.Type,System.Windows.Forms.ComboBox)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="control"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ControlDataSourceContainer.BindingDataSource(System.Type,System.Windows.Forms.DataGridViewComboBoxColumn)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="control"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicMenuStrip.LoadData(System.Object)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicMenuStrip.LoadData(Rsd.Dudu.UIView.MenuItemObject[])">
+            <summary>
+            
+            </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicMenuStrip.AddObject(System.Windows.Forms.ToolStripDropDownButton,Rsd.Dudu.UIView.MenuItemObject)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.ValueType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.SetValueType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.RefreshValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.GetValue">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.SetValue(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.EnumTypeEditControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.FieldSetControl`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl`1.#ctor(Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="readAlignment"></param>
+            <param name="columnCount"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl`1.GetCurrentObject">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl`1.GetObjectList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl`1.SetDataSource(`0[])">
+            <summary>
+            
+            </summary>
+            <param name="objList"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.IDataControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.IDataControl.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl.GetCurrentObject``1">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl.GetObjectList``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl.WriteValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl.ReadValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl.SetDataSource``1(``0[])">
+            <summary>
+            
+            </summary>
+            <param name="objList"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl.SetText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.IDataControl`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.IDataControl`1.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl`1.GetCurrentObject">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl`1.GetObjectList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl`1.WriteValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl`1.ReadValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.IDataControl`1.SetDataSource(`0[])">
+            <summary>
+            
+            </summary>
+            <param name="objList"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.MajorSubControl.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.#ctor(Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="columnCount"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.#ctor(System.Type,System.Type,Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tMajor"></param>
+            <param name="tSub"></param>
+            <param name="type"></param>
+            <param name="columnCount"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.Initialization">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.OnHandleCreated(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.SetText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.GetMajorObject``1">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.GetSubObjectList``1">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.GetCurrentObject``1">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.GetObjectList``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.SetDataSource``1(``0[])">
+            <summary>
+            
+            </summary>
+            <param name="objList"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.WriteValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl.ReadValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.MajorSubControl`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.MajorSubControl`2.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl`2.#ctor(Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="columnCount"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl`2.SetDataSource(Rsd.Dudu.BizModel.MajorSubObject{`0,`1})">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl`2.GetCurrentObject">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl`2.GetObjectList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.MajorSubControl`2.SetDataSource(Rsd.Dudu.BizModel.MajorSubObject{`0,`1}[])">
+            <summary>
+            
+            </summary>
+            <param name="objList"></param>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.ObjectDataGridView.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.#ctor(System.Type,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="view"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.SetDataSource``1(``0[])">
+            <summary>
+            
+            </summary>
+            <param name="dataSource"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.GetObjectCount">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.GetCurrentObject``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.GetObjectList``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.WriteValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView.ReadValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.AddNewObjectEventArgs`1.Obj">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.AddNewObjectEventArgs`1.#ctor(`0)">
+            <summary>
+            
+            </summary>
+            <param name="newObj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView`1.#ctor(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView`1.GetCurrentObject">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView`1.GetObjectList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.ObjectDataGridView`1.SetDataSource(`0[])">
+            <summary>
+            
+            </summary>
+            <param name="objList"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeColumn.EnumType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeColumn.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeColumn.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell.ValueType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell.GetValue">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell.SetValue(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataGridViewEnumTypeCell.SetEnumType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.DataListView`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.IsBusy">
+            <summary>
+            控件正在加载信息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.CompleteData">
+            <summary>
+            获取或设置一个值，该值表示当前数据是否为完整对象
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.Current">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.RowIndex">
+            <summary>
+            获取或设置一个值，该值表示数据列表当前Index
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.OldRowIndex">
+            <summary>
+            原RowIndex
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.DataListView`1.OldColumnIndex">
+            <summary>
+            原ColumnIndex
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.Initial">
+            <summary>
+            
+            </summary>
+            <param name="controlAttributes"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.CreateListViewColumns">
+            <summary>
+            创建列集合
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.BindData(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="table"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.ClearData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.FirstRow">
+            <summary>
+            响应首条记录导航事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.PrevRow">
+            <summary>
+            响应前一条记录导航事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.NextRow">
+            <summary>
+            响应下一条记录导航事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.LastRow">
+            <summary>
+            响应最后一条记录导航事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.Find(System.String)">
+            <summary>
+            Find
+            </summary>
+            <param name="currentRowWhere"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.Find(System.String,System.String)">
+            <summary>
+            Orientation
+            </summary>
+            <param name="colName"></param>
+            <param name="colValue"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.Filtration(System.String)">
+            <summary>
+            数据筛选
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.DataListView_CurrentCellChanged(System.Object,System.EventArgs)">
+            <summary>
+            在数据源发生改变后 该事件同样被触发
+            响应数据当前记录改变事件,
+            排序事件触发两次该事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.OnCurrentCellChanged(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DataListView`1.OrientationLastRow">
+            <summary>
+            定位到上一次访问数据
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.DataStateType.Normal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.DataStateType.New">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.DataStateType.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.FieldSetControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.FieldSetControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.ObjectType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.DataSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.ControlDataBindings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Win.DataControls.FieldSetControl.LastInputControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.AutoAddLabel">
+            <summary>
+             获取或设置一个值，该值表示是否自动添加Label标签
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.AutoAddInput">
+            <summary>
+             获取或设置一个值，该值表示是否自动添加Input控件
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.Controls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.Item(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.Item(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="objectName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.IsBusy">
+            <summary>
+            控件正在加载信息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.DataState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.ReadAlignment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.DataControls.FieldSetControl.ColumnCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.SetStyles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.#ctor(System.Type,Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.SetText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.OnParentChanged(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.GetControlFont">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.SetBackground(System.Drawing.Image)">
+            <summary>
+            
+            </summary>
+            <param name="image"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.LoadControls">
+            <summary>
+            
+            </summary>
+            <param name="columns"></param>
+            <param name="dataBoundRow"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.InitialControls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.InitialControlsInvoke">
+            <summary>
+            异步执行对象
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.Compare(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo)">
+            <summary>
+            
+            </summary>
+            <param name="p1"></param>
+            <param name="p2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.AddLabelControl(System.Reflection.PropertyInfo,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <param name="rowIndex"></param>
+            <param name="colIndex"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.AddInputControl(System.Reflection.PropertyInfo,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="p"></param>
+            <param name="controlCount"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.LayoutControls(Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.LayoutControls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.LayoutControls(System.Windows.Forms.Control,Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="parent"></param>
+            <param name="type"></param>
+            <param name="columnCount"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.GetRowCount(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="controlCount"></param>
+            <param name="columnCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.GetControlLocation(System.Int32,Rsd.Dudu.Win.DataControls.ReadAlignmentType,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.GetControlLocation(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.FieldsControl_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            KeyDown，如果为Tab键或Enter键，使下一控件获取焦点
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.FieldsControl_GotFocus(System.Object,System.EventArgs)">
+            <summary>
+             
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.FieldsControl_Leave(System.Object,System.EventArgs)">
+            <summary>
+            control_Leave事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.SetDataPosition(System.Int32,Rsd.Dudu.Win.DataControls.DataStateType)">
+            <summary>
+            
+            </summary>
+            <param name="p"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.SetDataSource``1(``0[])">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.ClearObjecs">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <param name="p"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.GetObjectList``1">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.GetCurrentObject``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.FocusFirst">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.FindControl(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.WriteValue">
+            <summary>
+            将控件属性值，更新到对象属性中
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.FieldSetControl.ReadValue">
+            <summary>
+            将对象属性值，更新到控件属性中
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.ReadAlignmentType">
+            <summary>
+            控件布局类型
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.ReadAlignmentType.LeftRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.DataControls.ReadAlignmentType.TopBottom">
+            <summary>
+            纵向
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.DataControls.DynamicTreeView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.ClearData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.LoadObjects``1(``0[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.AddObject``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.RemoveObject(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.LoadTopLay``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <param name="textMemberName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.LoadSubLay``1(System.Windows.Forms.TreeNode,System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="node"></param>
+            <param name="list"></param>
+            <param name="textMemberName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.AddTopItem``1(``0,System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="item"></param>
+            <param name="textMemberName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.DataControls.DynamicTreeView.AddSubItem``1(System.Windows.Forms.TreeNode,``0,System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="node"></param>
+            <param name="textMemberName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.#ctor(System.Type,Rsd.Dudu.Core.IObject)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.#ctor(System.Type[])">
+            <summary>
+            
+            </summary>
+            <param name="t1"></param>
+            <param name="t2"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.WriteValue(System.Int32)">
+            <summary>
+            将控件属性值，更新到对象属性中
+            </summary>
+            <param name="index">FieldSetControl控件序号</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.ReadValue(System.Int32)">
+            <summary>
+              将对象属性值，更新到控件属性中
+            </summary>
+            <param name="index">FieldSetControl控件序号</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.LoadObjects``1(System.Int32,``0[])">
+            <summary>
+             设置 指定FieldSetControl控件数据源
+            </summary>
+            <param name="index">FieldSetControl控件序号</param>
+            <param name="objs"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.GetObjects``1(System.Int32)">
+            <summary>
+            获取 指定FieldSetControl控件数据源
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="index">FieldSetControl控件序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.GetCurrentObject``1(System.Int32)">
+            <summary>
+            获取 指定FieldSetControl控件当前对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="index">FieldSetControl控件序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.SetObjectPosition(System.Int32,System.Int32,Rsd.Dudu.Win.DataControls.DataStateType)">
+            <summary>
+            设置数据索引
+            </summary>
+            <param name="index"></param>
+            <param name="objectIndex"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.AddButton(System.String,System.Drawing.Image,System.EventHandler)">
+            <summary>
+            添加 操作按钮
+            </summary>
+            <param name="text">文本</param>
+            <param name="img">图标</param>
+            <param name="handler">点击事件</param>
+        </member>
+        <member name="F:Rsd.Dudu.Win.FormDataView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.FormDataView`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormDataView`1.#ctor(`0)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Win.FormDataView`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="T:Rsd.Dudu.Win.FormMessageBox">
+             <summary>
+            多行的MessageBox 
+             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.#ctor">
+             <summary>
+            构造函数 
+             </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.FormMessageBox.InfoType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.FormMessageBox.InfoDescribe">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.FormMessageBox.Caption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.rsdFormMessageBox_Load(System.Object,System.EventArgs)">
+            <summary>
+            初始化界面显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.ShowDialog(Rsd.Dudu.Win.MultiLineMessageBoxInfoType,System.String,System.String,Rsd.Dudu.Win.MultiLineMessageBoxButton[])">
+            <summary>
+            
+            </summary>
+            <param name="infoType"></param>
+            <param name="caption"></param>
+            <param name="text"></param>
+            <param name="buttons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.btn_SaveAndAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            保存并添加
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.btn_Save_Click(System.Object,System.EventArgs)">
+            <summary>
+            保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.btn_Modify_Click(System.Object,System.EventArgs)">
+            <summary>
+            修改
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.btn_Close_Click(System.Object,System.EventArgs)">
+            <summary>
+            关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.btn_Print_Click(System.Object,System.EventArgs)">
+            <summary>
+            打印
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.pd_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            从MSDN里面拷贝的打印方法
+            </summary>
+            <param name="sender"></param>
+            <param name="ev"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.btn_SaveAs_Click(System.Object,System.EventArgs)">
+            <summary>
+            将文本框里面的内容保存到文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Rsd.Dudu.Win.FormMessageBox.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormMessageBox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.MultiLineMessageBoxButton">
+            <summary>
+            MultiLineMessageBoxButton
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_CLOSE">
+            <summary>
+            关闭，关闭窗体，返回DialogResult.Cancel
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_OK">
+            <summary>
+            确定，关闭窗体，返回DialogResult.OK
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_NO">
+            <summary>
+            否，关闭窗体，返回DialogResult.No
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_YES">
+            <summary>
+            是，关闭窗体，返回DialogResult.Yes
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_MODIFY">
+            <summary>
+            修改，关闭窗体，返回DialogResult.Retry
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_IGNORE">
+            <summary>
+            忽略，关闭窗体，返回DialogResult.Ignore
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_SAVE">
+            <summary>
+            保存，关闭窗体，返回DialogResult.OK
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_SAVEANDADD">
+            <summary>
+            保存并添加，关闭窗体，返回DialogResult.Yes
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_PRINT">
+            <summary>
+            打印，不关闭窗体
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_SAVEAS">
+            <summary>
+            另存为，不关闭窗体
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxButton.BUTTON_NONE">
+            <summary>
+            无，不添加任何按钮
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.MultiLineMessageBoxInfoType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxInfoType.INFO_ERROR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxInfoType.INFO_INFO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxInfoType.INFO_WARN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Win.MultiLineMessageBoxInfoType.INFO_PRINT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.FormWait">
+            <summary>
+            WaitForm
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.FormWait.TimeSpan">
+            <summary>
+            窗体展示的时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.FormWait.WaitingText">
+            <summary>
+            WaitForm上面显示的文字
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.#ctor(System.String,Rsd.Dudu.Win.FormWait.WaitTask)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="method"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.#ctor(System.Drawing.Image,System.String,Rsd.Dudu.Win.FormWait.WaitTask)">
+            <summary>
+            
+            </summary>
+            <param name="image"></param>
+            <param name="msg"></param>
+            <param name="method"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.#ctor(System.Drawing.Image,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="image"></param>
+            <param name="span"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.FrmWait_Shown(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Rsd.Dudu.Win.FormWait.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.FormWait.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.Helpers.PrintHelper.Print(System.Data.DataTable,System.String)">
+            <summary>
+                打印
+            </summary>
+            <param name="dt">要打印的DataTable</param>
+            <param name="title">打印文件的标题</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.Helpers.PrintHelper.PrintPriview(System.Data.DataTable,System.String)">
+            <summary>
+                打印预览
+            </summary>
+            <param name="dt">要打印的DataTable</param>
+            <param name="title">打印文件的标题</param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.Helpers.PrintHelper.PrintSetting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.Helpers.PrintHelper.CreatePrintDocument(System.Data.DataTable,System.String)">
+            <summary>
+                创建打印文件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.Helpers.PrintHelper.PrintDocumentPrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+                打印当前页
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Win.MultiLineMessageBox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.MultiLineMessageBox.Show(Rsd.Dudu.Win.MultiLineMessageBoxInfoType,System.String,System.String,Rsd.Dudu.Win.MultiLineMessageBoxButton[])">
+            <summary>
+            
+            </summary>
+            <param name="infoType"></param>
+            <param name="caption"></param>
+            <param name="text"></param>
+            <param name="buttons"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Win.Resource">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.Resource.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.Resource.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.Resource.bg">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.Resource.btnAdd">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Win.WinExceptionHandleService.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.Do(Rsd.Dudu.Exception.ExceptionObject[])">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.Do(System.Collections.Generic.List{Rsd.Dudu.Exception.ExceptionObject})">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.MyMessageBox.ShowError(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.MyMessageBox.ShowException(System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.MyMessageBox.ShowMessage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.MyMessageBox.ShowWarn(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Win.MyMessageBox.ShowYesOrNo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Rsd.Dudu.Win.MyMessageBox.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
