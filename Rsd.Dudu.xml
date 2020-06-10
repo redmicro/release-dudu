@@ -13217,44 +13217,6 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.IErrorCodesContainer.AddErrorCode(System.String,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="typeGuid"></param>
-            <param name="code"></param>
-            <param name="text"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.IErrorCodesContainer.AddErrorCodeEnum(System.Type)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.IErrorCodesContainer.AddErrorCodeEnum``1">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Rsd.Dudu.Core.IErrorCodesContainer.FormatErrorText(System.Type,System.String,System.Object[])">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <param name="code"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Core.IErrorCodesContainer.FormatErrorText``1(``0,System.Object[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="code"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
         <member name="T:Rsd.Dudu.Core.IDBSession">
             <summary>
             
@@ -14958,6 +14920,16 @@
             <param name="errorCode"></param>
             <param name="operation"></param>
             <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Log.LogBaseService.Error``1(``0,System.String,Rsd.Dudu.Log.LogSourceType,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="user"></param>
+            <param name="type"></param>
+            <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.LogBaseService.BeginCapture(System.String)">
             <summary>
