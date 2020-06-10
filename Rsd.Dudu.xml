@@ -15734,6 +15734,16 @@
             <param name="operation"></param>
             <param name="type"></param>
         </member>
+        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(``0,System.String,Rsd.Dudu.Log.LogSourceType,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="user"></param>
+            <param name="type"></param>
+            <param name="args"></param>
+        </member>
         <member name="M:Rsd.Dudu.Log.ILogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             警告日志
