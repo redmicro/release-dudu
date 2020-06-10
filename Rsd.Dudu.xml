@@ -14931,6 +14931,15 @@
             <param name="type"></param>
             <param name="args"></param>
         </member>
+        <member name="M:Rsd.Dudu.Log.LogBaseService.Error``1(``0,System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="user"></param>
+            <param name="args"></param>
+        </member>
         <member name="M:Rsd.Dudu.Log.LogBaseService.BeginCapture(System.String)">
             <summary>
             
@@ -15742,6 +15751,15 @@
             <param name="code"></param>
             <param name="user"></param>
             <param name="type"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(``0,System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="user"></param>
             <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
