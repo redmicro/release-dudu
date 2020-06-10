@@ -3029,7 +3029,72 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.DBServices.IDBConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.IDBConfig.DbName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.IDBConfig.DbType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.IDBConfig.Host">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.IDBConfig.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.IDBConfig.Port">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.IDBConfig.User">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.DBServices.DBConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.DBConfig.Host">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.DBConfig.Port">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.DBConfig.User">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.DBConfig.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.DBConfig.DbName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.DBServices.DBConfig.DbType">
             <summary>
             
             </summary>
@@ -4723,6 +4788,11 @@
             <param name="selfDestruct"></param>
             <param name="commandTextList"></param>
             <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.DBServices.OdbcDbService">
+            <summary>
+            
+            </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.OdbcDbService.LimitVersion">
             <summary>
