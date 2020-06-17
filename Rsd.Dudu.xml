@@ -15307,7 +15307,7 @@
             <summary>
             
             </summary>
-            <param name="sleep"></param>
+            <param name="logService"></param>
             <param name="key"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.ThreadInvoke(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
