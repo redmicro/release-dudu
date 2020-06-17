@@ -14952,11 +14952,11 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.CommitCapture(System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.CommitCapture(Rsd.Dudu.Log.ILogService,System.String)">
             <summary>
             
             </summary>
-            <param name="sleep"></param>
+            <param name="logService"></param>
             <param name="key"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.ConsoleLogService.GetMonitorInfo">
@@ -15036,6 +15036,12 @@
             <param name="user"></param>
             <param name="args"></param>
         </member>
+        <member name="M:Rsd.Dudu.Log.LogBaseService.CommitCapture(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+        </member>
         <member name="M:Rsd.Dudu.Log.LogBaseService.BeginCapture(System.String)">
             <summary>
             
@@ -15048,11 +15054,11 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogBaseService.CommitCapture(System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Log.LogBaseService.CommitCapture(Rsd.Dudu.Log.ILogService,System.String)">
             <summary>
             
             </summary>
-            <param name="sleep"></param>
+            <param name="logService"></param>
             <param name="key"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.LogBaseService.DbSql(System.String,Rsd.Dudu.DBServices.SqlQueryTypes,Rsd.Dudu.Log.SqlOpType,System.String,System.Int64,System.Int64)">
@@ -15297,14 +15303,14 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.CommitCapture(System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.CommitCapture(Rsd.Dudu.Log.ILogService,System.String)">
             <summary>
             
             </summary>
             <param name="sleep"></param>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.ThreadInvoke(Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.DbLogService.ThreadInvoke(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
             <summary>
             
             </summary>
@@ -15595,11 +15601,11 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.CommitCapture(System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.CommitCapture(Rsd.Dudu.Log.ILogService,System.String)">
             <summary>
             
             </summary>
-            <param name="sleep"></param>
+            <param name="logService"></param>
             <param name="key"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.FileLogService.GetMonitorInfo">
@@ -15784,11 +15790,17 @@
             线程独立
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.CommitCapture(System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Log.ILogService.CommitCapture(Rsd.Dudu.Log.ILogService,System.String)">
             <summary>
             线程独立 提交所有捕获的日志
             </summary>
-            <param name="sleep">主线程延时退出时间（单位：毫秒）</param>
+            <param name="logService">日志的日志</param>
+            <param name="key"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Log.ILogService.CommitCapture(System.String)">
+            <summary>
+            
+            </summary>
             <param name="key"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.DbSql(System.String,Rsd.Dudu.DBServices.SqlQueryTypes,Rsd.Dudu.Log.SqlOpType,System.String,System.Int64,System.Int64)">
@@ -15981,11 +15993,11 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.CommitCapture(System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.CommitCapture(Rsd.Dudu.Log.ILogService,System.String)">
             <summary>
             
             </summary>
-            <param name="sleep"></param>
+            <param name="logService"></param>
             <param name="key"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.WindowsLogService.GetMonitorInfo">
