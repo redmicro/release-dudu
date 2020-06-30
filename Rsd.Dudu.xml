@@ -11611,6 +11611,15 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Core.IMyType`1.GetObject(System.String,System.Boolean,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="cache"></param>
+            <param name="tableNameSuffixList"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.IMyType`1.GetObjects(Rsd.Dudu.Core.IDBSession,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.String[])">
             <summary>
             
