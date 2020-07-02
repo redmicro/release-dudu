@@ -8382,12 +8382,12 @@
             
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Ladder.IPayService">
+        <member name="T:Rsd.Dudu.Ladder.IWxPayService">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxAppPaySign(System.String,System.String)">
             <summary>
             
             </summary>
@@ -8395,7 +8395,7 @@
             <param name="outTtradeNo"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxAppPaySign(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8408,7 +8408,7 @@
             <param name="clientIp"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxAppPaySign(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8422,7 +8422,7 @@
             <param name="clientIp"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxAppPaySign(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8438,7 +8438,7 @@
             <param name="clientIp"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxJsApiPaySign(System.String,System.String)">
             <summary>
             
             </summary>
@@ -8446,7 +8446,7 @@
             <param name="outTtradeNo"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxJsApiPaySign(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8459,7 +8459,7 @@
             <param name="clientIp"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxJsApiPaySign(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8473,7 +8473,7 @@
             <param name="clientIp"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.GetWxJsApiPaySign(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8489,13 +8489,13 @@
             <param name="clientIp"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.SetPayNotifyInfo(System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.SetPayNotifyInfo(System.String)">
             <summary>
             
             </summary>
             <param name="notifyXml"></param>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.Refund(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.Refund(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8509,7 +8509,7 @@
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Ladder.IPayService.SetRefundNotifyInfo(System.String)">
+        <member name="M:Rsd.Dudu.Ladder.IWxPayService.SetRefundNotifyInfo(System.String)">
             <summary>
             
             </summary>
