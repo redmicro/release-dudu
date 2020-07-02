@@ -8382,6 +8382,160 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Ladder.IWxDbSession">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxDbSession.DBSession">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetWxAppConfig(System.String)">
+            <summary>
+            获取微信小程序配置
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetWxAppConfigByAppId(System.String)">
+            <summary>
+            获取微信小程序配置
+            </summary>
+            <param name="appId">小程序AppId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetWxMpConfig(System.String)">
+            <summary>
+            获取微信公众号配置
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetWxMpConfigByAppId(System.String)">
+            <summary>
+            获取微信公众号配置
+            </summary>
+            <param name="appId">公众号AppId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.InsertPayInfo(Rsd.Dudu.Ladder.IWxPayInfo)">
+            <summary>
+            新增支付订单
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.UpdatePayInfo(Rsd.Dudu.Ladder.IWxPayInfo)">
+            <summary>
+            更新支付订单信息
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetPayInfo(System.String,System.String)">
+            <summary>
+            获取支付订单
+            </summary>
+            <param name="openId"></param>
+            <param name="out_trade_no"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.InsertRefundInfo(Rsd.Dudu.Ladder.IWxRefundInfo)">
+            <summary>
+            新增退款订单
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.UpdateRefundInfo(Rsd.Dudu.Ladder.IWxRefundInfo)">
+            <summary>
+            更新退款订单信息
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetRefundInfo(System.String)">
+            <summary>
+            获取退款订单
+            </summary>
+            <param name="out_refund_no">退款单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IWxDbSession.GetRefundInfoByTradeNo(System.String)">
+            <summary>
+            获取退款订单
+            </summary>
+            <param name="out_trade_no">原交易订单号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Ladder.IWxMpConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.AgentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.AgentKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.AppId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.AppKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.CertPwd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.CertUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.MerchId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.MerchKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.OpenKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.OpenToken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.OriginalId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxMpConfig.Status">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Ladder.IWxPayService">
             <summary>
             
