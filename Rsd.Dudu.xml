@@ -8382,6 +8382,140 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Ladder.IPayService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="openId"></param>
+            <param name="outTtradeNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="openId"></param>
+            <param name="outTtradeNo"></param>
+            <param name="totalFee"></param>
+            <param name="body"></param>
+            <param name="notifyUrl"></param>
+            <param name="attach"></param>
+            <param name="clientIp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="appId"></param>
+            <param name="openId"></param>
+            <param name="outTradeNo"></param>
+            <param name="totalFee"></param>
+            <param name="body"></param>
+            <param name="notifyUrl"></param>
+            <param name="attach"></param>
+            <param name="clientIp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxAppPaySign(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="merchId"></param>
+            <param name="payKey"></param>
+            <param name="appId"></param>
+            <param name="openId"></param>
+            <param name="outTtradeNo"></param>
+            <param name="totalFee"></param>
+            <param name="body"></param>
+            <param name="notifyUrl"></param>
+            <param name="attach"></param>
+            <param name="clientIp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="openId"></param>
+            <param name="outTtradeNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="openId"></param>
+            <param name="outTtradeNo"></param>
+            <param name="totalFee"></param>
+            <param name="body"></param>
+            <param name="notifyUrl"></param>
+            <param name="attach"></param>
+            <param name="clientIp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="appId"></param>
+            <param name="openId"></param>
+            <param name="outTradeNo"></param>
+            <param name="totalFee"></param>
+            <param name="body"></param>
+            <param name="notifyUrl"></param>
+            <param name="attach"></param>
+            <param name="clientIp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.GetWxJsApiPaySign(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="merchId"></param>
+            <param name="payKey"></param>
+            <param name="appId"></param>
+            <param name="openId"></param>
+            <param name="outTradeNo"></param>
+            <param name="totalFee"></param>
+            <param name="body"></param>
+            <param name="notifyUrl"></param>
+            <param name="attach"></param>
+            <param name="clientIp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.SetPayNotifyInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="notifyXml"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.Refund(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="openId"></param>
+            <param name="outTtradeNo"></param>
+            <param name="outRefundNo"></param>
+            <param name="refund_fee"></param>
+            <param name="reason"></param>
+            <param name="notifyUrl"></param>
+            <param name="certFile"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.IPayService.SetRefundNotifyInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="notifyXml"></param>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Ladder.PayChannelType">
             <summary>
              "支付渠道：wechat：微信支付;alipay：支付宝;chinaunion：银联 
