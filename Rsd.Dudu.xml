@@ -8312,6 +8312,76 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Ladder.IWxAppConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.WxAppId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.WxAppKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.WxAppName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.CertPwd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.CertUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.MerchId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.MerchKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.OpenKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.OpenToken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.OriginalId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.AgentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.AgentKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IWxAppConfig.Status">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Ladder.PayChannelType">
             <summary>
              "支付渠道：wechat：微信支付;alipay：支付宝;chinaunion：银联 
