@@ -8165,6 +8165,69 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Ladder.ApiDocBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.Version">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.Category">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.RequestUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.RequestMethod">
+            <summary>
+            POST SET
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.ContentType">
+            <summary>
+            x-www-form-urlencoded
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.ResponeType">
+            <summary>
+            JSON XML
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.Status">
+            <summary>
+            状态
+            </summary>
+            <summary>
+            status
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiDocBase.HelpUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.ApiDocBase.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.ModelProvider.TableIndexAttribute">
             <summary>
             ALTER TABLE `info__fang_wu_xin_xi_biao` ADD UNIQUE INDEX `idx_bian_hao` (`bian_hao`,`ming_cheng`) USING BTREE ;
