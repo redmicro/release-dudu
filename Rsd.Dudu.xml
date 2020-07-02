@@ -8228,6 +8228,125 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Ladder.ApiResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.ApiResult.#ctor(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.ApiResult.#ctor(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="success"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Ladder.ApiResult`1">
+            <summary>
+            API接口调用请求结果
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.HelpUrl">
+            <summary>
+            帮助文档URL
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.Success">
+            <summary>
+            API接口调用成功
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.Message">
+            <summary>
+            API接口调用 消息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.ReturnMessage">
+            <summary>
+            API接口返回处理结果信息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.ReturnCode">
+            <summary>
+            API接口返回处理结果代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.ReturnSuccess">
+            <summary>
+            请求结果返回成功
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.ReturnData">
+            <summary>
+            API接口返回数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.ApiResult`1.ReturnJson">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.ApiResult`1.#ctor(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Ladder.ApiResult`1.#ctor(`0,System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Ladder.IPayServiceBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Ladder.IPayServiceBase.PayChannel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Ladder.PayChannelType">
+            <summary>
+             "支付渠道：wechat：微信支付;alipay：支付宝;chinaunion：银联 
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Ladder.PayChannelType.Credit">
+            <summary>
+            余额支付
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Ladder.PayChannelType.Wechat">
+            <summary>
+            微信支付
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Ladder.PayChannelType.Alipay">
+            <summary>
+            支付宝
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Ladder.PayChannelType.ChinaUnion">
+            <summary>
+            银联
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Ladder.PayChannelType.Cash">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Ladder.PayChannelType.EFT">
+            <summary>
+             电子转账(Electronic Funds Transfer)
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.ModelProvider.TableIndexAttribute">
             <summary>
             ALTER TABLE `info__fang_wu_xin_xi_biao` ADD UNIQUE INDEX `idx_bian_hao` (`bian_hao`,`ming_cheng`) USING BTREE ;
