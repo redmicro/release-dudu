@@ -114,6 +114,19 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.BadRequest(System.String)">
+            <summary>
+            返回：ErrorCodes.W2000 非法请求 (token 为空)
+            </summary>
+            <param name="msg"></param>
+            <returns>非法请求</returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.NoSessionRequest">
+            <summary>
+            返回：ErrorCodes.W2001 Session信息不存在
+            </summary>
+            <returns>Session信息不存在</returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SaveObject(System.Type,Rsd.Dudu.BizModel.JsonObject,Rsd.Dudu.BizModel.ObjectStateType)">
             <summary>
             保存对象至数据，并将返回内存中的对象
