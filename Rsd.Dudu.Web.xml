@@ -1787,6 +1787,14 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="assembly"></param>
+            <param name="path"></param>
+            <param name="category"></param>
+        </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.Type,System.Type,System.String,System.String)">
             <summary>
             
