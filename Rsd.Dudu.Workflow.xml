@@ -910,6 +910,11 @@
             用于工作流持久化与重启
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.Key">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Workflow.Engine.IWfEntity.ParentId">
             <summary>
             父流程ID
@@ -1185,6 +1190,11 @@
         <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.Id">
             <summary>
             主键 
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.Key">
+            <summary>
+            
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Workflow.Engine.WfEntity.ParentId">

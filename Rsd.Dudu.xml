@@ -166,102 +166,6 @@
             <param name="property"></param>
             <param name="value"></param>
         </member>
-        <member name="T:Rsd.Dudu.BizModel.BizObjectBaseV2">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.Id">
-            <summary>
-            id 自增ID
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.Key">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.Creator">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.CreateTime">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.Modifier">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.ModifyTime">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.ProjectId">
-            <summary>
-            自动化生成的派生类中GetProjectId方法被重写。
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.Flag">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.SortIndex">
-            <summary>
-            displayorder 排序号
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.BizModel.BizObjectBaseV2.Remark">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
-            <summary>
-            
-            </summary>
-            <param name="info"></param>
-            <param name="context"></param>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.SetState(Rsd.Dudu.BizModel.ObjectStateType)">
-            <summary>
-            
-            </summary>
-            <param name="state"></param>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.GetKey">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.Validate">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.LogicDelete">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.BizObjectBaseV2.GetProjectId">
-            <summary>
-            获取项目ID编号(与注册编号绑定)
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:Rsd.Dudu.BizModel.BizObjectService`1">
             <summary>
             
@@ -655,6 +559,12 @@
             </summary>
             <param name="state"></param>
         </member>
+        <member name="M:Rsd.Dudu.BizModel.OperationBase.GetId">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.BizModel.OperationBase.GetKey">
             <summary>
             
@@ -823,6 +733,11 @@
             </summary>
         </member>
         <member name="P:Rsd.Dudu.BizModel.BizObjectBase.Id">
+            <summary>
+            id 自增ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.BizModel.BizObjectBase.Key">
             <summary>
             
             </summary>
@@ -1279,21 +1194,27 @@
             </summary>
             <param name="state"></param>
         </member>
+        <member name="M:Rsd.Dudu.BizModel.IOperation.GetId">
+            <summary>
+            获取ID
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.BizModel.IOperation.GetKey">
             <summary>
-            
+            获取Key
             </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.BizModel.IOperation.GetTitle">
             <summary>
-            
+            获取标题
             </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.BizModel.IOperation.GetProjectId">
             <summary>
-            
+            获取项目ID
             </summary>
             <returns></returns>
         </member>
@@ -4583,13 +4504,14 @@
             <param name="baseClass"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDBModel(System.String,System.String,System.String,System.String,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDBModel(System.String,System.String,System.String,System.String,System.String,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
             <param name="alias"></param>
             <param name="tableName"></param>
-            <param name="keyFields"></param>
+            <param name="idField"></param>
+            <param name="keyField"></param>
             <param name="baseClass"></param>
             <param name="objectType"></param>
             <returns></returns>
@@ -7639,11 +7561,6 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Key">
-            <summary>
-            唯一业务标识
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Title">
             <summary>
             
@@ -9154,12 +9071,11 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.ModelProvider.PropertyFlagAttribute.#ctor(Rsd.Dudu.ModelProvider.PropertyFlag,System.Boolean)">
+        <member name="M:Rsd.Dudu.ModelProvider.PropertyFlagAttribute.#ctor(Rsd.Dudu.ModelProvider.PropertyFlag)">
             <summary>
             
             </summary>
             <param name="flag"></param>
-            <param name="iskey"></param>
         </member>
         <member name="T:Rsd.Dudu.ModelProvider.StringTypeAttribute">
             <summary>
@@ -9249,9 +9165,14 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.ModelProvider.TableAttribute.PrimaryColumns">
+        <member name="P:Rsd.Dudu.ModelProvider.TableAttribute.IdColumn">
             <summary>
-            主键字段
+            Id主键字段
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ModelProvider.TableAttribute.KeyColumn">
+            <summary>
+            Key主键字段
             </summary>
         </member>
         <member name="P:Rsd.Dudu.ModelProvider.TableAttribute.TitleColumn">
@@ -9265,15 +9186,7 @@
             </summary>
             <param name="capiton"></param>
             <param name="name"></param>
-            <param name="key"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="capiton"></param>
-            <param name="name"></param>
-            <param name="keyFields"></param>
+            <param name="idField"></param>
         </member>
         <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
@@ -9281,36 +9194,39 @@
             </summary>
             <param name="capiton"></param>
             <param name="name"></param>
-            <param name="oldName"></param>
-            <param name="key"></param>
+            <param name="idField"></param>
+            <param name="keyField"></param>
         </member>
-        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="oldName"></param>
-            <param name="name"></param>
-            <param name="capiton"></param>
-            <param name="keyFields"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String[],System.String,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
             <param name="capiton"></param>
             <param name="name"></param>
-            <param name="keyFields"></param>
+            <param name="oldName"></param>
+            <param name="idField"></param>
+            <param name="keyField"></param>
+        </member>
+        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String,System.String,System.String,Rsd.Dudu.DBServices.DbObjectType)">
+            <summary>
+            
+            </summary>
+            <param name="capiton"></param>
+            <param name="name"></param>
+            <param name="idField"></param>
+            <param name="keyField"></param>
             <param name="titleField"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String,System.String[],System.String,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
             <param name="capiton"></param>
             <param name="name"></param>
             <param name="oldName"></param>
-            <param name="keyFields"></param>
+            <param name="idField"></param>
+            <param name="keyField"></param>
             <param name="titleField"></param>
             <param name="type"></param>
         </member>
@@ -9326,11 +9242,12 @@
             </summary>
             <param name="table"></param>
         </member>
-        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.SetPrimaryColumns(System.String[])">
+        <member name="M:Rsd.Dudu.ModelProvider.TableAttribute.SetPrimaryColumns(System.String,System.String)">
             <summary>
             
             </summary>
-            <param name="primaryColumns"></param>
+            <param name="idColumn"></param>
+            <param name="keyColumn"></param>
         </member>
         <member name="T:Rsd.Dudu.ModelProvider.TableFieldAttribute">
             <summary>
@@ -9760,7 +9677,12 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.ModelProvider.DBModel.PrimaryColumns">
+        <member name="P:Rsd.Dudu.ModelProvider.DBModel.IdColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ModelProvider.DBModel.KeyColumn">
             <summary>
             
             </summary>
@@ -9770,19 +9692,24 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.ModelProvider.DBModel.#ctor(System.String,System.String,System.String,System.String[],System.String,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.ModelProvider.DBModel.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
             <param name="alias"></param>
             <param name="name"></param>
-            <param name="keyField"></param>
+            <param name="titleField"></param>
+            <param name="idField">id主键名</param>
+            <param name="keyField">GUID主键名</param>
+            <param name="baseClass"></param>
+            <param name="objectType"></param>
         </member>
-        <member name="M:Rsd.Dudu.ModelProvider.DBModel.SetPrimaryColumns(System.String[])">
+        <member name="M:Rsd.Dudu.ModelProvider.DBModel.SetPrimaryColumns(System.String,System.String)">
             <summary>
             在无法在构造函数上设置primaryColumns值时，可以通过该方法设置
             </summary>
-            <param name="primaryColumns"></param>
+            <param name="idField">id主键名</param>
+            <param name="keyField">GUID主键名</param>
         </member>
         <member name="T:Rsd.Dudu.ModelProvider.DBModelProperty">
             <summary>
@@ -10536,6 +10463,11 @@
         <member name="T:Rsd.Dudu.Permission.PermBase">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Permission.PermBase.SortIndex">
+            <summary>
+            displayorder 排序号
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Permission.Role">
@@ -11528,6 +11460,13 @@
             <param name="obj"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Core.IMyType.GetIdValue(Rsd.Dudu.BizModel.IOperation)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.IMyType.GetKeyValue(Rsd.Dudu.BizModel.IOperation)">
             <summary>
             
@@ -11639,6 +11578,13 @@
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IMyType`1.IsExists(`0)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.IMyType`1.GetIdValue(`0)">
             <summary>
             
             </summary>
@@ -13107,12 +13053,17 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.ITypeOperation.Keys">
+        <member name="P:Rsd.Dudu.Core.ITypeOperation.IdProperty">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.ITypeOperation.Title">
+        <member name="P:Rsd.Dudu.Core.ITypeOperation.KeyProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ITypeOperation.TitleProperty">
             <summary>
             
             </summary>
@@ -13578,7 +13529,17 @@
             
             </summary>
             <param name="schema"></param>
-            <param name="keyValue"></param>
+            <param name="key">GUID主键</param>
+            <param name="cache"></param>
+            <param name="tableNameSuffix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.IDBSession.GetObject(Rsd.Dudu.ORM.TableSchema,System.Int64,System.Boolean,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="schema"></param>
+            <param name="id">自增主键</param>
             <param name="cache"></param>
             <param name="tableNameSuffix"></param>
             <returns></returns>
@@ -16768,12 +16729,17 @@
             </summary>
             <param name="owner"></param>
         </member>
-        <member name="P:Rsd.Dudu.MyType`1.Keys">
+        <member name="P:Rsd.Dudu.MyType`1.IdProperty">
+            <summary>
+            标题数据行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.MyType`1.KeyProperty">
             <summary>
             主键属性
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.MyType`1.Title">
+        <member name="P:Rsd.Dudu.MyType`1.TitleProperty">
             <summary>
             标题数据行
             </summary>
@@ -16966,6 +16932,20 @@
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.MyType`1.IsExists(Rsd.Dudu.BizModel.IOperation)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType`1.Rsd#Dudu#Core#IMyType{T}#GetIdValue(`0)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType`1.GetIdValue(Rsd.Dudu.BizModel.IOperation)">
             <summary>
             
             </summary>
@@ -17507,21 +17487,20 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.ORM.ITable.PrimaryColumns">
+        <member name="P:Rsd.Dudu.ORM.ITable.IdColumn">
             <summary>
-            主键或组合主键
+            自增主键
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ORM.ITable.KeyColumn">
+            <summary>
+            GUID主键 
             </summary>
         </member>
         <member name="P:Rsd.Dudu.ORM.ITable.TitleColumn">
             <summary>
-            
+            标题列
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.ORM.ITable.SetPrimaryColumns(System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="primaryColumn"></param>
         </member>
         <member name="T:Rsd.Dudu.ORM.ITableField">
             <summary>
@@ -17651,7 +17630,12 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.ORM.TableSchema.Keys">
+        <member name="P:Rsd.Dudu.ORM.TableSchema.KeyField">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ORM.TableSchema.IdField">
             <summary>
             
             </summary>
@@ -17683,7 +17667,7 @@
         </member>
         <member name="M:Rsd.Dudu.ORM.TableSchema.IsKeyField(Rsd.Dudu.ORM.ITableField)">
             <summary>
-            
+            判断是否是主键
             </summary>
             <param name="field"></param>
             <returns></returns>
@@ -19478,12 +19462,22 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.DBSession.GetObject(Rsd.Dudu.ORM.TableSchema,System.Int64,System.Boolean,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="schema"></param>
+            <param name="id"></param>
+            <param name="cache"></param>
+            <param name="tableNameSuffix"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.DBSession.GetObject(Rsd.Dudu.ORM.TableSchema,System.String,System.Boolean,System.String[])">
             <summary>
             
             </summary>
             <param name="schema"></param>
-            <param name="keyValue"></param>
+            <param name="key"></param>
             <param name="cache">[缓存暂未实现]是否使用缓存机制，ture为使用缓存，false为不使用缓存</param> 
             <param name="tableNameSuffix">表名后缀，一般用于分表查询</param>
             <returns></returns>
