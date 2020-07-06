@@ -19360,8 +19360,8 @@
             
             </summary>
             <param name="schema"></param>
-            <param name="collection"></param>
-            <param name="key"></param>
+            <param name="collection">属性集合</param>
+            <param name="key">主键</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBSession.Insert(Rsd.Dudu.ORM.TableSchema,System.String,Rsd.Dudu.Core.IPropertyValueCollection,System.String)">
@@ -19370,8 +19370,8 @@
             </summary>
             <param name="schema"></param>
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="collection"></param>
-            <param name="key"></param>
+            <param name="collection">属性集合</param>
+            <param name="key">主键</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBSession.Update(Rsd.Dudu.ORM.TableSchema,Rsd.Dudu.Core.IPropertyValueCollection,System.String)">
@@ -19379,8 +19379,8 @@
             
             </summary>
             <param name="schema">表结构</param>
-            <param name="collection"></param>
-            <param name="key"></param>
+            <param name="collection">属性集合</param>
+            <param name="key">主键</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBSession.Update(Rsd.Dudu.ORM.TableSchema,System.String,Rsd.Dudu.Core.IPropertyValueCollection,System.String)">
@@ -19389,8 +19389,8 @@
             </summary>
             <param name="schema"></param>
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="collection"></param>
-            <param name="key"></param>
+            <param name="collection">属性集合</param>
+            <param name="key">主键</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBSession.Update(Rsd.Dudu.ORM.TableSchema,Rsd.Dudu.Core.IPropertyValueCollection,Rsd.Dudu.DBServices.WhereCondition[])">
@@ -19398,7 +19398,7 @@
             批量修改对象
             </summary>
             <param name="schema">表结构</param>
-            <param name="collection"></param>
+            <param name="collection">属性集合</param>
             <param name="wheres">Where 条件存在</param>
             <returns></returns>
         </member>
@@ -19408,7 +19408,7 @@
             </summary>
             <param name="schema"></param>
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="collection"></param>
+            <param name="collection">属性集合</param>
             <param name="wheres"></param>
             <returns></returns>
         </member>
@@ -19419,7 +19419,7 @@
             <param name="sqlBuilder"></param>
             <param name="schema"></param>
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="collection"></param>
+            <param name="collection">属性集合</param>
             <param name="wheres"></param>
             <returns></returns>
         </member>
