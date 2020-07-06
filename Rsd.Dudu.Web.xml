@@ -1842,7 +1842,7 @@
             缓存MyType
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.RegistController(System.String)">
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.RegistControllers(System.String)">
             <summary>
             
             </summary>
