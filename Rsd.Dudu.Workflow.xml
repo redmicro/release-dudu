@@ -2456,6 +2456,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.Key">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Workflow.Template.Order.OrderEntityBase.BuyerId">
             <summary>
             
