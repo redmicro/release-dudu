@@ -1834,7 +1834,12 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.Initial">
             <summary>
-            插件 初始化
+            插件初始化：遍历ModelType 和Controller
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.CacheModelTypes">
+            <summary>
+            缓存MyType
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.RegistController(System.String)">
@@ -3919,7 +3924,7 @@
         </member>
         <member name="M:Rsd.Dudu.Web.WebApplication.LoadPlugins(Rsd.Dudu.Web.Core.PluginConfig[])">
             <summary>
-            
+            加载插件：初始化(遍历ModelType 和Controller)=>缓存MyType=>注册controller 
             </summary>
             <param name="plugins"></param>
         </member>
