@@ -11142,7 +11142,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator.Select(System.String[])">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="fileds"></param>
             <returns></returns>
@@ -11157,20 +11157,20 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator.Delete">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator.Count(System.String)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="field"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator.Insert(System.String,System.Object)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="field"></param>
             <param name="value"></param>
@@ -11178,7 +11178,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator.Update(System.String,System.Object)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="field"></param>
             <param name="value"></param>
@@ -11329,7 +11329,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Select``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <typeparam name="T1"></typeparam>
             <param name="filed"></param>
@@ -11337,7 +11337,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Select``1(System.Linq.Expressions.Expression{System.Func{`0,``0}}[])">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <typeparam name="T1"></typeparam>
             <param name="fileds"></param>
@@ -11345,7 +11345,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Select(System.Linq.Expressions.Expression{System.Func{`0,System.String}}[])">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="fileds"></param>
             <returns></returns>
@@ -11361,14 +11361,14 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Count(System.String)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="field"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Pagging(System.Int32,System.Int32)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <param name="pageIndex"></param>
             <param name="pageSize"></param>
@@ -11376,13 +11376,13 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Delete">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Insert``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <typeparam name="T1"></typeparam>
             <param name="filed"></param>
@@ -11391,7 +11391,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Update``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},``0)">
             <summary>
-            
+            必须执行Execute 或 ExecuteAt 才会生效
             </summary>
             <typeparam name="T1"></typeparam>
             <param name="filed"></param>
