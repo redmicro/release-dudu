@@ -1988,7 +1988,7 @@
             <param name="group"></param>
             <param name="initial">是否初始化 缓存对象 存储表</param>
         </member>
-        <member name="M:Rsd.Dudu.Cache.DBMemoryCacheProvider`1.InitialTable">
+        <member name="M:Rsd.Dudu.Cache.DBMemoryCacheProvider`1.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
