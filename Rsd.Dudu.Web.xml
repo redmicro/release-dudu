@@ -1161,7 +1161,7 @@
             失效时间
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.TimeSpanS">
+        <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.Duration">
             <summary>
             相对过期时间 时间间隔（秒）
             </summary>
@@ -2554,6 +2554,11 @@
         <member name="P:Rsd.Dudu.Web.Core.Session.TimeSpan">
             <summary>
             相对过期时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.Session.Duration">
+            <summary>
+            
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Core.Session.CreateTime">

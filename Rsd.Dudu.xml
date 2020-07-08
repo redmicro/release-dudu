@@ -1790,6 +1790,11 @@
             相对时间过期
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Cache.CacheObject.Duration">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Cache.CacheObject.Group">
             <summary>
             
@@ -2094,6 +2099,11 @@
             相对时间过期
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Cache.ICacheObject.Duration">
+            <summary>
+            有效期延期时长（秒）
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Cache.ICacheObject.Group">
             <summary>
             
@@ -2228,7 +2238,7 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Cache.DBMemoryCacheObject.TimeSpanS">
+        <member name="P:Rsd.Dudu.Cache.DBMemoryCacheObject.Duration">
             <summary>
             相对过期时间 时间间隔
             </summary>
