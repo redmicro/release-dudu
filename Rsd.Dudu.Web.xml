@@ -6583,13 +6583,6 @@
             <param name="service"></param>
             <param name="s"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.GetSessionInfo(Rsd.Dudu.SysMonitor)">
-            <summary>
-             获取session容器监控信息
-            </summary>
-            <param name="monitor"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Web.ExtendMethods.ToJson(System.Web.HttpCookieCollection)">
             <summary>
             
@@ -7240,6 +7233,13 @@
             <summary>
             
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SessionContainer.GetSessionInfo(Rsd.Dudu.SysMonitor)">
+            <summary>
+             获取session容器监控信息
+            </summary>
+            <param name="monitor"></param>
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.ExceptionHandleService">
