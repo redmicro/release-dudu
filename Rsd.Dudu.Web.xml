@@ -436,13 +436,16 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,System.String,System.Object,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
             </summary>
             <param name="userName"></param>
-            <param name="clientIp"></param>
             <param name="data"></param>
+            <param name="clientIp"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes">过期时间（分钟），默认30分钟</param>
             <returns></returns>
         </member>
@@ -1083,25 +1086,33 @@
             <param name="group"></param>
             <param name="initial">是否初始化 缓存对象 存储表</param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.DBMemorySessionCacheService.Rsd#Dudu#Web#Core#ISessionCacheService#Add(System.String,System.String,System.String,System.Object,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.Core.DBMemorySessionCacheService.Rsd#Dudu#Web#Core#ISessionCacheService#Add(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="userId"></param>
-            <param name="clientIP"></param>
             <param name="data"></param>
+            <param name="clientIP"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes"></param>
+            <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.DBMemorySessionCacheService.Rsd#Dudu#Web#Core#ISessionCacheService#Add(System.String,System.String,System.String,System.Object,System.TimeSpan)">
+        <member name="M:Rsd.Dudu.Web.Core.DBMemorySessionCacheService.Rsd#Dudu#Web#Core#ISessionCacheService#Add(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.TimeSpan)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="userId"></param>
-            <param name="clientIP"></param>
             <param name="data"></param>
+            <param name="clientIP"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="timeSpan"></param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.DBMemorySessionCacheService.Rsd#Dudu#Web#Core#ISessionCacheService#GetList">
             <summary>
@@ -1163,6 +1174,21 @@
         <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.ClientIP">
             <summary>
             客户端IP
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.FromHost">
+            <summary>
+            访问域名
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.FromReferer">
+            <summary>
+            请求的referer
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.FromUserAgent">
+            <summary>
+            请求的UserAgent
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Core.DBMemorySessionModel.Host">
@@ -1231,6 +1257,21 @@
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Core.ISession.ClientIP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISession.FromHost">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISession.FromReferer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISession.FromUserAgent">
             <summary>
             
             </summary>
@@ -2245,25 +2286,33 @@
             用于存储的缓存服务类型
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.ISessionCacheService.Add(System.String,System.String,System.String,System.Object,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.Core.ISessionCacheService.Add(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="userId"></param>
-            <param name="clientIP"></param>
             <param name="data"></param>
+            <param name="clientIP"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes"></param>
+            <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.ISessionCacheService.Add(System.String,System.String,System.String,System.Object,System.TimeSpan)">
+        <member name="M:Rsd.Dudu.Web.Core.ISessionCacheService.Add(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.TimeSpan)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="userId"></param>
-            <param name="clientIP"></param>
             <param name="data"></param>
+            <param name="clientIP"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="timeSpan"></param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.ISessionCacheService.GetList">
             <summary>
@@ -2522,6 +2571,21 @@
             客户端IP
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Core.Session.FromHost">
+            <summary>
+            访问域名
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.Session.FromReferer">
+            <summary>
+            请求的referer
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.Session.FromUserAgent">
+            <summary>
+            请求的UserAgent
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Core.Session.Host">
             <summary>
             
@@ -2605,25 +2669,33 @@
             </summary>
             <param name="cacheService"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.SessionCacheService.Add(System.String,System.String,System.String,System.Object,System.TimeSpan)">
+        <member name="M:Rsd.Dudu.Web.Core.SessionCacheService.Add(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.TimeSpan)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="userId"></param>
-            <param name="clientIP"></param>
             <param name="data"></param>
+            <param name="clientIP"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="timeSpan"></param>
+            <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.SessionCacheService.Add(System.String,System.String,System.String,System.Object,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.Core.SessionCacheService.Add(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="userId"></param>
-            <param name="clientIP"></param>
             <param name="data"></param>
+            <param name="clientIP"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes"></param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.SessionCacheService.Get(System.String)">
             <summary>
@@ -4049,13 +4121,16 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.BaseWebService.SignIn(System.String,System.String,System.Object)">
+        <member name="M:Rsd.Dudu.Web.BaseWebService.SignIn(System.String,System.Object,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
             <param name="userName"></param>
-            <param name="clientIp"></param>
             <param name="data"></param>
+            <param name="clientIp"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.BaseWebService.SignOut">
@@ -7084,24 +7159,30 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.String,System.Object,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
-            添加一个session
+             添加一个session
             </summary>
             <param name="userName"></param>
-            <param name="clientIp"></param>
             <param name="data"></param>
+            <param name="clientIp"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes">过期时间（分钟），默认30分钟</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.String,System.String,System.Object,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
-            
+            添加一个session
             </summary>
             <param name="key">指定SessionID</param>
-            <param name="userName"></param>
-            <param name="clientIp"></param>
+            <param name="userName"></param> 
             <param name="data"></param>
+            <param name="clientIp"></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes">过期时间（分钟），默认30分钟</param>
             <returns></returns>
         </member>
@@ -7132,11 +7213,15 @@
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.SessionContainer.ResetSession(System.String,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.SessionContainer.ResetSession(System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
-            重置Session 并延长有效时间
+             重置Session 并延长有效时间
             </summary>
             <param name="key"></param>
+            <param name=""></param>
+            <param name="host"></param>
+            <param name="referer"></param>
+            <param name="userAgent"></param>
             <param name="minutes">有效时长(分钟)，默认30分钟</param>
             <returns></returns>
         </member>
