@@ -6351,6 +6351,20 @@
             <param name="value"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Helpers.StringHelper.IsUrl(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.StringHelper.IsFilePath(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Helpers.StringHelper.IsTelephone(System.String)">
             <summary>
             
@@ -13942,6 +13956,19 @@
             是否是调试状态
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Core.IService.HttpRequest(System.String,System.String,System.IO.Stream,System.Int32,System.String,System.Text.Encoding,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="method"></param>
+            <param name="postStream"></param>
+            <param name="timeout">超时时间单位：秒</param>
+            <param name="contentType">默认application/x-www-form-urlencoded</param>
+            <param name="encoding">Response流解析编码,默认Encoding.Default</param>
+            <param name="clientIp">伪造的客户端IP</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.IService.Invoke(System.String,System.Object[])">
             <summary>
             动态调用内部方法
@@ -16430,12 +16457,12 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">
             <summary>
-            该项目使用的Rsd.Dudu服务即将到期，请及时联系厂家购买授权。
+            授权即将到期提示，该项目使用的Rsd.Dudu框架相关服务即将到期（{0}），请及时联系厂家购买授权。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9999">
             <summary>
-            该项目使用的Rsd.Dudu服务已过期，请联系厂家购买授权。
+            授权过期提示，该项目使用的Rsd.Dudu框架相关服务已到期（{0}），请联系厂家购买授权。
             </summary>
         </member>
         <member name="T:Rsd.Dudu.ExtendMethods">
@@ -19855,6 +19882,7 @@
             <param name="isInterface"></param>
             <param name="proxcy"></param>
             <param name="sessionid"></param>
+            <param name="user"></param>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.AddGlobalServiceEntry(Rsd.Dudu.Core.IService)">
             <summary>
@@ -19950,13 +19978,47 @@
             <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Regist(System.String,System.String,Rsd.Dudu.ApplicationType)">
+        <member name="M:Rsd.Dudu.ServicesContainer.RegistRemote(System.String,System.String,System.String,Rsd.Dudu.ApplicationType)">
             <summary>
-            
+            远程注册
             </summary>
-            <param name="projectId">项目编号</param>
+            <param name="projectId">AppId</param>
+            <param name="key">AppKey</param>
+            <param name="registUrl">注册URL</param>
+            <param name="type">应用类型</param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.RegistFile(System.String,System.String,System.String,Rsd.Dudu.ApplicationType)">
+            <summary>
+            授权文件注册
+            </summary>
+            <param name="projectId">AppId</param>
+            <param name="key">AppKey</param>
+            <param name="file">授权证书</param>
+            <param name="type">应用类型</param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.RegistCode(System.String,System.String,System.String,Rsd.Dudu.ApplicationType)">
+            <summary>
+            注册码注册
+            </summary>
+            <param name="projectId">AppId</param>
+            <param name="key">AppKey</param>
             <param name="code">注册码</param>
+            <param name="type">应用类型</param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Regist(System.String,Rsd.Dudu.ApplicationType)">
+            <summary>
+            注册基础服务
+            </summary>
+            <param name="projectId"></param>
             <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.DeCode(System.String,System.String,System.String)">
+            <summary>
+            解析注册码
+            </summary>
+            <param name="projectId"></param>
+            <param name="key"></param>
+            <param name="code"></param>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.AddService(Rsd.Dudu.Core.IService[])">
             <summary>

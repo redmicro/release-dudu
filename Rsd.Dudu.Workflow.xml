@@ -642,7 +642,8 @@
             <summary>
             
             </summary>
-            <param name="obj"></param>
+            <param name="url"></param>
+            <param name="method"></param>
         </member>
         <member name="T:Rsd.Dudu.Workflow.ApiDispatcher">
             <summary>
