@@ -16190,22 +16190,22 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Rsd.Dudu.ModelingTypes">
+        <member name="T:Rsd.Dudu.AiModelingTypes">
             <summary>
             对象模型构建方法
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.ModelingTypes.FromDb">
+        <member name="F:Rsd.Dudu.AiModelingTypes.FromDb">
             <summary>
             以主库为表结构为依据
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.ModelingTypes.FromMission">
+        <member name="F:Rsd.Dudu.AiModelingTypes.FromMission">
             <summary>
             从Mission平台中创建
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.ModelingTypes.FromCustom">
+        <member name="F:Rsd.Dudu.AiModelingTypes.FromCustom">
             <summary>
             项目定制开发
             </summary>
@@ -16454,6 +16454,11 @@
             <summary>
             日志保存数据库失败:{0}
             </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S9003">
+             <summary>
+            Service未注册:{0}
+             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">
             <summary>
@@ -20004,6 +20009,15 @@
             <param name="key">AppKey</param>
             <param name="code">注册码</param>
             <param name="type">应用类型</param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.RegistCheck(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="projectId"></param>
+            <param name="key"></param>
+            <param name="code"></param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.Regist(System.String,Rsd.Dudu.ApplicationType)">
             <summary>
