@@ -3827,6 +3827,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.WebApplication.CacheProvider">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.WebApplication.SysTitle">
             <summary>
             
