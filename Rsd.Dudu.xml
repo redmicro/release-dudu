@@ -764,7 +764,7 @@
         </member>
         <member name="P:Rsd.Dudu.BizModel.BizObjectBase.ProjectId">
             <summary>
-            自动化生成的派生类中GetProjectId方法被重写。
+            注册的项目ID，类似AppID的意义。
             </summary>
         </member>
         <member name="P:Rsd.Dudu.BizModel.BizObjectBase.Flag">

@@ -388,7 +388,7 @@
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="key"></param>
+            <param name="key">主键</param>
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
@@ -3877,7 +3877,7 @@
             拒绝访问提示信息
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Web.WebApplication.Plugins">
+        <member name="P:Rsd.Dudu.Web.WebApplication.Plugins">
             <summary>
             
             </summary>
@@ -4044,6 +4044,11 @@
             加载插件：初始化(遍历ModelType 和Controller)=>缓存MyType=>注册controller 
             </summary>
             <param name="plugins"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.WebApplication.ClearPlugins">
+            <summary>
+            清除所有插件
+            </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.WebApplication.RegistController(Rsd.Dudu.Web.Controllers.BaseHttpHandler)">
             <summary>
