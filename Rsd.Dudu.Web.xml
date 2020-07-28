@@ -671,6 +671,24 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetBrowserId">
+            <summary>
+            浏览器指纹
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetHostAddress">
+            <summary>
+             获取远程客户端的 IP 主机地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetHostName">
+            <summary>
+            获取远程客户端的 DNS 名称
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Web.Controllers.LogController">
             <summary>
             
