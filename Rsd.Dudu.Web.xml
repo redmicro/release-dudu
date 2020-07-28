@@ -667,7 +667,7 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetClientIP">
             <summary>
-            
+            请求客户端IP
             </summary>
             <returns></returns>
         </member>
@@ -5124,6 +5124,27 @@
             <summary>
             
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetBrowserId(System.Web.HttpRequest)">
+            <summary>
+            浏览器指纹
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetHostAddress(System.Web.HttpRequest)">
+            <summary>
+             获取远程客户端的 IP 主机地址
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetHostName(System.Web.HttpRequest)">
+            <summary>
+            获取远程客户端的 DNS 名称
+            </summary>
+            <param name="request"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetClientInfo(System.Web.HttpRequest,System.String)">

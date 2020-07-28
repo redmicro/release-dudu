@@ -13330,7 +13330,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.GetInternalIP">
             <summary>
-            
+            获取本机内网（网卡）IP
             </summary>
             <returns></returns>
         </member>
@@ -18176,7 +18176,7 @@
         </member>
         <member name="M:Rsd.Dudu.SysMonitor.GetInternalIP(System.Boolean)">
             <summary>
-            
+            获取本机内网（网卡）IP
             </summary>
             <returns></returns>
         </member>
