@@ -826,6 +826,11 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.Index">
+            <summary>
+            服务探测
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.Startup">
             <summary>
             

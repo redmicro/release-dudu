@@ -3958,7 +3958,7 @@
             <param name="dataType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.MySqlService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.MySqlService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             获取创建或修改表结构SQL脚本，如果表不存在则生成创建表SQL，否则生成改表结构SQL。
             </summary>
@@ -4334,6 +4334,7 @@
             <summary>
             
             </summary>
+            <param name="logService"></param>
             <param name="tableSchema"></param>
             <param name="tableNamePrefix"></param>
             <param name="tableNameSuffix"></param>
@@ -4344,12 +4345,13 @@
             <summary>
             
             </summary>
+            <param name="logService"></param>
             <param name="tableView"></param>
             <param name="prefix"></param>
             <param name="drop"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             获取创建或修改表结构SQL脚本，如果表不存在则生成创建表SQL，否则生成改表结构SQL。
             </summary>
@@ -4360,7 +4362,7 @@
             <param name="type"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetCreateViewSql(Rsd.Dudu.ORM.ITable,System.String,Rsd.Dudu.ORM.ITableField[],Rsd.Dudu.ORM.ITable[],Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetInitialViewSql(Rsd.Dudu.ORM.ITable,System.String,Rsd.Dudu.ORM.ITableField[],Rsd.Dudu.ORM.ITable[],Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
@@ -4686,7 +4688,7 @@
             <param name="dataType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.SqliteMemoryService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.SqliteMemoryService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
@@ -4793,7 +4795,7 @@
             <param name="dataType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.OdbcDbService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.OdbcDbService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
@@ -4925,7 +4927,7 @@
             <param name="dataType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.OleDbService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.OleDbService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
@@ -5450,7 +5452,7 @@
             <param name="dataType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.MsSqlServerService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.MsSqlServerService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
@@ -5646,7 +5648,7 @@
             <param name="dataType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.SqliteService.GetCreateTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
+        <member name="M:Rsd.Dudu.DBServices.SqliteService.GetInitialTableSql(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,Rsd.Dudu.DBServices.DbObjectType)">
             <summary>
             
             </summary>
@@ -19218,15 +19220,15 @@
         </member>
         <member name="M:Rsd.Dudu.MyType.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
             <summary>
-            
+            初始化数据库表,用于数据库升级及初始化
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="tableNameSuffix"></param>
             <param name="operationType"></param>
+            <param name="tableNameSuffix"></param>
         </member>
         <member name="M:Rsd.Dudu.MyType.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
             <summary>
-            
+            初始化数据库表,用于数据库升级及初始化
             </summary>
             <typeparam name="T"></typeparam>
             <param name="dbSession"></param>
@@ -19267,7 +19269,7 @@
             <param name="operationType"></param>
             <param name="tableNameSuffix"></param>
         </member>
-        <member name="M:Rsd.Dudu.MyType.UpdateDb(System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
+        <member name="M:Rsd.Dudu.MyType.InitialDb(System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
             <summary>
             更新数据库,用于数据库升级及初始化
             </summary>
@@ -19276,30 +19278,13 @@
             <param name="operationType"></param>
             <param name="tableNameSuffix"></param>
         </member>
-        <member name="M:Rsd.Dudu.MyType.UpdateDb(Rsd.Dudu.Core.IDBSession,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
+        <member name="M:Rsd.Dudu.MyType.InitialDb(Rsd.Dudu.Core.IDBSession,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
             <summary>
             更新数据库,用于数据库升级及初始化
             </summary>
             <param name="dbSession"></param> 
             <param name="assemblyName"></param>
             <param name="assemblyPath"></param>
-            <param name="operationType"></param>
-            <param name="tableNameSuffix"></param>
-        </member>
-        <member name="M:Rsd.Dudu.MyType.UpdateTable``1(Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
-            <summary>
-            更新数据库,用于数据库升级及初始化
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="operationType"></param>
-            <param name="tableNameSuffix"></param>
-        </member>
-        <member name="M:Rsd.Dudu.MyType.UpdateTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType,System.String)">
-            <summary>
-            更新数据库,用于数据库升级及初始化
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbSession"></param>
             <param name="operationType"></param>
             <param name="tableNameSuffix"></param>
         </member>
@@ -19960,7 +19945,7 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetServiceByTypeName(System.String,System.String)">
             <summary>
-            
+            获取可用的服务
             </summary>
             <param name="typeName"></param>
             <param name="user"></param>
@@ -19968,7 +19953,7 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.String,System.String)">
             <summary>
-            获取服务
+            获取可用的服务
             </summary>
             <param name="serviceId"></param>
             <param name="user"></param>
