@@ -5997,11 +5997,17 @@
             <param name="pBitmap">图形</param>
             <param name="pViewText"></param>           
         </member>
-        <member name="M:Rsd.Dudu.Helpers.IpHelper.IsIp(System.String)">
+        <member name="T:Rsd.Dudu.Helpers.IpHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.IpHelper.IsIp(System.String,System.Boolean)">
             <summary>
             
             </summary>
             <param name="ip"></param>
+            <param name="ipv6">包含IPV6</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Helpers.IpHelper.IpInRanges(System.String,System.String[])">
