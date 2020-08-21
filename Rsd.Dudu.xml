@@ -6689,6 +6689,11 @@
             最后一次心跳时间
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.IJobHost.HostId">
+            <summary>
+            主机标识
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.IJobHost.HostIP">
             <summary>
             
@@ -6722,6 +6727,11 @@
         <member name="P:Rsd.Dudu.Job.IJobService.DbSession">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.IJobService.HostId">
+            <summary>
+            当前主机标识
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.IJobService.HeartRate">
@@ -7113,11 +7123,12 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.Int32)">
+        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32)">
             <summary>
             
-            </summary>
+            </summary> 
             <param name="dBSession">数据库驱动</param>
+            <param name="hostKey">当前主机标识</param>
             <param name="heartRate">心跳频率(单位:每次/N秒)</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
@@ -7171,6 +7182,11 @@
         <member name="P:Rsd.Dudu.Job.JobServiceBase.Proxcy">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.JobServiceBase.HostId">
+            <summary>
+            当前主机标识
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.JobServiceBase.IsRegisterHost">
@@ -7542,6 +7558,11 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Job.TimerJobHostModel.NotifyFormatUrl" -->
+        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostId">
+            <summary>
+            主机标识
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostIP">
             <summary>
             主机IP
@@ -7695,6 +7716,11 @@
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Weight">
             <summary>
             权重 1秒中执行一次的权重为：1000
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostId">
+            <summary>
+            执行主机标识
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostType">
