@@ -689,6 +689,18 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetReferer">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetUserAgent">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Web.Controllers.LogController">
             <summary>
             
