@@ -689,7 +689,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetReferer">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetReferrer">
             <summary>
             
             </summary>
