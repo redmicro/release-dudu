@@ -6002,6 +6002,13 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Helpers.IpHelper.GetIPAddress(System.String)">
+            <summary>
+            获取IPAddress对象
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Helpers.IpHelper.IsIp(System.String,System.Boolean)">
             <summary>
             
