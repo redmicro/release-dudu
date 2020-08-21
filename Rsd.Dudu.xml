@@ -6002,6 +6002,12 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Helpers.IpHelper.GetInternalIP(System.Boolean)">
+            <summary>
+            获取本机内网（网卡）IP
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Helpers.IpHelper.GetIPAddress(System.String)">
             <summary>
             获取IPAddress对象
@@ -6015,6 +6021,29 @@
             </summary>
             <param name="ip"></param>
             <param name="ipv6">包含IPV6</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.IpHelper.IsPrivateIP(System.String)">
+            <summary>
+            判断IP地址是否为内网IP地址
+            </summary>
+            <param name="ipAddress">IP地址字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.IpHelper.GetIpNum(System.String)">
+            <summary>
+            把IP地址转换为Long型数字
+            </summary>
+            <param name="ipAddress">IP地址字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.IpHelper.IsInner(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            判断用户IP地址转换为Long型后是否在内网IP地址所在范围
+            </summary>
+            <param name="userIp"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Helpers.IpHelper.IpInRanges(System.String,System.String[])">
@@ -18251,8 +18280,9 @@
         </member>
         <member name="M:Rsd.Dudu.SysMonitor.GetInternalIP(System.Boolean)">
             <summary>
-            获取本机内网（网卡）IP
+            获取本机内网（网卡）IP,有缓存
             </summary>
+            <param name="contianIPv6"></param>
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.SysMonitorDataType">
