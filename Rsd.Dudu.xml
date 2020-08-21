@@ -6890,7 +6890,7 @@
             <param name="key">唯一业务标识</param>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.IJobService.RegisterHost(System.Boolean,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.IJobService.RegisterHost(System.String,System.Boolean)" -->
         <member name="M:Rsd.Dudu.Job.IJobService.SendJobNotify(System.String,System.String,Rsd.Dudu.Job.JobActionType)">
             <summary>
             通知Job所在主机
@@ -7312,7 +7312,7 @@
             <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.Boolean,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SelfHearting(System.Int64)">
             <summary>
             该主机心跳保持执行程序（更新数据库记录中的过期时间） 
@@ -11760,12 +11760,29 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Core.IMyType`1.GetObject(Rsd.Dudu.Core.IDBSession,System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="dbSession"></param>
+            <param name="id">自增主键</param>
+            <param name="tableNameSuffixList"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.IMyType`1.GetObject(System.String,System.Boolean,System.String[])">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="cache"></param>
+            <param name="tableNameSuffixList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.IMyType`1.GetObject(System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="id">自增主键</param>
             <param name="tableNameSuffixList"></param>
             <returns></returns>
         </member>
@@ -17245,12 +17262,29 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.MyType`1.GetObject(Rsd.Dudu.Core.IDBSession,System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="dbSession"></param> 
+            <param name="id"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.MyType`1.GetObject(System.String,System.Boolean,System.String[])">
             <summary>
             
             </summary> 
-            <param name="key"></param>
+            <param name="key">GUID主键</param>
             <param name="cache"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType`1.GetObject(System.Int64,System.String[])">
+            <summary>
+            
+            </summary> 
+            <param name="id">自增主键</param>
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
@@ -19062,8 +19096,17 @@
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="key"></param>
+            <param name="key">GUID主键</param>
             <param name="tableNameSuffixList">表名后缀，一般用于分表查询</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.GetObject``1(System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id">自增主键</param>
+            <param name="tableNameSuffixList"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.MyType.GetObject``1(Rsd.Dudu.Core.IDBSession,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
