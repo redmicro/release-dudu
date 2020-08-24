@@ -6882,7 +6882,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.AllocateJobs">
             <summary>
-             尝试为所有TimerJob 分配 JobHost，仅管理节点可以分配
+             管理节点尝试为所有TimerJob 分配 JobHost，仅管理节点可以分配
             </summary> 
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(System.String)">
@@ -6891,9 +6891,15 @@
              </summary>
              <param name="key">唯一业务标识</param>
         </member>
+        <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(Rsd.Dudu.Job.ITimerJob)">
+            <summary>
+            启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 
+            </summary>
+            <param name="job"></param>
+        </member>
         <member name="M:Rsd.Dudu.Job.IJobService.LoadJobsForSelf">
             <summary>
-            加载本主机定时Job任务 
+            加载本主机所有定时Job任务 ，程序启动时 使用
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String)">
@@ -6943,12 +6949,11 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.IJobService.RegisterHost(System.String,System.Boolean)" -->
-        <member name="M:Rsd.Dudu.Job.IJobService.SendJobNotify(System.String,System.String,Rsd.Dudu.Job.JobActionType)">
+        <member name="M:Rsd.Dudu.Job.IJobService.SendJobNotify(System.String,Rsd.Dudu.Job.JobActionType)">
             <summary>
             通知Job所在主机
             </summary>
-            <param name="ip"></param>
-            <param name="jobKey">唯一业务标识</param>
+            <param name="key">Job唯一业务标识</param>
             <param name="action"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.AddJobLog(System.String,System.String,System.String,System.String)">
@@ -7022,9 +7027,14 @@
             分配失效时间,与主机失效时间同步，大于当前时间 表示已失效,需要重新分配
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostId">
+            <summary>
+            执行主机标识
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostIP">
             <summary>
-            分配的执行主机
+            分配的执行主机IP
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostType">
@@ -7377,12 +7387,11 @@
             </summary>
             <param name="expireTime">过期时间</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SendJobNotify(System.String,System.String,Rsd.Dudu.Job.JobActionType)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.SendJobNotify(System.String,Rsd.Dudu.Job.JobActionType)">
             <summary>
             通知Job所在主机 处理指定job
             </summary>
-            <param name="hostIp">要通知的主机IP</param>
-            <param name="jobKey">job唯一键值</param>
+            <param name="key">Job唯一业务标识</param>
             <param name="action"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.AllocateJobs">
@@ -7396,7 +7405,7 @@
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.StartJob(Rsd.Dudu.Job.ITimerJob)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
             启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 
             </summary>

@@ -1020,8 +1020,75 @@
             <summary>
             
             </summary>
+            <param name="jobService"></param>
             <param name="key"></param>
-            <param name="action"></param> 
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.EnableJob(Rsd.Dudu.Job.IJobService,System.String)">
+            <summary>
+            将Job设置为可用，并尝试加载(1个小时之内即将执行的Job 将会被加载)
+            </summary> 
+            <param name="jobService"></param>
+            <param name="key">唯一业务标识</param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.DisableJob(Rsd.Dudu.Job.IJobService,System.String)">
+            <summary>
+            将Job设置为不可用，并将其卸载
+            </summary>
+            <param name="jobService"></param>
+            <param name="key">唯一业务标识</param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.ExecuteJob(Rsd.Dudu.Job.IJobService,System.String)">
+            <summary>
+            用于手动执行Job
+            </summary>
+            <param name="jobService"></param>
+            <param name="key">唯一业务标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.SendJobNotify(Rsd.Dudu.Job.IJobService,System.String,Rsd.Dudu.Job.JobActionType)">
+            <summary>
+            通知Job所在主机
+            </summary>
+            <param name="jobService"></param> 
+            <param name="key">Job唯一业务标识</param>
+            <param name="action"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetJobList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="jobService"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="where"></param>
+            <param name="sort"></param>
+            <param name="tableNameSuffix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetHostList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="jobService"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="where"></param>
+            <param name="sort"></param>
+            <param name="tableNameSuffix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetLogList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="jobService"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="where"></param>
+            <param name="sort"></param>
+            <param name="tableNameSuffix"></param>
+            <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.Controllers.TestController">
             <summary>
