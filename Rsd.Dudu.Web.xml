@@ -1054,6 +1054,11 @@
             <param name="key">Job唯一业务标识</param>
             <param name="action"></param>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetList">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetJobList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
             <summary>
             
@@ -1063,8 +1068,8 @@
             <param name="pageSize"></param>
             <param name="where"></param>
             <param name="sort"></param>
-            <param name="tableNameSuffix"></param>
-            <returns></returns>
+            <param name="suffix"></param>
+            <returns></returns> 
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetHostList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
             <summary>
@@ -1075,8 +1080,8 @@
             <param name="pageSize"></param>
             <param name="where"></param>
             <param name="sort"></param>
-            <param name="tableNameSuffix"></param>
-            <returns></returns>
+            <param name="suffix"></param>
+            <returns></returns> 
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetLogList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
             <summary>
@@ -1087,7 +1092,7 @@
             <param name="pageSize"></param>
             <param name="where"></param>
             <param name="sort"></param>
-            <param name="tableNameSuffix"></param>
+            <param name="suffix"></param>
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.Controllers.TestController">
