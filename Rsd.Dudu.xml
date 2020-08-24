@@ -7142,6 +7142,11 @@
             通过关系数据库 来持久化 TimerJob信息
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Job.JobService.#cctor">
+            <summary>
+            缓存类型
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Job.JobService.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
