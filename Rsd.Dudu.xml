@@ -6885,6 +6885,14 @@
              管理节点尝试为所有TimerJob 分配 JobHost，仅管理节点可以分配
             </summary> 
         </member>
+        <member name="M:Rsd.Dudu.Job.IJobService.AllocateJob(Rsd.Dudu.Job.ITimerJob,System.String,System.Boolean)">
+            <summary>
+             将TimerJob 分配 制定JobHost 
+            </summary>
+            <param name="job"></param>
+            <param name="hostId"></param>
+            <param name="isFixed">是否绑定</param>
+        </member>
         <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(System.String)">
              <summary>
             提供外部加载定时Job的功能 
@@ -7031,6 +7039,11 @@
             <summary>
             执行主机标识
             </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.ITimerJob.IsFixed">
+            <summary>
+            绑定执行主机
+            </summary> 
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostIP">
             <summary>
@@ -7386,6 +7399,11 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJobsForSelf">
+            <summary>
+            服务启动时 加载该服务器所属的TimeJob
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SelfHearting(System.Int64)">
             <summary>
             该主机心跳保持执行程序（更新数据库记录中的过期时间） 
@@ -7404,6 +7422,22 @@
              为所有未分配的job和主机失效的job 分配给有效主机,仅管理节点可执行
             </summary> 
         </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.AllocateJob(System.String,System.String,System.Boolean)">
+            <summary>
+            将TimerJob 分配 制定JobHost 
+            </summary>
+            <param name="key"></param>
+            <param name="hostId"></param>
+            <param name="isFixed">是否绑定主机</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.AllocateJob(Rsd.Dudu.Job.ITimerJob,System.String,System.Boolean)">
+            <summary>
+             将TimerJob 分配 制定JobHost 
+            </summary>
+            <param name="job"></param>
+            <param name="hostId"></param>
+            <param name="isFixed">是否绑定主机</param>
+        </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(System.String)">
             <summary>
             加载指定key的TimeJob,只有分配的主机为当前主机才会被加载 
@@ -7412,14 +7446,9 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
-            启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 
+            启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 ,否则发送加载通知
             </summary>
             <param name="job"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJobsForSelf">
-            <summary>
-            服务启动时 加载该服务器所属的TimeJob
-            </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String)">
             <summary>
@@ -7777,6 +7806,11 @@
         <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostId">
             <summary>
             执行主机标识
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.IsFixed">
+            <summary>
+            绑定执行主机
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostType">
