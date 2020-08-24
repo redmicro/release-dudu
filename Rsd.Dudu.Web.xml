@@ -1054,7 +1054,7 @@
             <param name="key">Job唯一业务标识</param>
             <param name="action"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetList">
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetList(Rsd.Dudu.Job.IJobService)">
             <summary>
             
             </summary>
