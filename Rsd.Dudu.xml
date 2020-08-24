@@ -7401,7 +7401,7 @@
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
         <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJobsForSelf">
             <summary>
-            服务启动时 加载该服务器所属的TimeJob
+            服务启动时 加载该服务器所属的TimeJob，1小时之内执行的Job 立即加入执行组
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SelfHearting(System.Int64)">
