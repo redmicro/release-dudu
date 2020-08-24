@@ -1054,6 +1054,14 @@
             <param name="key">Job唯一业务标识</param>
             <param name="action"></param>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetCodeView(Rsd.Dudu.Job.IJobService,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="jobService"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetList(Rsd.Dudu.Job.IJobService)">
             <summary>
             
@@ -6921,6 +6929,11 @@
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W0001">
             <summary>
             访问数据库失败，{0}
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W0002">
+            <summary>
+            {0}数据对象不存在。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W1000">
