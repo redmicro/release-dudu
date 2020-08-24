@@ -7062,7 +7062,7 @@
             已执行次数
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Result">
+        <member name="P:Rsd.Dudu.Job.ITimerJob.LastResult">
             <summary>
             最后一次代码运行结果
             </summary>
@@ -7122,7 +7122,7 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.Host">
+        <member name="P:Rsd.Dudu.Job.ITimerJobLog.HostId">
             <summary>
             执行主机
             </summary>
@@ -7613,15 +7613,15 @@
             
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Job.TimerJobHostModel.NotifyFormatUrl" -->
         <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostId">
             <summary>
             主机标识
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostIP">
+        <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Job.TimerJobHostModel.NotifyFormatUrl" -->
+        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.IsManager">
             <summary>
-            主机IP
+            是管理节点
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobHostModel.ExpireTime">
@@ -7644,9 +7644,9 @@
             可用
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.IsManager">
+        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostIP">
             <summary>
-            是管理节点
+            主机IP
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobHostModel.#ctor">
@@ -7736,7 +7736,7 @@
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.CodeType">
             <summary>
-            
+            代码
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Code">
@@ -7749,7 +7749,7 @@
             已执行次数
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Result">
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.LastResult">
             <summary>
             最后一次运行结果
             </summary>
@@ -7894,7 +7894,7 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Host">
+        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.HostId">
             <summary>
             操作所在主机
             </summary>
