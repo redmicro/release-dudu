@@ -7440,7 +7440,7 @@
         </member>
         <member name="T:Rsd.Dudu.Web.ExceptionHandleService">
             <summary>
-            
+            处理在一次执行中发生的所有异常
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.ExceptionHandleService.Proxcy">

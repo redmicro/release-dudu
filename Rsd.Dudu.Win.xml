@@ -1579,19 +1579,17 @@
               查找 System.Drawing.Bitmap 类型的本地化资源。
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Win.WinExceptionHandleService">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Win.WinExceptionHandleService.Proxcy">
             <summary>
             
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.Do(Rsd.Dudu.Exception.ExceptionObject[])">
-            <summary>
-            
-            </summary>
-            <param name="list"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.Do(System.Collections.Generic.List{Rsd.Dudu.Exception.ExceptionObject})">
             <summary>
             
             </summary>
