@@ -13463,6 +13463,14 @@
             </summary>
             <param name="msgList"></param>
         </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.Error``1(``0,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="args"></param>
+        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.GetInternalIP">
             <summary>
             获取本机内网（网卡）IP
