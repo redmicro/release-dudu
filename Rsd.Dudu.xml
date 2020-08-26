@@ -7420,12 +7420,11 @@
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.ExecuteJob(System.String,System.String[])">
+        <member name="M:Rsd.Dudu.Job.IJobService.ExecuteJob(System.String)">
             <summary>
             用于手动执行Job
             </summary>
             <param name="key">唯一业务标识</param> 
-            <param name="referList">应用其他资源</param>
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.IJobService.RegisterHost(System.String,System.Boolean)" -->
@@ -7540,6 +7539,11 @@
         <member name="P:Rsd.Dudu.Job.ITimerJob.Code">
             <summary>
             执行代码 字符串压缩后内容
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.ITimerJob.Refers">
+            <summary>
+            其他引用
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Count">
@@ -7947,7 +7951,14 @@
             </summary>
             <param name="job"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.ExecuteJob(System.String,System.String[])">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobRefers(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="refers"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.ExecuteJob(System.String)">
             <summary>
             用于手动执行Job
             </summary>
@@ -8104,11 +8115,10 @@
             关闭定时任务
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Execute(System.String[])">
+        <member name="M:Rsd.Dudu.Job.JobProvider.Execute">
             <summary>
              提供给外部访问 手动执行定时任务(仅对可手动执行任务有效)
             </summary>
-            <param name="referList">其他引用</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.JobProvider.AddLog(System.String,System.String)">
@@ -8252,6 +8262,16 @@
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Code">
             <summary>
             执行代码  字符串压缩后内容
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.Refers">
+            <summary>
+            其他引用
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.ReferString">
+            <summary>
+            
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Count">
@@ -8455,6 +8475,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Refers">
+            <summary>
+            其他引用
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.TimerProvider.ScheduleDes">
             <summary>
             
@@ -8525,7 +8550,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
             <summary>
             
             </summary>
@@ -8634,10 +8659,11 @@
             <param name="source"></param>
             <param name="e"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.InvokenRun">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.InvokenRun(System.String[])">
             <summary>
             
             </summary>
+            <param name="referList">执行时需要的其他应用</param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteCSharpCode(System.String,System.String[])">
             <summary>
