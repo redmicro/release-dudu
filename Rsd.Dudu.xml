@@ -13286,9 +13286,9 @@
             已创建 等待启动
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Core.TimerStatus.Started">
+        <member name="F:Rsd.Dudu.Core.TimerStatus.Loaded">
             <summary>
-            已启动 等待执行
+            已加载 等待执行
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Core.TimerStatus.Runing">
