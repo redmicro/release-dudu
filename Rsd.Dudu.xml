@@ -7401,7 +7401,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.EnableJob(Rsd.Dudu.Core.IDBSession,System.String)">
             <summary>
-            
+            将Job设置为可用
             </summary>
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
@@ -7414,14 +7414,14 @@
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.DisableJob(Rsd.Dudu.Core.IDBSession,System.String)">
             <summary>
-            
+            将Job设置为禁用
             </summary>
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.SetJobRefers(System.String,System.String[])">
             <summary>
-            
+            仅在job.Status == TimerStatus.Created 时，可操作
             </summary>
             <param name="key"></param>
             <param name="refers"></param>
