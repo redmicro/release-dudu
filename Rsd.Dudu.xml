@@ -7508,9 +7508,9 @@
             定时器状态：表示定时器经历过的状态。可位运算 
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Enabled">
+        <member name="P:Rsd.Dudu.Job.ITimerJob.Disabled">
             <summary>
-            可用，未被禁用，未被取消
+            已禁用
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.ExpireTime">
@@ -8196,9 +8196,9 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Enabled">
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.Disabled">
             <summary>
-            已启用
+            已禁用
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.StartTime">
