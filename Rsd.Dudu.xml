@@ -7292,7 +7292,7 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Object[],System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
             <summary>
             新建并持久化定时任务 
             </summary>
@@ -7300,8 +7300,8 @@
             <param name="schedule"></param>
             <param name="serviceType"></param>
             <param name="methodName"></param>
+            <param name="manualEnabled"></param> 
             <param name="args"></param>
-            <param name="manualEnabled"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.NewApiJob(System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
@@ -7807,16 +7807,16 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Object[],System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
             <summary>
             新建IService 定时任务
             </summary>
             <param name="key">唯一业务标识</param>
             <param name="schedule"></param>
             <param name="serviceType"></param>
-            <param name="methodName"></param>
-            <param name="args"></param>
+            <param name="methodName"></param> 
             <param name="manualEnabled"></param>
+            <param name="args"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.NewApiJob(System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
