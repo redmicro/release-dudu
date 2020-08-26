@@ -3941,10 +3941,11 @@
             </summary>
             <param name="handler"></param>
         </member>
-        <member name="M:Rsd.Dudu.Workflow.WfSchedule.Run">
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.Run(System.String[])">
             <summary>
             
             </summary>
+            <param name="referList"></param>
             <returns></returns>
         </member>
     </members>

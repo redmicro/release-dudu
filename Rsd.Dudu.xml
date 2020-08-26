@@ -7420,11 +7420,12 @@
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.ExecuteJob(System.String)">
+        <member name="M:Rsd.Dudu.Job.IJobService.ExecuteJob(System.String,System.String[])">
             <summary>
             用于手动执行Job
             </summary>
-            <param name="key">唯一业务标识</param>
+            <param name="key">唯一业务标识</param> 
+            <param name="referList">应用其他资源</param>
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.IJobService.RegisterHost(System.String,System.Boolean)" -->
@@ -7664,7 +7665,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32,System.String[])">
+        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32)">
             <summary>
             
             </summary> 
@@ -7761,7 +7762,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.#ctor(System.String[])">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.#ctor">
             <summary>
             
             </summary>
@@ -7946,11 +7947,12 @@
             </summary>
             <param name="job"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.ExecuteJob(System.String)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.ExecuteJob(System.String,System.String[])">
             <summary>
             用于手动执行Job
             </summary>
-            <param name="key">唯一业务标识</param>
+            <param name="key">唯一业务标识</param> 
+            <param name="referList">应用其他资源</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.EnableJob(System.String)">
@@ -8090,10 +8092,11 @@
             <param name="job"></param>
             <param name="autoReset"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Run">
+        <member name="M:Rsd.Dudu.Job.JobProvider.Run(System.String[])">
             <summary>
-            定时任务执行程序
+            定时任务执行程序 
             </summary>
+            <param name="referList">引用资源</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.JobProvider.Close">
@@ -8101,10 +8104,11 @@
             关闭定时任务
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Execute">
+        <member name="M:Rsd.Dudu.Job.JobProvider.Execute(System.String[])">
             <summary>
-            提供给外部访问 手动执行定时任务(仅对可手动执行任务有效)
+             提供给外部访问 手动执行定时任务(仅对可手动执行任务有效)
             </summary>
+            <param name="referList">其他引用</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.JobProvider.AddLog(System.String,System.String)">
@@ -8635,7 +8639,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteCSharpCode(System.String)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteCSharpCode(System.String,System.String[])">
             <summary>
             
             </summary>
@@ -8671,10 +8675,12 @@
             </summary>
             <param name="code"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Run">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Run(System.String[])">
             <summary>
             线程中执行
             </summary>
+            <param name="referList">引用资源</param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.GetScheduleList(System.Int32)">
             <summary>
@@ -11189,10 +11195,12 @@
             <param name="dbSession"></param>
             <param name="interval"></param>
         </member>
-        <member name="M:Rsd.Dudu.Redis.ObjectSaveFromListProvider`1.Run">
+        <member name="M:Rsd.Dudu.Redis.ObjectSaveFromListProvider`1.Run(System.String[])">
             <summary>
             
             </summary>
+            <param name="referList"></param>
+            <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Redis.RedisListCacheService`1">
             <summary>
@@ -15231,10 +15239,11 @@
             <param name="year">年</param>
             <param name="autoReset">是否周期执行</param>
         </member>
-        <member name="M:Rsd.Dudu.GCTimerProvider.Run">
+        <member name="M:Rsd.Dudu.GCTimerProvider.Run(System.String[])">
             <summary>
             
             </summary>
+            <param name="referList"></param>
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Log.ConsoleLogService">
