@@ -8564,11 +8564,12 @@
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
             <summary>
-            
+            定时计划
             </summary>
             <param name="key"></param>
-            <param name="schedule">定时计划</param>
+            <param name="schedule"></param>
             <param name="autoReset"></param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.Finalize">
             <summary>
@@ -8580,21 +8581,23 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int64)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int64,System.String[])">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="interval">时间间隔，单位：毫秒</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.DateTime)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.DateTime,System.String[])">
             <summary>
             定时执行一次
             </summary>
             <param name="key"></param>
             <param name="time"></param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
             <summary>
             
             </summary>
@@ -8603,8 +8606,9 @@
             <param name="minute">分钟</param>
             <param name="hour">小时</param>
             <param name="autoReset">是否周期执行</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
             <summary>
             
             </summary>
@@ -8616,8 +8620,9 @@
             <param name="month">月</param>
             <param name="year">年</param>
             <param name="autoReset">是否周期执行</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean,System.String[])">
             <summary>
             
             </summary>
@@ -8629,6 +8634,7 @@
             <param name="month">月</param>
             <param name="year">年</param>
             <param name="autoReset">是否周期执行</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.Start(System.Boolean)">
             <summary>
