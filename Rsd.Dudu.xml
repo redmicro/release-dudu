@@ -7244,7 +7244,12 @@
         </member>
         <member name="P:Rsd.Dudu.Job.IJobService.HostId">
             <summary>
-            当前主机标识
+            当前job服务设定的主机标识
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.IJobService.Host">
+            <summary>
+            注册返回的对象
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.IJobService.HeartRate">
