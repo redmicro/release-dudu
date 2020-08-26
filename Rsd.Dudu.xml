@@ -7749,7 +7749,7 @@
         </member>
         <member name="P:Rsd.Dudu.Job.JobServiceBase.IsRegisterHost">
             <summary>
-            当前主机是否已注册
+            当前主机是否已注册(Host != null)
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.JobServiceBase.HeartRate">
