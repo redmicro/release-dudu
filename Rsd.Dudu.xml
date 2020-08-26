@@ -7361,25 +7361,19 @@
              管理节点尝试为所有TimerJob 分配 JobHost，仅管理节点可以分配
             </summary> 
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.AllocateJob(Rsd.Dudu.Job.ITimerJob,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.IJobService.AllocateJob(System.String,System.String,System.Boolean)">
             <summary>
              将TimerJob 分配 制定JobHost 
             </summary>
-            <param name="job"></param>
+            <param name="key"></param>
             <param name="hostId"></param>
             <param name="isFixed">是否绑定</param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(System.String)">
-             <summary>
-            提供外部加载定时Job的功能 
-             </summary>
-             <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
             启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 
             </summary>
-            <param name="job"></param>
+            <param name="key">唯一业务标识</param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.LoadJobsForSelf">
             <summary>
@@ -7965,7 +7959,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobRefers(System.String,System.String[])">
             <summary>
-            
+            仅在job.Status == TimerStatus.Created 时，可操作
             </summary>
             <param name="key"></param>
             <param name="refers"></param>
