@@ -7498,7 +7498,7 @@
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Enabled">
             <summary>
-            已启用
+            可用，未被禁用，未被取消
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.ExpireTime">
@@ -7664,7 +7664,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32)">
+        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32,System.String[])">
             <summary>
             
             </summary> 
@@ -7760,6 +7760,12 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.#ctor(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="namespaces"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[],System.Boolean)">
             <summary>
