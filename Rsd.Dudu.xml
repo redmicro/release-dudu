@@ -7420,6 +7420,13 @@
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
         </member>
+        <member name="M:Rsd.Dudu.Job.IJobService.SetJobRefers(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="refers"></param>
+        </member>
         <member name="M:Rsd.Dudu.Job.IJobService.ExecuteJob(System.String)">
             <summary>
             用于手动执行Job
