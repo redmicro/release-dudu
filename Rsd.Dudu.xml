@@ -8671,7 +8671,7 @@
             <param name="source"></param>
             <param name="e"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.InvokenRun(System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.InvokeRun(System.String[])">
             <summary>
             
             </summary>
