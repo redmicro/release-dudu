@@ -7811,7 +7811,6 @@
             <summary>
             
             </summary>
-            <param name="namespaces"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
             <summary>
@@ -8004,7 +8003,6 @@
             用于手动执行Job
             </summary>
             <param name="key">唯一业务标识</param> 
-            <param name="referList">应用其他资源</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.EnableJob(System.String)">
@@ -8513,6 +8511,11 @@
         <member name="E:Rsd.Dudu.Job.TimerProvider.AfterClosed">
             <summary>
             到期后关闭 事件 
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Job.TimerProvider.AfterCompleted">
+            <summary>
+            执行完成 事件 
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerProvider.Key">
