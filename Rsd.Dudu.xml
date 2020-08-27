@@ -8151,10 +8151,11 @@
             <param name="referList">引用资源</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Close">
+        <member name="M:Rsd.Dudu.Job.JobProvider.Close(System.String)">
             <summary>
-            关闭定时任务
+            关闭定时 释放资源(一般由程序操作)
             </summary>
+            <param name="reason">原因</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobProvider.Execute">
             <summary>
@@ -8685,15 +8686,17 @@
             </summary>
             <param name="atOnce">是否启动时立即执行一次</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Stop">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Stop(System.String)">
             <summary>
             停止定时器
             </summary>
+            <param name="reason"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Close">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Close(System.String)">
             <summary>
             关闭定时 释放资源(一般由程序操作)
             </summary>
+            <param name="reason">原因</param>
         </member>
         <member name="F:Rsd.Dudu.Job.TimerProvider._runnerCount">
             <summary>
@@ -13222,10 +13225,17 @@
             启动
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.ITimerProvider.Stop">
+        <member name="M:Rsd.Dudu.Core.ITimerProvider.Stop(System.String)">
             <summary>
             停止
             </summary>
+            <param name="reason">原因</param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.ITimerProvider.Close(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="reason">原因</param>
         </member>
         <member name="M:Rsd.Dudu.Core.ITimerProvider.GetScheduleList(System.Int32)">
             <summary>
