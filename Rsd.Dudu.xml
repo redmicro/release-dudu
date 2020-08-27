@@ -7939,7 +7939,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
-            启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 ,否则发送加载通知
+            加载Job并，启动驱动程序,只有分配的主机为当前主机才会被加载 ,否则发送加载通知
             </summary>
             <param name="job"></param>
         </member>
@@ -8566,6 +8566,11 @@
             
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.Job.TimerProvider._providerName">
+            <summary>
+            驱动程序名称
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
             <summary>
             定时计划
@@ -8685,7 +8690,7 @@
             <summary>
             
             </summary>
-            <param name="referList">执行时需要的其他应用</param>
+            <param name="referList">执行时需要的其他引用</param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteCSharpCode(System.String,System.String[])">
             <summary>
