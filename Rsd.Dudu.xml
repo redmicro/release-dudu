@@ -2575,6 +2575,12 @@
             <param name="msg"></param>
             <param name="data"></param>
         </member>
+        <member name="M:Rsd.Dudu.Core.TimerResult.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Core.IDBOperator">
             <summary>
             提供对数据库 批量操作：新增，修改，删除，查询
