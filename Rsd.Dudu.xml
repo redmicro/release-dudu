@@ -10231,12 +10231,12 @@
             全部成功
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.HasError">
+        <member name="F:Rsd.Dudu.Job.ResultStatus.Error">
             <summary>
             部分失败
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.Fail">
+        <member name="F:Rsd.Dudu.Job.ResultStatus.Failure">
             <summary>
             全部失败
             </summary>
