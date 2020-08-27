@@ -8162,11 +8162,15 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.AddLog(System.String,System.String)">
+        <member name="M:Rsd.Dudu.Job.JobProvider.AddJobLog(System.String)">
             <summary>
-            
+            添加JOB日志 该类中使用AddJobLog
             </summary>
-            <param name="key"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobProvider.AddTimerLog(System.String)">
+            <summary>
+            添加定时器日志 重写父类 用于持久化
+            </summary> 
             <param name="log"></param> 
         </member>
         <member name="T:Rsd.Dudu.Job.TimerJobHostModel">
@@ -8774,12 +8778,11 @@
             <param name="count"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.AddLog(System.String,System.String)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.AddTimerLog(System.String)">
             <summary>
             
             </summary>
-            <param name="key"></param>
-            <param name="log"></param> 
+            <param name="log"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.GetMonitorInfo">
             <summary>
@@ -13231,11 +13234,10 @@
             <param name="count"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.ITimerProvider.AddLog(System.String,System.String)">
+        <member name="M:Rsd.Dudu.Core.ITimerProvider.AddTimerLog(System.String)">
             <summary>
-            
-            </summary>
-            <param name="key"></param>
+            添加定时器日志
+            </summary> 
             <param name="log"></param>
         </member>
         <member name="T:Rsd.Dudu.Core.LogicTypes">
