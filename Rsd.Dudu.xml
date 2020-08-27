@@ -7607,6 +7607,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.ITimerJobLog.LogTime">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.ITimerJobLog.JobId">
             <summary>
             
@@ -8425,9 +8430,14 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.LogTime">
+            <summary>
+            日志时间
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.TimerJobLogModel.JobId">
             <summary>
-            
+            任务ID
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobLogModel.JobTitle">
