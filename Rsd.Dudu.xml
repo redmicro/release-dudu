@@ -16727,6 +16727,11 @@
             反序列化失败。\r\n原类型（{0}）和目标类型（{1}）不一致。
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S6000">
+            <summary>
+            JobProvider写日志失败:{0}
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S8000">
             <summary>
             获取服务器信息，获取本机IP失败，{0}
