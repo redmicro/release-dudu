@@ -7510,7 +7510,7 @@
             <summary>
             
             </summary>
-            <param name="jobId"></param>
+            <param name="jobKey"></param>
             <param name="jobTitle"></param>
             <param name="log"></param>
             <param name="status"></param> 
@@ -8037,7 +8037,7 @@
             <summary>
              添加Job日志
             </summary>
-            <param name="jobId"></param>
+            <param name="jobKey"></param>
             <param name="jobTitle"></param>
             <param name="log"></param>
             <param name="status"></param> 
