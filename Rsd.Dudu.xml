@@ -7227,6 +7227,71 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Job.ResultStatus">
+            <summary>
+            整体执行结果
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.ResultStatus.Success">
+            <summary>
+            全部成功
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.ResultStatus.HasError">
+            <summary>
+            部分失败
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.ResultStatus.Fail">
+            <summary>
+            全部失败
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Job.RunHostType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.RunHostType.DBServer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.RunHostType.ComputeServer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Job.TimerJobStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Created">
+            <summary>
+            已创建 等待加载
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Loaded">
+            <summary>
+            已加载 等待执行
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Runing">
+            <summary>
+            正在运行
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Completed">
+            <summary>
+            已完成
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Close">
+            <summary>
+            已关闭(手动关闭/到期自动关闭)
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Job.IJob">
             <summary>
             
@@ -7498,9 +7563,9 @@
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Status">
-            <summary>
-            定时器状态：表示定时器经历过的状态。可位运算 
-            </summary>
+             <summary>
+            
+             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Disabled">
             <summary>
@@ -7565,41 +7630,6 @@
         <member name="P:Rsd.Dudu.Job.ITimerJob.ResultStatus">
             <summary>
             成功标志
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.ResultStatus">
-            <summary>
-            整体执行结果
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.Success">
-            <summary>
-            全部成功
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.HasError">
-            <summary>
-            部分失败
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.Fail">
-            <summary>
-            全部失败
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.RunHostType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.RunHostType.DBServer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.RunHostType.ComputeServer">
-            <summary>
-            
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Job.ITimerJobLog">
@@ -8533,7 +8563,7 @@
         </member>
         <member name="P:Rsd.Dudu.Job.TimerProvider.Status">
             <summary>
-            定时器状态
+             定时器状态：表示定时器经历过的状态。可位运算  
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerProvider.IsClosed">
@@ -8697,6 +8727,8 @@
             
             </summary>
             <param name="code"></param>
+            <param name="dllList"></param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteBatCode(System.String)">
             <summary>
@@ -13293,17 +13325,17 @@
         </member>
         <member name="T:Rsd.Dudu.Core.TimerStatus">
             <summary>
-            
+             定时器状态：表示定时器经历过的状态。可位运算 
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Core.TimerStatus.Created">
             <summary>
-            已创建 等待启动
+            已创建 等待启动线程
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Core.TimerStatus.Loaded">
+        <member name="F:Rsd.Dudu.Core.TimerStatus.Started">
             <summary>
-            已加载 等待执行
+            已启动（倒计时中）
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Core.TimerStatus.Runing">
@@ -13311,14 +13343,14 @@
             正在运行
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Core.TimerStatus.Completed">
+        <member name="F:Rsd.Dudu.Core.TimerStatus.Stop">
             <summary>
-            已完成
+            已停止
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Core.TimerStatus.Close">
             <summary>
-            已关闭(手动关闭/到期自动关闭)
+            已关闭(手动关闭/到期自动关闭)，释放资源
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Core.TimerSchedule">
