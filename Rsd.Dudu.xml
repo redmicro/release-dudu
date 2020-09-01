@@ -4970,10 +4970,24 @@
             将 Stream 写入文件 
             </summary> 
         </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.StreamToBase64(System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.FileToStream(System.String)">
             <summary> 
             从文件读取 Stream 
             </summary> 
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.Base64ToFile(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="base64String"></param>
+            <param name="filePath"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Dispose">
             <summary>
