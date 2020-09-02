@@ -889,6 +889,13 @@
             </summary>
             <param name="modelType"></param>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.GetEnum(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="enumType"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.GetSchemaList(System.Int32,System.Int32)">
             <summary>
             
@@ -7507,6 +7514,13 @@
             </summary>
             <param name="type"></param>
             <param name="width">列宽度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SchemasContainer.GetEnumInfo(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.SchemasContainer.Initial(System.Type,System.Int32)">
