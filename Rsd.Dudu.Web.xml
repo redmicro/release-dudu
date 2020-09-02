@@ -7516,7 +7516,14 @@
             <param name="width">列宽度</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.SchemasContainer.GetEnumInfo(System.Type)">
+        <member name="M:Rsd.Dudu.Web.SchemasContainer.GetEnumInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="typeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SchemasContainer.InitialEnum(System.Type)">
             <summary>
             
             </summary>
