@@ -19122,43 +19122,6 @@
             <param name="code"></param>
             <param name="value"></param>
         </member>
-        <member name="M:Rsd.Dudu.EnumTypeItem.GetItemJsonList(System.Type,Rsd.Dudu.StringFormatType)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <param name="formatType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.EnumTypeItem.GetCacheItem(System.Type)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.EnumTypeItem.GetItems(System.Type)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.EnumTypeItem.GetEnumItems``1">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.EnumTypeItem.GetItem``1(``0)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
         <member name="T:Rsd.Dudu.Container`1">
             <summary>
             内存键值一级通用缓存，键值不区分大小写，占有本地内存空间。
@@ -19294,6 +19257,11 @@
         <member name="T:Rsd.Dudu.MyType">
             <summary>
             模型工厂类
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.MyType._enum_cache">
+            <summary>
+            枚举类型缓存
             </summary>
         </member>
         <member name="M:Rsd.Dudu.MyType.#cctor">
@@ -19595,17 +19563,31 @@
         </member>
         <member name="M:Rsd.Dudu.MyType.GetEnumItems``1">
             <summary>
-            
+            获取枚举对象值集合
             </summary>
             <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.MyType.GetEnumItems(System.Type)">
+            <summary>
+            获取枚举对象值集合
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.MyType.GetEnumItem``1(``0)">
             <summary>
-            
+            获取枚举值对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.GetCacheItem(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.MyType.InitialDb(System.String,System.String)">
