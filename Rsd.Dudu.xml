@@ -4300,7 +4300,7 @@
         <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
             计划执行时间
-            </summary>
+            </summary> 
             <param name="title"></param>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
@@ -10248,6 +10248,11 @@
         <member name="T:Rsd.Dudu.Job.ResultStatus">
             <summary>
             整体执行结果
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.ResultStatus.None">
+            <summary>
+            未执行
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Job.ResultStatus.Success">
