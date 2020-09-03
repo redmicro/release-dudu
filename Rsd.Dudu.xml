@@ -4155,11 +4155,6 @@
             年份最小值 小于该值，表示每年的意思
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.TimerSchedule.Key">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Core.TimerSchedule.Title">
             <summary>
             
@@ -4240,33 +4235,31 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int64,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int64)">
             <summary>
             
             </summary>
             <param name="interval">时间间隔单位毫秒</param>
             <param name="title"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.DateTime,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.DateTime)">
             <summary>
             定时执行一次
             </summary>
             <param name="time">执行时间</param>
             <param name="title"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int64,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int64,System.String)">
             <summary>
             时间间隔单位毫秒
             </summary>
-            <param name="key"></param>
             <param name="interval"></param>
             <param name="title"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.DateTime,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.DateTime,System.String)">
             <summary>
             定时执行一次
             </summary>
-            <param name="key"></param>
             <param name="time">执行时间</param>
             <param name="title"></param>
         </member>
@@ -4284,11 +4277,10 @@
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param> 
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32)">
             <summary>
             
             </summary>
-            <param name="key"></param>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param>
@@ -4305,18 +4297,17 @@
             <param name="month">0 表示每月执行</param>
             <param name="year">0 表示每年执行</param> 
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
-            
+            计划执行时间
             </summary>
-            <param name="key"></param>
+            <param name="title"></param>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param>
             <param name="day">0 表示每天执行</param>
             <param name="month">0 表示每月执行</param>
             <param name="year">0 表示每年执行</param>
-            <param name="title"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32)">
             <summary>
@@ -4329,18 +4320,17 @@
             <param name="month">0 表示每月执行</param>
             <param name="year">0 表示每年执行</param> 
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32)">
             <summary>
             
             </summary>
-            <param name="key"></param>
+            <param name="title"></param>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param>
             <param name="day">星期几</param>
             <param name="month">0 表示每月执行</param>
-            <param name="year">0 表示每年执行</param>
-            <param name="title"></param>
+            <param name="year">0 表示每年执行</param> 
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextIntervalList(System.Int64,System.Int32)">
             <summary>
