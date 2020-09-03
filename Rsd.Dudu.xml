@@ -10529,14 +10529,23 @@
             <param name="key">Job唯一业务标识</param>
             <param name="action"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.AddJobLog(System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Job.IJobService.AddJobLog(System.String,System.String,System.String,Rsd.Dudu.Job.TimerJobStatus)">
             <summary>
-            
+            定时任务日志
             </summary>
             <param name="jobKey"></param>
             <param name="jobTitle"></param>
             <param name="log"></param>
             <param name="status"></param> 
+        </member>
+        <member name="M:Rsd.Dudu.Job.IJobService.AddTimerLog(System.String,System.String,System.String,Rsd.Dudu.Core.TimerStatus)">
+            <summary>
+            定时器驱动日志
+            </summary>
+            <param name="jobKey"></param>
+            <param name="jobTitle"></param>
+            <param name="log"></param>
+            <param name="status"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
             <summary>
@@ -11054,7 +11063,7 @@
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.AddJobLog(System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.AddJobLog(System.String,System.String,System.String,Rsd.Dudu.Job.TimerJobStatus)">
             <summary>
              添加Job日志
             </summary>
@@ -11062,6 +11071,15 @@
             <param name="jobTitle"></param>
             <param name="log"></param>
             <param name="status"></param> 
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.AddTimerLog(System.String,System.String,System.String,Rsd.Dudu.Core.TimerStatus)">
+            <summary>
+            
+            </summary>
+            <param name="jobKey"></param>
+            <param name="jobTitle"></param>
+            <param name="log"></param>
+            <param name="status"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
             <summary>
