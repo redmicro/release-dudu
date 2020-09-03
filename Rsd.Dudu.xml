@@ -10290,6 +10290,11 @@
             
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.None">
+            <summary>
+            未设置
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Job.TimerJobStatus.Created">
             <summary>
             已创建 等待加载
