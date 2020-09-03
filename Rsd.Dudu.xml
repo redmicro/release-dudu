@@ -11503,7 +11503,12 @@
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobLogModel.HostId">
             <summary>
-            操作所在主机
+            主机标识
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.HostIp">
+            <summary>
+            主机IP
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobLogModel.JobStatus">
