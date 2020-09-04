@@ -3865,12 +3865,12 @@
         </member>
         <member name="P:Rsd.Dudu.Core.ITimerSchedule.StartTime">
             <summary>
-            有效时间_起始
+            有效时间_起始，job执行时间仅在有效期内 才可以执行，如果Job在指定时间未能执行，可在有效期内 重新被执行
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ITimerSchedule.EndTime">
             <summary>
-            有效时间_结束
+            有效时间_结束，job执行时间仅在有效期内 才可以执行，如果Job在指定时间未能执行，可在有效期内 重新被执行
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ITimerSchedule.IsOnce">
@@ -4162,12 +4162,12 @@
         </member>
         <member name="P:Rsd.Dudu.Core.TimerSchedule.StartTime">
             <summary>
-             有效时间_起始
+             有效时间_起始，job执行时间仅在有效期内 才可以执行，如果Job在指定时间未能执行，可在有效期内 重新被执行
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.TimerSchedule.EndTime">
             <summary>
-            有效时间_结束
+            有效时间_结束，job执行时间仅在有效期内 才可以执行，如果Job在指定时间未能执行，可在有效期内 重新被执行
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.TimerSchedule.Weight">
@@ -10609,7 +10609,7 @@
             已禁用
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.ExpireTime">
+        <member name="P:Rsd.Dudu.Job.ITimerJob.HostExpireTime">
             <summary>
             分配失效时间,与主机失效时间同步，大于当前时间 表示已失效,需要重新分配
             </summary>
@@ -11281,12 +11281,14 @@
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.StartTime">
             <summary>
-            有效期起
+            有效期起,job执行时间仅在有效期内 才可以执行
+            如果Job在指定时间未能执行，可在有效期内 重新被执行
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.EndTime">
             <summary>
-            有效期止
+            有效期止,job执行时间仅在有效期内 才可以执行
+            如果Job在指定时间未能执行，可在有效期内 重新被执行
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Status">
@@ -11384,7 +11386,7 @@
             该Job允许手动触发执行
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.ExpireTime">
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.HostExpireTime">
             <summary>
             分配失效时间,与主机失效时间同步，大于当前时间 表示已失效,需要重新分配
             </summary>
@@ -19137,7 +19139,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.EnumTypeItem.#ctor(System.String,System.String,System.Object)">
+        <member name="M:Rsd.Dudu.EnumTypeItem.#ctor(System.String,System.String,System.Int32)">
             <summary>
             
             </summary>
@@ -19606,7 +19608,7 @@
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.MyType.GetCacheItem(System.Type)">
+        <member name="M:Rsd.Dudu.MyType.GetEnumItemsFromCache(System.Type)">
             <summary>
             
             </summary>
