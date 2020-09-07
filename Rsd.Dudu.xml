@@ -5720,6 +5720,91 @@
             
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._params">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._where">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._whereExists">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._whereNotExists">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._order">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._select">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._insert_fields">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._insert_values">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._sql_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._is_pagging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._page_index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._page_size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._is_limit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._limit_length">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlBase._limit_offset">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.DBServices.SqlBase.#ctor">
             <summary>
             
