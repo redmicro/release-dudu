@@ -5309,11 +5309,12 @@
             <param name="name"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.IDBSession.GetSqlBuilder(Rsd.Dudu.SqlBuilderType)">
+        <member name="M:Rsd.Dudu.Core.IDBSession.GetSqlBuilder(Rsd.Dudu.SqlBuilderType,System.Boolean)">
             <summary>
             SQL 构造器， 线程内获取对象唯一 不会重复创建
             </summary>
             <param name="type">是否使用参数传递</param>
+            <param name="createNew">是否创建新对象,默认值:false</param>
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Core.MyClassAttribute">
@@ -6395,7 +6396,7 @@
         </member>
         <member name="T:Rsd.Dudu.DBServices.SqlQuerier">
             <summary>
-             sql语句查询器对象
+             sql语句查询器对象 参数独立存储
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.SqlQuerier.Owner">
@@ -6830,6 +6831,13 @@
             
             </summary>
             <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.DBServices.SqlView`1.#ctor(Rsd.Dudu.DBServices.SqlQuerier,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="querier"></param>
+            <param name="alias"></param>
         </member>
         <member name="T:Rsd.Dudu.DBServices.WhereCondition">
             <summary>
@@ -14972,6 +14980,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.DBOperator.DBSession">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.DBOperator._modelType">
             <summary>
             
@@ -20119,11 +20132,12 @@
             <param name="name"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBSession.GetSqlBuilder(Rsd.Dudu.SqlBuilderType)">
+        <member name="M:Rsd.Dudu.DBSession.GetSqlBuilder(Rsd.Dudu.SqlBuilderType,System.Boolean)">
             <summary>
-            
+            SQL 构造器， 线程内获取对象唯一 不会重复创建
             </summary>
-            <param name="type">是否使用参数</param>
+            <param name="type">是否使用参数传递</param>
+            <param name="createNew">是否创建新对象,默认值:false</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBSession.GetData``1(System.String)">
