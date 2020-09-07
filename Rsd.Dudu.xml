@@ -5832,7 +5832,7 @@
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlBase.GetParameters">
             <summary>
-            
+            获取当前对象 参数集合
             </summary>
             <returns></returns>
         </member>
@@ -6396,7 +6396,7 @@
         </member>
         <member name="T:Rsd.Dudu.DBServices.SqlQuerier">
             <summary>
-             sql语句查询器对象 参数独立存储
+             sql语句查询器对象，完整sql语句的最小对象， 参数独立存储
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.SqlQuerier.Owner">
@@ -6799,6 +6799,11 @@
         <member name="T:Rsd.Dudu.DBServices.SqlView">
             <summary>
             SQL 子查询
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.DBServices.SqlView._querier">
+            <summary>
+            sql语句查询器对象，完整sql语句的最小对象， 参数独立存储
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.SqlView.Alias">
@@ -14972,7 +14977,7 @@
         </member>
         <member name="F:Rsd.Dudu.DBOperator.sqlQuerier">
             <summary>
-            
+            sql语句查询器对象:完整sql语句的最小对象， 参数独立存储
             </summary>
         </member>
         <member name="F:Rsd.Dudu.DBOperator._dbSession">
