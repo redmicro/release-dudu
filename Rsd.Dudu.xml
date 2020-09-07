@@ -2822,14 +2822,6 @@
             <param name="alias"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.IDBOperator`1.Select``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
-            <summary>
-            必须执行Execute 或 ExecuteAt 才会生效
-            </summary>
-            <typeparam name="T1"></typeparam>
-            <param name="filed"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Core.IDBOperator`1.Select``1(System.Linq.Expressions.Expression{System.Func{`0,``0}}[])">
             <summary>
             必须执行Execute 或 ExecuteAt 才会生效
@@ -15181,14 +15173,6 @@
             <param name="filed"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBOperator`1.Select``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T1"></typeparam>
-            <param name="filed"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.DBOperator`1.Select``1(System.Linq.Expressions.Expression{System.Func{`0,``0}}[])">
             <summary>
             
@@ -19740,7 +19724,7 @@
             <param name="dbService"></param>
             <param name="tableNamePrefix">表名称前缀</param>
             <param name="sqlLevel"></param>
-            <param name="isDebug"></param>
+            <param name="isDebug">false:GetSqlBuilder默认参为：数使用参数</param>
         </member>
         <member name="M:Rsd.Dudu.DBSession.Insert(Rsd.Dudu.ORM.TableSchema,Rsd.Dudu.Core.IPropertyValueCollection,Rsd.Dudu.DBServices.WhereCondition[])">
             <summary>
@@ -20054,7 +20038,7 @@
             <summary>
             
             </summary>
-            <param name="type"></param>
+            <param name="type">是否使用参数</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBSession.GetData``1(System.String)">
