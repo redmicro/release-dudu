@@ -11378,6 +11378,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.Group">
+            <summary>
+            分组
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Disabled">
             <summary>
             已禁用
