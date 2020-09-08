@@ -10552,6 +10552,13 @@
             <param name="hostId"></param>
             <param name="isFixed">是否绑定</param>
         </member>
+        <member name="M:Rsd.Dudu.Job.IJobService.SetJobSchedule(System.String,Rsd.Dudu.Core.ITimerSchedule)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="schedule"></param>
+        </member>
         <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(System.String)">
             <summary>
             启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 
@@ -11118,6 +11125,13 @@
             </summary>
             <param name="job"></param>
         </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobSchedule(System.String,Rsd.Dudu.Core.ITimerSchedule)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="schedule"></param>
+        </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobRefers(System.String,System.String[])">
             <summary>
             仅在job.Status == TimerStatus.Created 时，可操作
@@ -11531,6 +11545,12 @@
             <param name="type"></param>
             <param name="code"></param>
             <param name="manualEnabled"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetSchedule(Rsd.Dudu.Core.ITimerSchedule)">
+            <summary>
+            
+            </summary>
+            <param name="schedule"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.GetWeight">
             <summary>
