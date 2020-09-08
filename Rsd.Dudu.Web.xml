@@ -7163,6 +7163,11 @@
             WebUIService请求地址{0}失败：{1}。
              </summary>
         </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W5004">
+            <summary>
+            获取AppId时发生异常。{0}
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W6001">
             <summary>
             服务调用失败\r\n服务（{0}）不存在，请先注入服务再使用。
