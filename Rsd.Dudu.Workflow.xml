@@ -3895,26 +3895,29 @@
             </summary>
             <param name="interval"></param>
         </member>
-        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(Rsd.Dudu.Core.ITimerSchedule,System.Boolean)">
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="schedule"></param>
             <param name="autoReset"></param>
         </member>
-        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="second">秒</param>
             <param name="minute">分钟</param>
             <param name="hour">小时</param>
             <param name="autoReset">是否周期执行</param>
         </member>
-        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="second">秒</param>
             <param name="minute">分钟</param>
             <param name="hour">小时</param>
@@ -3923,10 +3926,11 @@
             <param name="year">年</param>
             <param name="autoReset">是否周期执行</param>
         </member>
-        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="second">秒</param>
             <param name="minute">分钟</param>
             <param name="hour">小时</param>

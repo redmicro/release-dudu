@@ -3850,11 +3850,6 @@
             进度计划
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.ITimerSchedule.Title">
-            <summary>
-            说明
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Core.ITimerSchedule.StartTime">
             <summary>
             有效时间_起始，job执行时间仅在有效期内 才可以执行，如果Job在指定时间未能执行，可在有效期内 重新被执行
@@ -4147,11 +4142,6 @@
             年份最小值 小于该值，表示每年的意思
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.TimerSchedule.Title">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Core.TimerSchedule.StartTime">
             <summary>
              有效时间_起始，job执行时间仅在有效期内 才可以执行，如果Job在指定时间未能执行，可在有效期内 重新被执行
@@ -4227,73 +4217,35 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int64)">
-            <summary>
-            
-            </summary>
-            <param name="interval">时间间隔单位毫秒</param>
-            <param name="title"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.DateTime)">
-            <summary>
-            定时执行一次
-            </summary>
-            <param name="time">执行时间</param>
-            <param name="title"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int64,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int64)">
             <summary>
             时间间隔单位毫秒
             </summary>
-            <param name="interval"></param>
-            <param name="title"></param>
+            <param name="interval">时间间隔单位毫秒</param>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.DateTime,System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.DateTime)">
             <summary>
             定时执行一次
             </summary>
             <param name="time">执行时间</param>
-            <param name="title"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor">
             <summary>
             每秒执行一次
             </summary> 
-            <param name="title"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int32,System.Int32,System.Int32)">
-            <summary>
-            指定分钟，指定秒周期执行
-            </summary>
-            <param name="second">-1 表示每秒钟执行</param>
-            <param name="minute">-1 表示每分钟执行</param>
-            <param name="hour">-1 表示每小时执行</param> 
-        </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32)">
             <summary>
             
             </summary>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param>
-            <param name="title"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
             计划执行时间
-            </summary>
-            <param name="second">-1 表示每秒钟执行</param>
-            <param name="minute">-1 表示每分钟执行</param>
-            <param name="hour">-1 表示每小时执行</param>
-            <param name="day">0 表示每天执行</param>
-            <param name="month">0 表示每月执行</param>
-            <param name="year">0 表示每年执行</param> 
-        </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
-            <summary>
-            计划执行时间
             </summary> 
-            <param name="title"></param>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param>
@@ -4305,18 +4257,6 @@
             <summary>
             
             </summary>
-            <param name="second">-1 表示每秒钟执行</param>
-            <param name="minute">-1 表示每分钟执行</param>
-            <param name="hour">-1 表示每小时执行</param>
-            <param name="day">星期几</param>
-            <param name="month">0 表示每月执行</param>
-            <param name="year">0 表示每年执行</param> 
-        </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="title"></param>
             <param name="second">-1 表示每秒钟执行</param>
             <param name="minute">-1 表示每分钟执行</param>
             <param name="hour">-1 表示每小时执行</param>
@@ -10440,11 +10380,12 @@
             心跳频率(单位:每次/N秒)
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean,Rsd.Dudu.Job.RunHostType)">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean,Rsd.Dudu.Job.RunHostType)">
             <summary>
             新建并持久化定时任务 
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="codeType"></param>
@@ -10453,12 +10394,13 @@
             <param name="hostType"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob``1(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
              <summary>
             新建并持久化定时任务 
              </summary>
              <typeparam name="T">唯一业务标识</typeparam>
              <param name="key"></param>
+             <param name="title"></param>
              <param name="group"></param>
              <param name="schedule"></param>
              <param name="methodName"></param> 
@@ -10466,23 +10408,25 @@
              <param name="args"></param>
              <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob``1(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[])">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[])">
             <summary>
             新建并持久化定时任务 
             </summary>
             <typeparam name="T"></typeparam>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="methodName"></param>
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
             <summary>
             新建并持久化定时任务 
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="serviceType"></param>
@@ -10491,11 +10435,12 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewApiJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewApiJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
             <summary>
             新建并持久化定时任务 
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="url"></param>
@@ -10504,11 +10449,12 @@
             <param name="manualEnabled"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewSqlJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Core.IDBOperator,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.IJobService.NewSqlJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Core.IDBOperator,System.Boolean)">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="dBOperator"></param>
@@ -10700,6 +10646,11 @@
         <member name="P:Rsd.Dudu.Job.ITimerJob.Key">
             <summary>
              唯一业务标识
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.ITimerJob.Title">
+            <summary>
+            说明
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Status">
@@ -10952,12 +10903,13 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
             <summary>
             新建IService 定时任务
             </summary>
             <typeparam name="T"></typeparam>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="methodName"></param>
@@ -10965,23 +10917,25 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[])">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[])">
             <summary>
             新建IService 定时任务
             </summary>
             <typeparam name="T"></typeparam>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="methodName"></param>
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
             <summary>
             新建IService 定时任务
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="serviceType"></param>
@@ -10990,11 +10944,12 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewApiJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewApiJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="url"></param>
@@ -11012,22 +10967,24 @@
             <param name="method"></param>
             <param name="formData"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewSqlJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Core.IDBOperator,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewSqlJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Core.IDBOperator,System.Boolean)">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="dBOperator"></param>
             <param name="manualEnabled"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewJob(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean,Rsd.Dudu.Job.RunHostType)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean,Rsd.Dudu.Job.RunHostType)">
             <summary>
             新建并持久化定时任务 
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="title"></param>
             <param name="group"></param>
             <param name="schedule"></param>
             <param name="codeType"></param>
@@ -11553,11 +11510,12 @@
             <param name="code"></param>
             <param name="manualEnabled"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.#ctor(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean)">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="schedule"></param>
             <param name="type"></param>
             <param name="code"></param>
@@ -11789,11 +11747,12 @@
             驱动程序名称
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
             <summary>
             定时计划
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="schedule"></param>
             <param name="autoReset"></param>
             <param name="refers">执行任务时需要的其他引用资源</param>
@@ -11808,38 +11767,42 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int64,System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int64,System.String,System.String[])">
             <summary>
             
             </summary>
             <param name="key"></param>
             <param name="interval">时间间隔，单位：毫秒</param>
+            <param name="title"></param>
             <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.DateTime,System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.DateTime,System.String[])">
             <summary>
             定时执行一次
             </summary>
             <param name="key"></param>
-            <param name="time"></param>
+            <param name="title"></param>
+            <param name="time"></param> 
             <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="second">秒</param>
             <param name="minute">分钟</param>
             <param name="hour">小时</param>
             <param name="autoReset">是否周期执行</param>
             <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="second">秒</param>
             <param name="minute">分钟</param>
             <param name="hour">小时</param>
@@ -11849,11 +11812,12 @@
             <param name="autoReset">是否周期执行</param>
             <param name="refers">执行任务时需要的其他引用资源</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean,System.String[])">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean,System.String[])">
             <summary>
             
             </summary>
             <param name="key"></param>
+            <param name="title"></param>
             <param name="second">秒</param>
             <param name="minute">分钟</param>
             <param name="hour">小时</param>
