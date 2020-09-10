@@ -4291,7 +4291,8 @@
             获取有效时间内的下一次执行时间
             </summary>
             <param name="current">当前时间</param>
-            <param name="zero">大于有效期结束时间时返回0</param>
+            <param name="schedule"></param>
+            <param name="zero">大于有效期结束时间时返回0</param> 
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextIntervalForDay(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
@@ -4304,15 +4305,23 @@
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextIntervalForDayWeek(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
             <summary>
-            获取有效时间内的下一次执行时间
+             获取有效时间内的下一次执行时间
             </summary>
             <param name="current"></param>
+            <param name="schedule"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.ToString">
             <summary>
             
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetDescription(Rsd.Dudu.Core.ITimerSchedule)">
+            <summary>
+            
+            </summary>
+            <param name="schedule"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.GetWeight">
@@ -11494,6 +11503,16 @@
             执行服务器IP
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.NextInterval">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.#ctor">
             <summary>
             
@@ -11554,6 +11573,12 @@
             获取有效时间内的下一次执行时间
             </summary>
             <param name="zero">大于有效期结束时间时返回0</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.ToString">
+            <summary>
+            
+            </summary>
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Job.JobCodeType">
