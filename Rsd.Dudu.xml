@@ -15769,23 +15769,23 @@
             <param name="operation"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error``1(``0,System.String,Rsd.Dudu.Log.LogSourceType,System.String[])">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error``1(System.String,``0,Rsd.Dudu.Log.LogSourceType,System.String[])">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="code"></param>
             <param name="user"></param>
+            <param name="code"></param>
             <param name="type"></param>
             <param name="args"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error``1(``0,System.String,System.String[])">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error``1(System.String,``0,System.String[])">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="code"></param>
             <param name="user"></param>
+            <param name="code"></param>
             <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.LogServiceBase.CommitCapture(System.String)">
@@ -16600,23 +16600,23 @@
             <param name="operation"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(``0,System.String,Rsd.Dudu.Log.LogSourceType,System.String[])">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(System.String,``0,Rsd.Dudu.Log.LogSourceType,System.String[])">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="code"></param>
             <param name="user"></param>
+            <param name="code"></param>
             <param name="type"></param>
             <param name="args"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(``0,System.String,System.String[])">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(System.String,``0,System.String[])">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="code"></param>
             <param name="user"></param>
+            <param name="code"></param>
             <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
