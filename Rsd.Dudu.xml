@@ -17008,7 +17008,12 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S6000">
             <summary>
-            JobProvider写日志失败:{0}
+            JobProvider写日志失败:{0}。
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S6001">
+            <summary>
+            JobProvider发送通知失败:{0}。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S8000">
