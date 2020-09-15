@@ -10279,6 +10279,21 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Job.LogType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.LogType.Job">
+            <summary>
+            任务
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.LogType.Provider">
+            <summary>
+            驱动
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Job.ResultStatus">
             <summary>
             整体执行结果
@@ -10757,6 +10772,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.ITimerJobLog.Type">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.ITimerJobLog.LogTime">
             <summary>
             
@@ -10777,7 +10797,7 @@
             执行主机
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.JobStatus">
+        <member name="P:Rsd.Dudu.Job.ITimerJobLog.Status">
             <summary>
             当前定时器状态
             </summary>
@@ -11113,7 +11133,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String)">
             <summary>
-            立即卸载任务
+            立即卸载任务驱动
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
@@ -11126,7 +11146,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
-            立即卸载TimeJob ,Status=Colse 时，需要将 TimeJob 从该JobHost 卸载，并释放资源
+            立即卸载Job驱动 ,Status=Colse 时，需要将 Job驱动 从该JobHost 卸载，并释放资源
             </summary>
             <param name="job"></param>
         </member>
@@ -11675,6 +11695,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Type">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.TimerJobLogModel.HostId">
             <summary>
             主机标识
@@ -11685,9 +11710,9 @@
             主机IP
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.JobStatus">
+        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Status">
             <summary>
-            job当时状态
+            job或驱动 当时状态
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Log">
@@ -11712,12 +11737,17 @@
         </member>
         <member name="E:Rsd.Dudu.Job.TimerProvider.AfterClosed">
             <summary>
-            到期后关闭 事件 
+            在定时器时钟后关闭后发生 
             </summary>
         </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.AfterCompleted">
+        <member name="E:Rsd.Dudu.Job.TimerProvider.BeforeRun">
             <summary>
-            执行完成 事件 
+            每次任务执行完成后发生
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Job.TimerProvider.AfterRun">
+            <summary>
+            每次任务执行完成后发生
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerProvider.Key">
@@ -11898,13 +11928,13 @@
             <summary>
             线程计数器加1 该方法只能在最终run方法中引用，其他地方使用会导致计数不准
             </summary>
-            <param name="args"></param>
+            <param name="args">执行参数</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.EndRun(System.Object)">
+        <member name="M:Rsd.Dudu.Job.TimerProvider.EndRun(Rsd.Dudu.Core.TimerResult)">
             <summary>
              线程计数器减1 该方法只能在最终run方法中引用，其他地方使用会导致计数不准
             </summary>
-            <param name="result"></param>
+            <param name="result">执行结果</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.t_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
