@@ -4121,12 +4121,12 @@
         </member>
         <member name="F:Rsd.Dudu.Core.TimerStatus.Stop">
             <summary>
-            已停止
+            已停止：临时停止计时，未释放资源,择机重新启动
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Core.TimerStatus.Close">
             <summary>
-            已关闭(手动关闭/到期自动关闭)，释放资源
+            已关闭，释放已资源
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Core.TimerSchedule">
@@ -9389,7 +9389,7 @@
         </member>
         <member name="M:Rsd.Dudu.Helpers.JsonHelper.GetWhereConditions(System.Type,Rsd.Dudu.BizModel.JsonObject[])">
             <summary>
-            
+             wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
             <param name="t"></param>
             <param name="where"></param>
@@ -9397,7 +9397,7 @@
         </member>
         <member name="M:Rsd.Dudu.Helpers.JsonHelper.GetWhereConditions(Rsd.Dudu.Core.IMyType,Rsd.Dudu.BizModel.JsonObject[])">
             <summary>
-            
+             wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
             <param name="myType"></param>
             <param name="where"></param>
@@ -10336,12 +10336,12 @@
         </member>
         <member name="F:Rsd.Dudu.Job.TimerJobStatus.Created">
             <summary>
-            已创建 等待加载
+            已创建：任务已创建，等待分配主机，或等待执行主机加载
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Job.TimerJobStatus.Loaded">
             <summary>
-            已加载 等待执行
+            已加载：任务已加载到执行主机任务中等待执行
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Job.TimerJobStatus.Runing">
@@ -10351,12 +10351,17 @@
         </member>
         <member name="F:Rsd.Dudu.Job.TimerJobStatus.Completed">
             <summary>
-            已完成
+            已完成：本次计划已执行,等待驱动进一步处理（休眠或关闭）
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Sleep">
+            <summary>
+            已休眠：等待下次执行
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Job.TimerJobStatus.Close">
             <summary>
-            已关闭(手动关闭/到期自动关闭)
+            已关闭(到期自动关闭) 无可执行计划
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Job.IJob">
@@ -11737,26 +11742,6 @@
              定时器状态：表示定时器经历过的状态。可位运算  
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.IsClosed">
-            <summary>
-            已关闭 关闭后无法再次启动
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.IsStarted">
-            <summary>
-            已启动
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.IsRuning">
-            <summary>
-            正在运行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.IsStop">
-            <summary>
-            已关闭
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Job.TimerProvider.Weight">
             <summary>
             执行资源损耗权重
@@ -11854,19 +11839,19 @@
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.Start(System.Boolean)">
             <summary>
-            启动定时器
+            启动驱动定时器：重新计算计数器时间间隔 并启动
             </summary>
             <param name="atOnce">是否启动时立即执行一次</param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.Stop(System.String)">
             <summary>
-            停止定时器
+            暂时停止驱动定时器
             </summary>
             <param name="reason"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.Close(System.String)">
             <summary>
-            关闭定时 释放资源(一般由程序操作)
+            关闭驱动定时器并释放资源(一般由程序操作)
             </summary>
             <param name="reason">原因</param>
         </member>

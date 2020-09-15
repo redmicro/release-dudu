@@ -758,12 +758,12 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.LogController.GetUILogList">
             <summary>
-            
+            wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.LogController.GetSysLogList">
             <summary>
-            
+             wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
             <returns></returns>
         </member>
@@ -1076,7 +1076,7 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetJobList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
             <summary>
-            
+             wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
             <param name="jobService"></param>
             <param name="pageIndex"></param>
@@ -1088,7 +1088,7 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetHostList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
             <summary>
-            
+             wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
             <param name="jobService"></param>
             <param name="pageIndex"></param>
@@ -1100,7 +1100,7 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.JobController.GetLogList(Rsd.Dudu.Job.IJobService,System.Int32,System.Int32,Rsd.Dudu.BizModel.JsonObject[],Rsd.Dudu.BizModel.JsonObject[],System.String)">
             <summary>
-            
+             wherejson结构:{group:'default',grouplogic:'or',name:'xxxx',logic:'or',op:'equals',value:12}
             </summary>
             <param name="jobService"></param>
             <param name="pageIndex"></param>
