@@ -10670,12 +10670,12 @@
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Status">
              <summary>
-            
+            状态的变迁由定时器驱动控制
              </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.Disabled">
             <summary>
-            已禁用
+            已禁用 由外部设置
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.HostExpireTime">
