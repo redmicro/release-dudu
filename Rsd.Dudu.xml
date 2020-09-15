@@ -3910,7 +3910,7 @@
             有效值：1970-2099；0 表示每年执行
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetNextIntervalList(System.Int64,System.Int32)">
+        <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetNextTimeList(System.Int64,System.Int32)">
             <summary>
             
             </summary>
@@ -3918,19 +3918,17 @@
             <param name="count"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetNextInterval(System.Int64,System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetNextTime(System.Int64)">
             <summary>
             
             </summary>
-            <param name="current"></param>
-            <param name="zero">无效时间返回0</param>
+            <param name="current"></param> 
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetNextInterval(System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetNextTime">
             <summary>
             
             </summary>
-            <param name="zero"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.ITimerSchedule.GetWeight">
@@ -4264,7 +4262,7 @@
             <param name="month">0 表示每月执行</param>
             <param name="year">0 表示每年执行</param> 
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextIntervalList(System.Int64,System.Int32)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextTimeList(System.Int64,System.Int32)">
             <summary>
             获取有效时间内的最近可执行时间列表
             </summary>
@@ -4272,40 +4270,37 @@
             <param name="count"></param> 
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextInterval(System.Int64,System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextTime">
             <summary>
-            获取有效时间内的下一次执行时间
+            获取有效时间内的下一次执行具体时间
             </summary>
-            <param name="current">当前时间</param>
-            <param name="zero">大于有效期结束时间时返回0</param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextInterval(System.Boolean)">
-            <summary>
-            获取有效时间内的下一次执行时间
-            </summary>
-            <param name="zero">大于有效期结束时间时返回0</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextInterval(System.Int64,Rsd.Dudu.Core.ITimerSchedule,System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextTime(System.Int64)">
             <summary>
-            获取有效时间内的下一次执行时间
+            获取在有效时间内，以current为起始时间，下一次执行具体时间。如果不存在有效可执行时间，则返回：0
+            </summary>
+            <param name="current">当前时间</param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextTime(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
+            <summary>
+            获取在有效时间内，以current为起始时间，下一次执行具体时间。如果不存在有效可执行时间，则返回：0
             </summary>
             <param name="current">当前时间</param>
             <param name="schedule"></param>
-            <param name="zero">大于有效期结束时间时返回0</param> 
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextIntervalForDay(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextTimeForDay(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
             <summary>
-             获取有效时间内的下一次执行时间
+             获取有效时间内的下一次执行具体时间
             </summary>
             <param name="current"></param>
             <param name="schedule"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextIntervalForDayWeek(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.GetNextTimeForDayWeek(System.Int64,Rsd.Dudu.Core.ITimerSchedule)">
             <summary>
-             获取有效时间内的下一次执行时间
+             获取有效时间内的下一次执行具体时间
             </summary>
             <param name="current"></param>
             <param name="schedule"></param>
@@ -11535,7 +11530,7 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.NextInterval">
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.NextTime">
             <summary>
             
             </summary>
@@ -11598,7 +11593,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextIntervalList(System.Int64,System.Int32)">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTimeList(System.Int64,System.Int32)">
             <summary>
             获取有效时间内的最近可执行时间列表
             </summary>
@@ -11606,19 +11601,17 @@
             <param name="count"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextInterval(System.Int64,System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTime(System.Int64)">
             <summary>
-             获取有效时间内的下一次执行时间
+             获取有效时间内的下一次执行具体时间
             </summary>
             <param name="current"></param>
-            <param name="zero">大于有效期结束时间时返回0</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextInterval(System.Boolean)">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTime">
             <summary>
             获取有效时间内的下一次执行时间
-            </summary>
-            <param name="zero">大于有效期结束时间时返回0</param>
+            </summary> 
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.ToString">
