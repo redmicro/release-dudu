@@ -10750,16 +10750,15 @@
             成功标志
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetRunning">
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetRunning(System.String)">
             <summary>
             设置任务状态为正在运行
             </summary> 
         </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetCompleted(System.String,System.String,Rsd.Dudu.Job.ResultStatus)">
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
             <summary>
             设置任务状态为已完成
-            </summary>
-            <param name="hostIp"></param>
+            </summary> 
             <param name="result"></param>
             <param name="status"></param>
         </member>
@@ -11592,10 +11591,11 @@
             </summary>
             <param name="schedule"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning(System.String)">
             <summary>
             
             </summary>
+            <param name="hostIp"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetLoaded(System.Int64)">
             <summary>
@@ -11603,11 +11603,10 @@
             </summary>
             <param name="hostExpireAt"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetCompleted(System.String,System.String,Rsd.Dudu.Job.ResultStatus)">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
             <summary>
             
             </summary>
-            <param name="hostIp"></param>
             <param name="result"></param>
             <param name="status"></param>
         </member>
