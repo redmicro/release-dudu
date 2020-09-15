@@ -10531,10 +10531,11 @@
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.LoadJobsForSelf">
+        <member name="M:Rsd.Dudu.Job.IJobService.CreateLoadJobsTimer(System.Int32)">
             <summary>
-            加载本主机所有定时Job任务 ，程序启动时 使用
+            并创建JOB加载定时器,并立即加载需要在一个时间间隔内执行的Job
             </summary>
+            <param name="interval">定时获取任务的时间间隔（单位：秒）</param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String)">
             <summary>
@@ -10882,6 +10883,7 @@
         </member>
         <member name="T:Rsd.Dudu.Job.JobServiceBase">
             <summary>
+            对个多个任务进行管理
             定时任务Job
             </summary>
         </member>
@@ -11057,16 +11059,22 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJobsForSelf">
-            <summary>
-            服务启动时 加载该服务器所属的TimeJob，1小时之内执行的Job 立即加入执行组
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SelfHearting(System.Int64)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.HeartingInvoke(System.Int64)">
             <summary>
             该主机心跳保持执行程序（更新数据库记录中的过期时间） 
             </summary>
             <param name="expireTime">过期时间</param>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobServiceBase._loadJobTimerInterval">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateLoadJobsTimer(System.Int32)">
+            <summary>
+            并创建JOB加载定时器,并立即加载需要在一个时间间隔内执行的Job
+            </summary>
+            <param name="interval">定时获取任务的时间间隔（单位：秒）</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SendJobNotify(System.String,Rsd.Dudu.Job.JobActionType)">
             <summary>
@@ -11098,38 +11106,38 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(System.String)">
             <summary>
-            加载指定key的TimeJob,只有分配的主机为当前主机才会被加载 
+             尝试加载指定key的TimeJob,只有分配的主机为当前主机且下次执行时间在一个时间间隔的周期内才会被加载 
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
-            加载Job并，启动驱动程序,只有分配的主机为当前主机才会被加载 ,否则发送加载通知
+            立即加载Job并，启动驱动程序,只有分配的主机为当前主机才会被加载 ,否则发送加载通知
             </summary>
             <param name="job"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String)">
             <summary>
-            卸载任务
+            立即卸载任务
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String)">
             <summary>
-            卸载任务
+            立即卸载任务
             </summary>
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob)">
             <summary>
-            卸载TimeJob ,Status=Colse 时，需要将 TimeJob 从该JobHost 卸载，并释放资源
+            立即卸载TimeJob ,Status=Colse 时，需要将 TimeJob 从该JobHost 卸载，并释放资源
             </summary>
             <param name="job"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobSchedule(System.String,Rsd.Dudu.Core.ITimerSchedule)">
             <summary>
-            
+            修改任务执行计划
             </summary>
             <param name="key"></param>
             <param name="schedule"></param>
@@ -11277,6 +11285,7 @@
         </member>
         <member name="T:Rsd.Dudu.Job.JobProvider">
             <summary>
+            对单个任务进行管理
             接受ITimerJob对象，作为单个定时任务的封装对象
             提供给JobService作为job驱动程序使用
             </summary>
@@ -11300,12 +11309,6 @@
             </summary>
             <param name="referList">引用资源</param>
             <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Close(System.String)">
-            <summary>
-            关闭定时 释放资源(一般由程序操作)
-            </summary>
-            <param name="reason">原因</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobProvider.Execute">
             <summary>
