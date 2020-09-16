@@ -17670,7 +17670,7 @@
         </member>
         <member name="M:Rsd.Dudu.MyType`1.SaveObject(`0)">
             <summary>
-            保存对象
+            保存对象,返回对象本身，未从数据库重新获取 
             </summary>
             <param name="obj"></param>
             <returns></returns>
@@ -19724,7 +19724,7 @@
         </member>
         <member name="M:Rsd.Dudu.MyType.SaveObjects``1(``0[])">
             <summary>
-            保存对象至数据，并将返回内存中的对象
+            保存对象至数据，返回对象本身，未从数据库重新获取 
             </summary>
             <typeparam name="T"></typeparam>
             <param name="list"></param>
@@ -19732,7 +19732,7 @@
         </member>
         <member name="M:Rsd.Dudu.MyType.SaveObject``1(``0)">
             <summary>
-            
+            保存对象,返回对象本身，未从数据库重新获取  
             </summary>
             <typeparam name="T"></typeparam>
             <param name="obj"></param>
@@ -19740,7 +19740,7 @@
         </member>
         <member name="M:Rsd.Dudu.MyType.SaveObjects``1(Rsd.Dudu.Core.IDBSession,``0[])">
             <summary>
-            
+            保存对象集合 ,返回对象本身，未从数据库重新获取 
             </summary>
             <typeparam name="T"></typeparam>
             <param name="dbSession"></param>
@@ -19749,7 +19749,7 @@
         </member>
         <member name="M:Rsd.Dudu.MyType.SaveObject``1(Rsd.Dudu.Core.IDBSession,``0)">
             <summary>
-            
+            返回对象本身，未从数据库重新获取 
             </summary>
             <typeparam name="T"></typeparam>
             <param name="dbSession"></param>
