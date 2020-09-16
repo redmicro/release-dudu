@@ -5889,7 +5889,7 @@
             <summary>
             
             </summary>
-            <param name="group"></param>
+            <param name="group">组标识，以"-"分割层次结构</param>
             <param name="gLogic"></param>
         </member>
         <member name="M:Rsd.Dudu.DBServices.WhereClauseBuilder.AppendWhere(Rsd.Dudu.Core.LogicTypes,System.String)">
@@ -5897,15 +5897,15 @@
             
             </summary>
             <param name="logic"></param>
-            <param name="where"></param>
+            <param name="where">where sql 语句</param>
         </member>
         <member name="M:Rsd.Dudu.DBServices.WhereClauseBuilder.AppendWhere(System.String,Rsd.Dudu.Core.LogicTypes,System.String)">
             <summary>
             添加并组装树结构
             </summary>
+            <param name="key">子句结构标识，以"-"分割层次结构</param>
             <param name="logic"></param>
-            <param name="key"></param>
-            <param name="where"></param>
+            <param name="where">where sql 语句</param>
         </member>
         <member name="M:Rsd.Dudu.DBServices.WhereClauseBuilder.Clear">
             <summary>
@@ -5920,7 +5920,7 @@
         </member>
         <member name="T:Rsd.Dudu.DBServices.WhereClauseExpression">
             <summary>
-            
+            where 子句表达式 对象
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.WhereClauseExpression.Index">
@@ -5950,7 +5950,7 @@
         </member>
         <member name="P:Rsd.Dudu.DBServices.WhereClauseExpression.Name">
             <summary>
-            分组 名称
+            分组子句 名称
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.WhereClauseExpression.Where">
@@ -6248,7 +6248,7 @@
             <summary>
             
             </summary>
-            <param name="type"></param>
+            <param name="type">model类</param>
             <param name="tableNameSuffix">表名后缀，一般用于分表查询</param>
             <param name="paramsPrefix">参数名前缀</param>
             <returns></returns>
