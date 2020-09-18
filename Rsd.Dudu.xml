@@ -10692,7 +10692,8 @@
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.HostExpireTime">
             <summary>
-            分配失效时间,与主机失效时间同步，大于当前时间 表示已失效,需要重新分配
+            主机分配失效时间与主机心态有效期一致，主机心跳时，同步更新分配失效时间
+            大于当前时间 表示已失效,需要重新分配
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostId">
@@ -11520,7 +11521,8 @@
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.HostExpireTime">
             <summary>
-            分配失效时间,与主机失效时间同步，大于当前时间 表示已失效,需要重新分配
+            主机分配失效时间与主机心态有效期一致，主机心跳时，同步更新分配失效时间
+            大于当前时间 表示已失效,需要重新分配
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.Weight">
