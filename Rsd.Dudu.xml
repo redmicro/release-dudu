@@ -4227,6 +4227,13 @@
             </summary>
             <param name="time">执行时间</param>
         </member>
+        <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor(System.DateTime,System.DateTime)">
+            <summary>
+            定时执行一次
+            </summary>
+            <param name="time">执行时间</param>
+            <param name="endTime"></param>
+        </member>
         <member name="M:Rsd.Dudu.Core.TimerSchedule.#ctor">
             <summary>
             每秒执行一次
