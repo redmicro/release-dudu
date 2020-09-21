@@ -10548,18 +10548,20 @@
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String)">
+        <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String,System.String)">
             <summary>
             提供外部卸载定时Job的功能 
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="reason"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String)">
+        <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String,System.String)">
             <summary>
             提供外部卸载 数据库 定时Job的功能
             </summary>
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
+            <param name="reason"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.EnableJob(System.String)">
             <summary>
@@ -11133,24 +11135,27 @@
             </summary>
             <param name="job"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String,System.String)">
             <summary>
             立即卸载任务驱动
             </summary>
             <param name="key">唯一业务标识</param>
+            <param name="reason"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String,System.String)">
             <summary>
             立即卸载任务
             </summary>
             <param name="dbSession"></param>
             <param name="key">唯一业务标识</param>
+            <param name="reason"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob,System.String)">
             <summary>
             立即卸载Job驱动 ,Status=Colse 时，需要将 Job驱动 从该JobHost 卸载，并释放资源
             </summary>
             <param name="job"></param>
+            <param name="reason"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobSchedule(System.String,Rsd.Dudu.Core.ITimerSchedule)">
             <summary>
