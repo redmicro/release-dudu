@@ -10548,12 +10548,6 @@
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.CreateLoadJobsTimer(System.Int32)">
-            <summary>
-            并创建JOB加载定时器,并立即加载需要在一个时间间隔内执行的Job
-            </summary>
-            <param name="interval">定时获取任务的时间间隔（单位：秒）</param>
-        </member>
         <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String)">
             <summary>
             提供外部卸载定时Job的功能 
@@ -10936,6 +10930,11 @@
             心跳时间间隔(单位:1次/N秒)
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.JobServiceBase.LoadInterval">
+            <summary>
+            job周期加载时间间隔(单位:秒)
+            </summary>
+        </member>
         <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Job.JobServiceBase.NotifyFormatUrl" -->
         <member name="P:Rsd.Dudu.Job.JobServiceBase.Host">
             <summary>
@@ -11083,16 +11082,11 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.HeartingInvoke(System.Int64)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateHostHeartingTimer(System.Int64)">
             <summary>
             该主机心跳保持执行程序（更新数据库记录中的过期时间） 
             </summary>
             <param name="expireTime">过期时间</param>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobServiceBase._loadJobTimerInterval">
-            <summary>
-            
-            </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateLoadJobsTimer(System.Int32)">
             <summary>
@@ -11920,7 +11914,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.TimerProvider.Start(System.Boolean)">
             <summary>
-            启动驱动定时器：重新计算计数器时间间隔 并启动
+            启动驱动定时器：重新计算计数器时间间隔并启动
             </summary>
             <param name="atOnce">是否启动时立即执行一次</param>
         </member>
