@@ -3867,7 +3867,7 @@
         </member>
         <member name="P:Rsd.Dudu.Core.ITimerSchedule.IsInterval">
             <summary>
-            是否是指定时间间隔
+            是否是固定长度的时间间隔（即：Interval > 0）
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ITimerSchedule.Interval">
