@@ -17124,14 +17124,6 @@
             <param name="inherit"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.ToTimeStamp(System.DateTime,System.Boolean)">
-            <summary>
-            转化为10位或10位长度时间戳
-            </summary>
-            <param name="time"></param>
-            <param name="longFormat">true:13位长度，精确到毫秒；fales:10w位长度，精确到秒</param>
-            <returns>13位或10位长度</returns>
-        </member>
         <member name="M:Rsd.Dudu.ExtendMethods.ToLongTimeStamp(System.DateTime)">
             <summary>
             转化为13位长度时间戳
