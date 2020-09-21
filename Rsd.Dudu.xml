@@ -10754,24 +10754,6 @@
             成功标志
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetRunning(System.String)">
-            <summary>
-            设置任务状态为正在运行
-            </summary> 
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
-            <summary>
-            设置任务状态为已完成
-            </summary> 
-            <param name="result"></param>
-            <param name="status"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetLoaded(System.Int64)">
-            <summary>
-             设置任务状态为已加载
-            </summary>
-            <param name="hostExpireAt"></param>
-        </member>
         <member name="T:Rsd.Dudu.Job.ITimerJobLog">
             <summary>
             
@@ -11750,17 +11732,17 @@
             
             </summary>
         </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.AfterClosed">
+        <member name="E:Rsd.Dudu.Job.TimerProvider.OnAfterClosed">
             <summary>
             在定时器时钟后关闭后发生 
             </summary>
         </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.BeforeRun">
+        <member name="E:Rsd.Dudu.Job.TimerProvider.OnBeforeRun">
             <summary>
             每次任务执行完成后发生
             </summary>
         </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.AfterRun">
+        <member name="E:Rsd.Dudu.Job.TimerProvider.OnAfterRun">
             <summary>
             每次任务执行完成后发生
             </summary>
