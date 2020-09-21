@@ -11620,14 +11620,14 @@
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTime(System.Int64)">
             <summary>
-             获取有效时间内的下一次执行具体时间
+             获取有效时间内的下一次执行具体时间(13位时间戳)
             </summary>
             <param name="current"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTime">
             <summary>
-            获取有效时间内的下一次执行时间
+            获取有效时间内的下一次执行时间(13位时间戳)
             </summary> 
             <returns></returns>
         </member>
