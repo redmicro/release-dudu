@@ -14,6 +14,11 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Web.Authorization.FormAuthenticationFilterAttribute">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Web.Authorization.FormAuthenticationFilterAttribute.Authorization">
             <summary>
             
