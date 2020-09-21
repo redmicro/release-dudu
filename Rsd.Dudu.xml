@@ -10406,7 +10406,7 @@
             注册返回的对象
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.IJobService.HeartRate">
+        <member name="P:Rsd.Dudu.Job.IJobService.HeartingInterval">
             <summary>
             心跳频率(单位:每次/N秒)
             </summary>
@@ -10853,13 +10853,14 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32)">
+        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32,System.Int32)">
             <summary>
-            
+            下一版本 使用API 通讯
             </summary> 
             <param name="dBSession">数据库驱动</param>
             <param name="hostKey">当前主机标识</param>
-            <param name="heartRate">心跳频率(单位:每次/N秒)</param>
+            <param name="heartInterval">心跳频率(单位:每次/N秒)</param>
+            <param name="loadInterval">定时获取任务的时间间隔（单位：秒）</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
             <summary>
@@ -10925,9 +10926,9 @@
             当前主机是否已注册(Host != null)
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.HeartRate">
+        <member name="P:Rsd.Dudu.Job.JobServiceBase.HeartingInterval">
             <summary>
-            心跳时间间隔(单位:1次/N秒)
+            心跳时间间隔，间隔N秒与控制端通讯一次。(单位:1次/N秒)
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Job.JobServiceBase.LoadInterval">
@@ -11082,17 +11083,15 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateHostHeartingTimer(System.Int64)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateHostHeartingTimer">
             <summary>
             该主机心跳保持执行程序（更新数据库记录中的过期时间） 
-            </summary>
-            <param name="expireTime">过期时间</param>
+            </summary> 
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateLoadJobsTimer(System.Int32)">
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateLoadJobsTimer">
             <summary>
             并创建JOB加载定时器,并立即加载需要在一个时间间隔内执行的Job
             </summary>
-            <param name="interval">定时获取任务的时间间隔（单位：秒）</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.SendJobNotify(System.String,Rsd.Dudu.Job.JobActionType)">
             <summary>
