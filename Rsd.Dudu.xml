@@ -10286,6 +10286,41 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Job.JobCodeType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobCodeType.CSharp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobCodeType.Sql">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobCodeType.JavaScript">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobCodeType.Shell">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobCodeType.Bat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.JobCodeType.Python">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Job.LogType">
             <summary>
             
@@ -10754,6 +10789,19 @@
             成功标志
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Job.ITimerJob.BindHost(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="hostId"></param>
+            <param name="isFixed"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetLoaded(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="hostExpireAt"></param>
+        </member>
         <member name="T:Rsd.Dudu.Job.ITimerJobLog">
             <summary>
             
@@ -11124,14 +11172,6 @@
             <param name="key">唯一业务标识</param>
             <param name="reason"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String,System.String)">
-            <summary>
-            立即卸载任务
-            </summary>
-            <param name="dbSession"></param>
-            <param name="key">唯一业务标识</param>
-            <param name="reason"></param>
-        </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob,System.String)">
             <summary>
             立即卸载Job驱动 ,Status=Colse 时，需要将 Job驱动 从该JobHost 卸载，并释放资源
@@ -11166,24 +11206,32 @@
             </summary>
             <param name="key">唯一业务标识</param>
         </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.EnableJob(Rsd.Dudu.Core.IDBSession,System.String)">
-            <summary>
-            将设置job可用
-            </summary>
-            <param name="dbSession"></param>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.DisableJob(Rsd.Dudu.Core.IDBSession,System.String)">
-            <summary>
-            将设置job不可用
-            </summary>
-            <param name="dbSession"></param>
-            <param name="key">唯一业务标识</param>
-        </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.DisableJob(System.String)">
             <summary>
             将Job设置为不可用，并将其卸载
             </summary>
+            <param name="key">唯一业务标识</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String,System.String)">
+            <summary>
+            立即卸载数据库定时器任务 
+            </summary>
+            <param name="targetDbSession">数据库定时器的目标数据库驱动</param>
+            <param name="key">唯一业务标识</param>
+            <param name="reason"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.EnableJob(Rsd.Dudu.Core.IDBSession,System.String)">
+            <summary>
+            将数据库定时器job设置为可用
+            </summary>
+            <param name="targetDbSession"></param>
+            <param name="key">唯一业务标识</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.JobServiceBase.DisableJob(Rsd.Dudu.Core.IDBSession,System.String)">
+            <summary>
+            将数据库定时器job设置为不可用
+            </summary>
+            <param name="targetDbSession"></param>
             <param name="key">唯一业务标识</param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.AddJobLog(System.String,System.String,System.String,Rsd.Dudu.Job.TimerJobStatus,System.Int64)">
@@ -11585,17 +11633,24 @@
             </summary>
             <param name="schedule"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning(System.String)">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.BindHost(System.String,System.Boolean)">
             <summary>
             
             </summary>
-            <param name="hostIp"></param>
+            <param name="hostId"></param>
+            <param name="isFixed"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetLoaded(System.Int64)">
             <summary>
             
             </summary>
             <param name="hostExpireAt"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="hostIp"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
             <summary>
@@ -11636,41 +11691,6 @@
             
             </summary>
             <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Job.JobCodeType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.CSharp">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Sql">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.JavaScript">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Shell">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Bat">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Python">
-            <summary>
-            
-            </summary>
         </member>
         <member name="T:Rsd.Dudu.Job.TimerJobLogModel">
             <summary>
