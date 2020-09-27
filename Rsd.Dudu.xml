@@ -10411,7 +10411,7 @@
             已休眠：等待下次执行
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Close">
+        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Closed">
             <summary>
             已关闭(到期自动关闭) 无可执行计划
             </summary>
@@ -10585,7 +10585,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String,System.String)">
             <summary>
-            提供外部卸载定时Job的功能 
+            立即卸载任务驱动：1.因job状态进入sleep而卸载；2.因job状态进入close而卸载
             </summary>
             <param name="key">唯一业务标识</param>
             <param name="reason"></param>
@@ -10801,6 +10801,29 @@
             
             </summary>
             <param name="hostExpireAt"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetRunning(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="hostIp"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetSleep">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="status"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetClosed">
+            <summary>
+            设置job为已关闭
+            </summary>
         </member>
         <member name="T:Rsd.Dudu.Job.ITimerJobLog">
             <summary>
@@ -11167,14 +11190,14 @@
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String,System.String)">
             <summary>
-            立即卸载任务驱动
+            立即卸载任务驱动：1.因job状态进入sleep而卸载；2.因job状态进入close而卸载;3.因job被禁用而卸载;4.因Job接受到管理节点卸载通知而卸载
             </summary>
             <param name="key">唯一业务标识</param>
             <param name="reason"></param>
         </member>
         <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob,System.String)">
             <summary>
-            立即卸载Job驱动 ,Status=Colse 时，需要将 Job驱动 从该JobHost 卸载，并释放资源
+            立即卸载Job驱动 ,Status=Colse或 ,Status=Sleep时，需要将 Job驱动 从该JobHost 卸载，并释放资源
             </summary>
             <param name="job"></param>
             <param name="reason"></param>
@@ -11646,11 +11669,21 @@
             </summary>
             <param name="hostExpireAt"></param>
         </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetClosed">
+            <summary>
+            1.因到期卸载；2.因距离下个执行时太长而卸载
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning(System.String)">
             <summary>
             
             </summary>
             <param name="hostIp"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetSleep">
+            <summary>
+            2.因距离下个执行时太长而卸载
+            </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
             <summary>
