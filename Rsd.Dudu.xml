@@ -11487,6 +11487,11 @@
             定时器状态：表示定时器状态。
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Job.TimerJobModel.StatusChangeTime">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Job.TimerJobModel.IsInterval">
             <summary>
             是否时固定时间间隔定时器 ,true 表示 Interval 值有效
