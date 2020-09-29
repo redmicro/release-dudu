@@ -10808,7 +10808,7 @@
             </summary>
             <param name="hostIp"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetSleep">
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetSleep(System.String)">
             <summary>
             
             </summary>
@@ -10820,7 +10820,7 @@
             <param name="result"></param>
             <param name="status"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetClosed">
+        <member name="M:Rsd.Dudu.Job.ITimerJob.SetClosed(System.String)">
             <summary>
             设置job为已关闭
             </summary>
@@ -11674,20 +11674,15 @@
             </summary>
             <param name="hostExpireAt"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetClosed">
-            <summary>
-            1.因到期卸载；2.因距离下个执行时太长而卸载
-            </summary>
-        </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning(System.String)">
             <summary>
             
             </summary>
             <param name="hostIp"></param>
         </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetSleep">
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetSleep(System.String)">
             <summary>
-            2.因距离下个执行时太长而卸载
+            因距离下个执行时太长而进入Sleep状态
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
@@ -11696,6 +11691,11 @@
             </summary>
             <param name="result"></param>
             <param name="status"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetClosed(System.String)">
+            <summary>
+            1.因到期卸载；2.因距离下个执行时太长而卸载
+            </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.GetWeight">
             <summary>
@@ -17251,6 +17251,31 @@
             <param name="nameFormat"></param>
             <param name="startRowIndex">起始行</param>
             <param name="length">长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ExtendMethods.ToJsonList(System.Data.DataTable,System.Type[])">
+            <summary>
+            遇到同名字段放弃
+            </summary>
+            <param name="dt"></param>
+            <param name="types">遇到同名字段放弃</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ExtendMethods.ToJsonList``2(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ExtendMethods.ToJsonList(System.Data.DataTable,Rsd.Dudu.ORM.ITableField[])">
+            <summary>
+            安装指定的ITableField集合转化为JOSN数据
+            </summary>
+            <param name="dt"></param>
+            <param name="columns"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ExtendMethods.ConvertTo``1(System.Object)">

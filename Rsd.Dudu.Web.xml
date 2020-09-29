@@ -209,8 +209,8 @@
             <summary>
             
             </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T">对象类型</typeparam>
+            <typeparam name="T1">排序字段类型</typeparam>
             <param name="expression"></param>
             <param name="orderBy"></param>
             <param name="type"></param>
@@ -221,8 +221,8 @@
             <summary>
             
             </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T">对象类型</typeparam>
+            <typeparam name="T1">排序字段类型</typeparam>
             <param name="dbSession"></param>
             <param name="expression"></param>
             <param name="orderBy"></param>
