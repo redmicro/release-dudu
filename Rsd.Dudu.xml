@@ -10810,7 +10810,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.ITimerJob.SetSleep(System.String)">
             <summary>
-            
+            设置状态为休眠， 并记录入日志
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.ITimerJob.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
@@ -10822,7 +10822,7 @@
         </member>
         <member name="M:Rsd.Dudu.Job.ITimerJob.SetClosed(System.String)">
             <summary>
-            设置job为已关闭
+            设置job为已关闭， 并记录入日志
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Job.ITimerJobLog">
@@ -11695,6 +11695,11 @@
         <member name="M:Rsd.Dudu.Job.TimerJobModel.SetClosed(System.String)">
             <summary>
             1.因到期卸载；2.因距离下个执行时太长而卸载
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerJobModel.AddJobLog(System.String)">
+            <summary>
+            添加JOB日志 该类中使用AddJobLog
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Job.TimerJobModel.GetWeight">
