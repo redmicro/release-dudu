@@ -5639,7 +5639,7 @@
         </member>
         <member name="T:Rsd.Dudu.DBServices.SqlBase">
             <summary>
-            
+            简单SQL查询，不支持join
             </summary>
         </member>
         <member name="F:Rsd.Dudu.DBServices.SqlBase._auto_id">
@@ -5791,7 +5791,7 @@
             <summary>
             
             </summary>
-            <param name="isSub">是否是查询子句,true:表示语句末尾不加分号，false:表示语句末尾加分号</param>
+            <param name="isSub">是否是查询子句(末尾不加分号),true:表示语句末尾不加分号，false:表示语句末尾加分号</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlBase.GetTopString">
@@ -6347,7 +6347,8 @@
         </member>
         <member name="T:Rsd.Dudu.DBServices.SqlQuerier">
             <summary>
-             sql语句查询器对象，完整sql语句的最小对象， 参数独立存储
+             sql语句查询器对象，支持join查询;
+             完整sql语句的最小对象， 参数独立存储
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.SqlQuerier.Owner">
@@ -6544,7 +6545,9 @@
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlQuerier.Pagging(System.Int32,System.Int32)">
             <summary>
-            指定分页参数，Pagging与Limit只能两者其一执行，且只能执行一次。
+            分页查询 
+            Pagging(页号和页大小) 和 Limit（限制长度和偏移量） 两种不同的数据分批查询算法；
+             指定分页参数，Pagging与Limit只能两者其一执行，且只能执行一次。
             </summary>
             <param name="pageIndex">页索引</param>
             <param name="pageSize">分页页大小</param>
@@ -6552,13 +6555,15 @@
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlQuerier.Limit(System.Int32,System.Int32)">
             <summary>
-            仅限支持Limit语法格式的数据库使用； 指定limit(top)参数，Limit与Pagging只能两者其一执行，且只能执行一次。
+             Pagging(页号和页大小) 和 Limit（限制长度和偏移量） 两种不同的数据分批查询算法；
+             指定limit(top)参数，Limit与Pagging只能两者其一执行，且只能执行一次。
+            仅限支持Limit语法格式的数据库使用； 
             格式：limit #offset#,#length#
             MSSQLServer,Oracle:top length
             PostgreSQL:limit length
             Mysql:limit length,offset
             </summary>
-            <param name="length">-1起始行后表示全部行</param>
+            <param name="length">要查询数据记录的最大长度，-1起始行后表示全部行</param>
             <param name="offset">根据数据库驱动支持情况决定是否支持limit length,offset 特性（Mysql）</param>
             <returns></returns>
         </member>
@@ -6591,9 +6596,15 @@
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlQuerier.BuildSql(System.Boolean)">
             <summary>
-            
+            支持join查询
             </summary>
-            <param name="isSub"></param>
+            <param name="isSub">是否是查询子句(末尾不加分号),true:表示语句末尾不加分号，false:表示语句末尾加分号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.DBServices.SqlQuerier.BuildSqlForView">
+            <summary>
+            构建 为视图使用的sql语句
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlQuerier.AutoId(System.Boolean,System.String)">
@@ -6687,6 +6698,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.DBServices.SqlQuerier.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.DBServices.SqlQuerier.WhereTypes">
             <summary>
             
@@ -6775,11 +6792,10 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.SqlView.BuildSql(System.Boolean)">
+        <member name="M:Rsd.Dudu.DBServices.SqlView.BuildSql">
             <summary>
             
-            </summary>
-            <param name="isSub"></param>
+            </summary> 
             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.DBServices.SqlView`1">
@@ -15169,14 +15185,6 @@
             <param name="field"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBOperator.Limit(System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="length"></param>
-            <param name="offset"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.DBOperator.Delete">
             <summary>
             
@@ -15314,12 +15322,26 @@
             <param name="view"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.DBOperator.Limit(System.Int32,System.Int32)">
+            <summary>
+             Pagging(页号和页大小) 和 Limit（限制长度和偏移量） 两种不同的数据分批查询算法
+            仅限支持Limit语法格式的数据库使用； 指定limit(top)参数，Limit与Pagging只能两者其一执行，且只能执行一次。
+            格式：limit #offset#,#length#
+            MSSQLServer,Oracle:top length
+            PostgreSQL:limit length
+            Mysql:limit length,offset
+            </summary>
+            <param name="length">要查询数据记录的最大长度，-1起始行后表示全部行</param>
+            <param name="offset">根据数据库驱动支持情况决定是否支持limit length,offset 特性（Mysql）</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.DBOperator.Pagging(System.Int32,System.Int32)">
             <summary>
-            
+            Pagging(页号和页大小) 和 Limit（限制长度和偏移量） 两种不同的数据分批查询算法
+            指定分页参数，Pagging与Limit只能两者其一执行，且只能执行一次。
             </summary>
-            <param name="pageIndex"></param>
-            <param name="pageSize"></param>
+            <param name="pageIndex">页索引</param>
+            <param name="pageSize">分页页大小</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBOperator.OrderBy(Rsd.Dudu.DBServices.SortCondition[])">
