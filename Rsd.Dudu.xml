@@ -14162,7 +14162,7 @@
         </member>
         <member name="T:Rsd.Dudu.Permission.IPermService">
             <summary>
-            
+            权限处理 服务 ，不包含UI菜单管理
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Permission.IPermService.AddApi(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)">
@@ -14353,12 +14353,12 @@
         </member>
         <member name="M:Rsd.Dudu.Permission.PermService.#ctor(Rsd.Dudu.Core.IDBSession)">
             <summary>
-            
+            权限处理服务构造函数
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Permission.PermService.#ctor">
             <summary>
-            
+            权限处理服务构造函数
             </summary> 
         </member>
         <member name="M:Rsd.Dudu.Permission.PermService.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
