@@ -1842,7 +1842,7 @@
         </member>
         <member name="T:Rsd.Dudu.Web.Core.RedjsConfig">
             <summary>
-            
+            redjs 框架 配置项
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Core.RedjsConfig.Version">
@@ -2010,7 +2010,7 @@
             <summary>
             
             </summary>
-            <param name="assembly"></param>
+            <param name="assembly">插件dll</param>
             <param name="modelBase"></param>
             <param name="controllerBase"></param>
             <param name="path">Controller注册路径</param>
@@ -2039,6 +2039,18 @@
             <summary>
             插件初始化：遍历ModelType 和Controller
             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.AddModelType``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.AddController``1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.CacheModelTypes">
             <summary>
