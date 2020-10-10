@@ -790,7 +790,7 @@
             权限控制Controller
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetPageList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetPageList(Rsd.Dudu.Permission.IPermService,System.String)">
             <summary>
             
             </summary>
@@ -798,7 +798,7 @@
             <param name="keyword"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddPage(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddPage(Rsd.Dudu.Permission.IPermService,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -813,7 +813,7 @@
             <param name="code"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetRoleList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetRoleList(Rsd.Dudu.Permission.IPermService,System.String)">
             <summary>
             
             </summary>
@@ -821,7 +821,7 @@
             <param name="keyword"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddRole(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddRole(Rsd.Dudu.Permission.IPermService,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -831,7 +831,7 @@
             <param name="orgId"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetApiList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetApiList(Rsd.Dudu.Permission.IPermService,System.String)">
             <summary>
             
             </summary>
@@ -839,7 +839,7 @@
             <param name="keyword"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddApi(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddApi(Rsd.Dudu.Permission.IPermService,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
             <summary>
             
             </summary>

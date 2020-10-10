@@ -14160,12 +14160,12 @@
             系统被特定业务独占使用，拒绝其他请求
             </summary> 
         </member>
-        <member name="T:Rsd.Dudu.Permission.IPermSerivce">
+        <member name="T:Rsd.Dudu.Permission.IPermService">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Permission.IPermSerivce.AddApi(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Permission.IPermService.AddApi(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)">
             <summary>
             
             </summary>
@@ -14182,7 +14182,7 @@
             <param name="enable"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.IPermSerivce.AddPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Permission.IPermService.AddPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             
             </summary>
@@ -14196,7 +14196,7 @@
             <param name="desc"></param>
             <param name="enable"></param>
         </member>
-        <member name="M:Rsd.Dudu.Permission.IPermSerivce.AddPageButton(Rsd.Dudu.Permission.Page,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Permission.IPermService.AddPageButton(Rsd.Dudu.Permission.Page,System.String,System.String,System.String,System.Boolean)">
             <summary>
             
             </summary>
@@ -14207,7 +14207,7 @@
             <param name="enable"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.IPermSerivce.AddRole(System.String,System.String,System.Boolean,System.String)">
+        <member name="M:Rsd.Dudu.Permission.IPermService.AddRole(System.String,System.String,System.Boolean,System.String)">
             <summary>
             
             </summary>
@@ -14217,14 +14217,14 @@
             <param name="orgId"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.IPermSerivce.GetMenuList(Rsd.Dudu.Permission.Role)">
+        <member name="M:Rsd.Dudu.Permission.IPermService.GetMenuList(Rsd.Dudu.Permission.Role)">
             <summary>
             
             </summary>
             <param name="role"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.IPermSerivce.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.Permission.IPermService.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
@@ -14341,34 +14341,34 @@
             
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Permission.PermSerivce">
+        <member name="T:Rsd.Dudu.Permission.PermService">
             <summary>
             权限处理 服务 ，不包含UI菜单管理
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Permission.PermSerivce.Proxcy">
+        <member name="P:Rsd.Dudu.Permission.PermService.Proxcy">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.#ctor(Rsd.Dudu.Core.IDBSession)">
+        <member name="M:Rsd.Dudu.Permission.PermService.#ctor(Rsd.Dudu.Core.IDBSession)">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.#ctor">
+        <member name="M:Rsd.Dudu.Permission.PermService.#ctor">
             <summary>
             
             </summary> 
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.Permission.PermService.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
             <param name="dbSession"></param>
             <param name="drop"></param>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.Permission.PermService.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             初始化 数据库表
             </summary>
@@ -14376,13 +14376,13 @@
             <param name="dbSession"></param>
             <param name="drop"></param>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.Permission.PermService.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
             <param name="drop"></param>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.AddPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Permission.PermService.AddPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             
             </summary>
@@ -14397,7 +14397,7 @@
             <param name="enable"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.AddPageButton(Rsd.Dudu.Permission.Page,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Permission.PermService.AddPageButton(Rsd.Dudu.Permission.Page,System.String,System.String,System.String,System.Boolean)">
             <summary>
             
             </summary>
@@ -14408,7 +14408,7 @@
             <param name="enable"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.AddApi(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)">
+        <member name="M:Rsd.Dudu.Permission.PermService.AddApi(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)">
             <summary>
             
             </summary>
@@ -14425,7 +14425,7 @@
             <param name="enable"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.AddRole(System.String,System.String,System.Boolean,System.String)">
+        <member name="M:Rsd.Dudu.Permission.PermService.AddRole(System.String,System.String,System.Boolean,System.String)">
             <summary>
             
             </summary>
@@ -14435,14 +14435,14 @@
             <param name="orgId"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.GetMenuList(Rsd.Dudu.Permission.Role)">
+        <member name="M:Rsd.Dudu.Permission.PermService.GetMenuList(Rsd.Dudu.Permission.Role)">
             <summary>
             
             </summary>
             <param name="role"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Permission.PermSerivce.GetMonitorInfo">
+        <member name="M:Rsd.Dudu.Permission.PermService.GetMonitorInfo">
             <summary>
             
             </summary>
