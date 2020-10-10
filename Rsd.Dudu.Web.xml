@@ -785,6 +785,77 @@
             <param name="list"></param>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Web.Controllers.PermController">
+            <summary>
+            权限控制Controller
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetPageList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="permSerivce"></param>
+            <param name="keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddPage(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="permSerivce"></param>
+            <param name="name"></param>
+            <param name="text"></param>
+            <param name="viewType"></param>
+            <param name="modelType"></param>
+            <param name="serviceName"></param>
+            <param name="desc"></param>
+            <param name="icon"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetRoleList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="permSerivce"></param>
+            <param name="keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddRole(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="permSerivce"></param>
+            <param name="name"></param>
+            <param name="desc"></param>
+            <param name="orgId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.GetApiList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="permSerivce"></param>
+            <param name="keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.PermController.AddApi(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="permSerivce"></param>
+            <param name="path"></param>
+            <param name="group"></param>
+            <param name="text"></param>
+            <param name="desc"></param>
+            <param name="level"></param>
+            <param name="session"></param>
+            <param name="log"></param>
+            <param name="thread"></param>
+            <param name="block"></param>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Web.Controllers.UIController">
             <summary>
             
@@ -905,70 +976,6 @@
             <summary>
             
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.GetPageList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="permSerivce"></param>
-            <param name="keyword"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.AddPage(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String,System.String,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="permSerivce"></param>
-            <param name="name"></param>
-            <param name="text"></param>
-            <param name="viewType"></param>
-            <param name="modelType"></param>
-            <param name="icon"></param>
-            <param name="code"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.GetRoleList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="permSerivce"></param>
-            <param name="keyword"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.AddRole(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="permSerivce"></param>
-            <param name="name"></param>
-            <param name="desc"></param>
-            <param name="orgId"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.GetApiList(Rsd.Dudu.Permission.IPermSerivce,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="permSerivce"></param>
-            <param name="keyword"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.AddApi(Rsd.Dudu.Permission.IPermSerivce,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="permSerivce"></param>
-            <param name="path"></param>
-            <param name="group"></param>
-            <param name="text"></param>
-            <param name="desc"></param>
-            <param name="level"></param>
-            <param name="session"></param>
-            <param name="log"></param>
-            <param name="thread"></param>
-            <param name="block"></param>
-            <param name="enable"></param>
-            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.DeveloperController.GetAllMyTypes">
             <summary>
@@ -1173,27 +1180,33 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Rsd.Dudu.Web.Core.ControllerRuoteAttribute">
+        <member name="T:Rsd.Dudu.Web.Core.ControllerAttribute">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Web.Core.ControllerRuoteAttribute.Path">
+        <member name="P:Rsd.Dudu.Web.Core.ControllerAttribute.Path">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Web.Core.ControllerRuoteAttribute.Name">
+        <member name="P:Rsd.Dudu.Web.Core.ControllerAttribute.Name">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.ControllerRuoteAttribute.#ctor(System.String,System.String)">
+        <member name="P:Rsd.Dudu.Web.Core.ControllerAttribute.Description">
+            <summary>
+            描述
+            </summary> 
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.ControllerAttribute.#ctor(System.String,System.String,System.String)">
             <summary>
             
             </summary>
             <param name="path">路径</param>
             <param name="name">名称</param>
+            <param name="description"></param>
         </member>
         <member name="T:Rsd.Dudu.Web.Core.DBMemorySessionCacheService">
             <summary>

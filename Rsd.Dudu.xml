@@ -14102,7 +14102,7 @@
         </member>
         <member name="T:Rsd.Dudu.Permission.Api">
             <summary>
-            
+            系统API接口
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Permission.Api.Path">
@@ -14232,7 +14232,7 @@
         </member>
         <member name="T:Rsd.Dudu.Permission.Page">
             <summary>
-            
+            系统UI页面
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Permission.Page.Name">
@@ -14343,7 +14343,7 @@
         </member>
         <member name="T:Rsd.Dudu.Permission.PermSerivce">
             <summary>
-            
+            权限处理 服务 ，不包含UI菜单管理
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Permission.PermSerivce.Proxcy">
