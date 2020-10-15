@@ -2924,6 +2924,11 @@
             前端js,css文件压缩,js 混淆
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Core.WebUIService.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Core.WebUIService.SourceHost">
             <summary>
             
@@ -3089,11 +3094,6 @@
             <param name="url"></param>
             <param name="domainName">授权可引用框架的域名</param>
             <param name="urlEn"></param>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.WebUIService.Proxcy">
-            <summary>
-            
-            </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.WebUIService.PictureExt(System.String)">
             <summary>
