@@ -18899,37 +18899,37 @@
             
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Containers.AfterAddServiceEventArgs">
+        <member name="T:Rsd.Dudu.AfterAddServiceEventArgs">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Containers.AfterAddServiceEventArgs.FullName">
+        <member name="P:Rsd.Dudu.AfterAddServiceEventArgs.FullName">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Containers.AfterAddServiceEventArgs.SessionId">
+        <member name="P:Rsd.Dudu.AfterAddServiceEventArgs.SessionId">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Containers.AfterAddServiceEventArgs.EntryId">
+        <member name="P:Rsd.Dudu.AfterAddServiceEventArgs.EntryId">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Containers.AfterAddServiceEventArgs.ServiceType">
+        <member name="P:Rsd.Dudu.AfterAddServiceEventArgs.ServiceType">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Containers.AfterAddServiceEventArgs.Proxcy">
+        <member name="P:Rsd.Dudu.AfterAddServiceEventArgs.Proxcy">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Containers.AfterAddServiceEventArgs.#ctor(System.String,System.String,System.Type,Rsd.Dudu.Core.ServiceProxcy,System.String)">
+        <member name="M:Rsd.Dudu.AfterAddServiceEventArgs.#ctor(System.String,System.String,System.Type,Rsd.Dudu.Core.ServiceProxcy,System.String)">
             <summary>
             
             </summary>
