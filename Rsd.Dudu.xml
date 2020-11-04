@@ -20171,7 +20171,7 @@
         </member>
         <member name="P:Rsd.Dudu.DBSession.IsTransaction">
             <summary>
-            在进行事物操作
+            表示当前线程在进行的操作是事务操作
             </summary>
         </member>
         <member name="M:Rsd.Dudu.DBSession.BeginTransaction">
