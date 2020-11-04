@@ -17009,6 +17009,11 @@
             Lamda表达式解析失败： 类型（{0}）。
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S2013">
+            <summary>
+            反射对象模型错误，解析WhereCondition对象属性（{0}）,（{1}）,（{2}）失败，原因：对象类型（{3}）MyType不存在。"
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S3001">
             <summary>
             属性赋值错误，对象{0}属性{1}内容长度大于存储长度（{2}个字节），将被截断存储。
