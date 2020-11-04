@@ -17874,7 +17874,7 @@
         </member>
         <member name="M:Rsd.Dudu.MyType`1.DeleteObjects(Rsd.Dudu.Core.IDBSession,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
             <summary>
-            批量删除数据,立刻执行
+            批量物理删除数据,立刻执行
             </summary>
             <param name="dbSession"></param>
             <param name="expression">obj=>obj.name=="123"</param>
@@ -19852,6 +19852,38 @@
             <param name="obj"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.MyType.DeleteObject``1(Rsd.Dudu.Core.IDBSession,``0,Rsd.Dudu.BizModel.DeleteType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dbSession"></param>
+            <param name="obj"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.DeleteObject``1(``0,Rsd.Dudu.BizModel.DeleteType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.DeleteObjects``1(Rsd.Dudu.Core.IDBSession,``0[])">
+            <summary>
+            批量物理删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dbSession"></param>
+            <param name="objs"></param>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.DeleteObjects``1(``0[])">
+            <summary>
+            批量物理删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objs"></param>
+        </member>
         <member name="M:Rsd.Dudu.MyType.GetEnumItems``1">
             <summary>
             获取枚举对象值集合
@@ -20115,7 +20147,7 @@
         </member>
         <member name="M:Rsd.Dudu.DBSession.Delete(Rsd.Dudu.ORM.TableSchema,System.String,Rsd.Dudu.DBServices.WhereCondition[])">
             <summary>
-            支持分表存储
+            批量物理删除对象，支持分表存储
             </summary>
             <param name="schema"></param>
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>

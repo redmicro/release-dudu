@@ -174,14 +174,6 @@
             <param name="objectState">当前对象状态</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject(Rsd.Dudu.Core.IMyType,System.String,Rsd.Dudu.BizModel.DeleteType)">
-            <summary>
-            
-            </summary>
-            <param name="myType"></param>
-            <param name="key"></param>
-            <param name="delType"></param>
-        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject(System.Type,System.String,Rsd.Dudu.BizModel.DeleteType)">
             <summary>
             
@@ -198,12 +190,27 @@
             <param name="key"></param>
             <param name="delType"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject``1(``0,Rsd.Dudu.BizModel.DeleteType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
             <param name="where"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObjects``1(``0[])">
+            <summary>
+            批量物理删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objs"></param>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String)">
             <summary>
