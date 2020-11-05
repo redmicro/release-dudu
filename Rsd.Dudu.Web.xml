@@ -672,12 +672,12 @@
             </summary>
             <param name="minutes"></param>
         </member>
-        <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.ClientIP">
+        <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.CurrentRequestIp">
             <summary>
-            当前请求客户端IP
+            当前请求来源客户端IP
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetClientIP">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetClientIp">
             <summary>
             请求客户端IP
             </summary>
