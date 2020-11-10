@@ -2084,106 +2084,6 @@
             <param name="path">Controller注册路径</param>
             <returns></returns>
         </member>
-        <member name="T:Rsd.Dudu.Web.Core.SuccessResult">
-            <summary>
-            data 数据可以被正确解析
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.SuccessResult.#ctor(System.Object,System.String,System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="data"></param>
-            <param name="msg"></param>
-            <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.SuccessResult.#ctor(System.Object,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="data"></param>
-            <param name="msg"></param>
-            <param name="code"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.SuccessResult`1">
-            <summary>
-             data 数据可以被正确解析
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.SuccessResult`1.#ctor(System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.SuccessResult`1.#ctor(`0,System.Object,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="data"></param>
-            <param name="codeIsValue"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.ErrorResult">
-            <summary>
-            返回系统执行失败结果，data 数据可能无法解释为目标结构
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ErrorResult.#ctor(System.Int32,System.String,System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="msg"></param>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ErrorResult.#ctor(System.String,System.String,System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="msg"></param>
-            <param name="data"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.ErrorResult`1">
-            <summary>
-            返回系统执行失败结果，data 数据可能无法解释为目标结构
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ErrorResult`1.#ctor(`0,System.Object[])">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ErrorResult`1.#ctor(`0,System.Object,System.Object[])">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="data"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ErrorResult`1.#ctor(`0,System.Boolean,System.Object[])">
-            <summary>
-            无返回数据
-            </summary>
-            <param name="code"></param>
-            <param name="codeIsValue">code是数值</param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ErrorResult`1.#ctor(`0,System.Object,System.Boolean,System.Object[])">
-            <summary>
-            有返回数据
-            </summary>
-            <param name="code"></param>
-            <param name="data"></param>
-            <param name="codeIsValue">code是数值</param>
-            <param name="args"></param>
-        </member>
         <member name="T:Rsd.Dudu.Web.Core.SchemasCacheService">
             <summary>
             
@@ -2531,184 +2431,6 @@
             <summary>
             
             </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.IResponseResult">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.IResponseResult.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.DataResult">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult.#ctor(System.Boolean,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="success"></param>
-            <param name="msg"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult.#ctor(System.Boolean,System.String,System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="success"></param>
-            <param name="msg"></param>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult.#ctor(System.String,System.Boolean,System.String,System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="success"></param>
-            <param name="msg"></param>
-            <param name="data"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.DataResult`1">
-            <summary>
-            
-            </summary>
-            <typeparam name="T">数据类型</typeparam>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.DataResult`1.Code">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.DataResult`1.Success">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.DataResult`1.Msg">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.DataResult`1.Data">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult`1.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult`1.#ctor(System.Boolean,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="success"></param>
-            <param name="msg"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult`1.#ctor(System.Boolean,System.String,`0)">
-            <summary>
-            
-            </summary>
-            <param name="success"></param>
-            <param name="msg"></param>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.DataResult`1.#ctor(System.String,System.Boolean,System.String,`0)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="success"></param>
-            <param name="msg"></param>
-            <param name="data"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.ResponseString">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.ResponseString.ReturnValue">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ResponseString.#ctor(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ResponseString.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.ResponseXml">
-            <summary>
-            return string.Format("<xml><return_code><![CDATA[{0}]]></return_code><return_msg><![CDATA[{1}]]></return_msg></xml>", this.ReturnCode, this.ReturnMsg);
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.ResponseXml.ReturnCode">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.ResponseXml.ReturnMsg">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ResponseXml.#ctor(System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="returnCode"></param>
-            <param name="returnMsg"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ResponseXml.ToString">
-            <summary>
-            return string.Format("<xml><return_code><![CDATA[{0}]]></return_code><return_msg><![CDATA[{1}]]></return_msg></xml>", this.ReturnCode, this.ReturnMsg);
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Web.Core.ResponseView">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.ResponseView.UIView">
-            <summary>
-            前端View页面
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Core.ResponseView.DataModel">
-            <summary>
-            数据模型
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ResponseView.#ctor(System.String,System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="view"></param>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.ResponseView.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.Core.Session">
             <summary>
@@ -4940,6 +4662,106 @@
             <param name="type"></param>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Web.SuccessResult">
+            <summary>
+            data 数据可以被正确解析
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SuccessResult.#ctor(System.Object,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="msg"></param>
+            <param name="code"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SuccessResult.#ctor(System.Object,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="msg"></param>
+            <param name="code"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Web.SuccessResult`1">
+            <summary>
+             data 数据可以被正确解析
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SuccessResult`1.#ctor(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.SuccessResult`1.#ctor(`0,System.Object,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="data"></param>
+            <param name="codeIsValue"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Web.ErrorResult">
+            <summary>
+            返回系统执行失败结果，data 数据可能无法解释为目标结构
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ErrorResult.#ctor(System.Int32,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="msg"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ErrorResult.#ctor(System.String,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="msg"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Web.ErrorResult`1">
+            <summary>
+            返回系统执行失败结果，data 数据可能无法解释为目标结构
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ErrorResult`1.#ctor(`0,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ErrorResult`1.#ctor(`0,System.Object,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="data"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ErrorResult`1.#ctor(`0,System.Boolean,System.Object[])">
+            <summary>
+            无返回数据
+            </summary>
+            <param name="code"></param>
+            <param name="codeIsValue">code是数值</param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ErrorResult`1.#ctor(`0,System.Object,System.Boolean,System.Object[])">
+            <summary>
+            有返回数据
+            </summary>
+            <param name="code"></param>
+            <param name="data"></param>
+            <param name="codeIsValue">code是数值</param>
+            <param name="args"></param>
+        </member>
         <member name="T:Rsd.Dudu.Web.HttpContextExtend">
             <summary>
             该扩展类所有方法，只上报异常，不对异常做任何处理
@@ -5042,7 +4864,7 @@
             <param name="returnUrl"></param>
             <param name="logEnabled"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpContextExtend.ResponseData(System.Web.HttpContext,System.String,Rsd.Dudu.Web.Core.IResponseResult,System.Boolean,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpContextExtend.ResponseData(System.Web.HttpContext,System.String,Rsd.Dudu.Web.IResponseResult,System.Boolean,System.String,System.String)">
             <summary>
             
             </summary>
@@ -7381,6 +7203,184 @@
             
             </summary>
             <param name="value"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Web.IResponseResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.IResponseResult.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Web.DataResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult.#ctor(System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult.#ctor(System.Boolean,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+            <param name="msg"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult.#ctor(System.String,System.Boolean,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="success"></param>
+            <param name="msg"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Web.DataResult`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Web.DataResult`1.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.DataResult`1.Success">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.DataResult`1.Msg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.DataResult`1.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult`1.#ctor(System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult`1.#ctor(System.Boolean,System.String,`0)">
+            <summary>
+            
+            </summary>
+            <param name="success"></param>
+            <param name="msg"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.DataResult`1.#ctor(System.String,System.Boolean,System.String,`0)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="success"></param>
+            <param name="msg"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:Rsd.Dudu.Web.ResponseString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.ResponseString.ReturnValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ResponseString.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ResponseString.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Web.ResponseXml">
+            <summary>
+            return string.Format("<xml><return_code><![CDATA[{0}]]></return_code><return_msg><![CDATA[{1}]]></return_msg></xml>", this.ReturnCode, this.ReturnMsg);
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.ResponseXml.ReturnCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.ResponseXml.ReturnMsg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ResponseXml.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnCode"></param>
+            <param name="returnMsg"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ResponseXml.ToString">
+            <summary>
+            return string.Format("<xml><return_code><![CDATA[{0}]]></return_code><return_msg><![CDATA[{1}]]></return_msg></xml>", this.ReturnCode, this.ReturnMsg);
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Web.ResponseView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.ResponseView.UIView">
+            <summary>
+            前端View页面
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.ResponseView.DataModel">
+            <summary>
+            数据模型
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ResponseView.#ctor(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ResponseView.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.SessionContainer">
             <summary>
