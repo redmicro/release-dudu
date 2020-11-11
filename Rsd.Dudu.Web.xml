@@ -404,6 +404,15 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObject``1(System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id">自增主键</param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
             <summary>
             
