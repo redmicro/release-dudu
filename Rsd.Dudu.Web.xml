@@ -6811,6 +6811,16 @@
             {0}数据对象不存在。
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W0003">
+            <summary>
+            请求API失败,获取API方法{0}（含父类）失败：{1}。
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W0004">
+            <summary>
+            请求API失败,API方法{0}（不含父类）失败：{1}。
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W1000">
             <summary>
             配置错误,{0}。
