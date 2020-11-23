@@ -5180,7 +5180,7 @@
             <param name="fileId"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadExcel(System.Web.HttpResponse,System.String,System.Data.DataTable[])">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadExcel(System.Web.HttpResponse,System.String,Rsd.Dudu.Helpers.DataTableForExcel[])">
             <summary>
             
             </summary>

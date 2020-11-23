@@ -9230,6 +9230,36 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Helpers.DataTableForExcel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Data">
+            <summary>
+            要导出的数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.SheetName">
+            <summary>
+            excel sheet 名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Title">
+            <summary>
+            表格内容标题
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Style">
+            <summary>
+            样式，按列名定义
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.DataTableForExcel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Helpers.ExcelBuilder">
             <summary>
             
