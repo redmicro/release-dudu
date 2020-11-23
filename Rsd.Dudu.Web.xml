@@ -5180,14 +5180,13 @@
             <param name="fileId"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadExcel(System.Web.HttpResponse,System.Data.DataTable,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadExcel(System.Web.HttpResponse,System.String,System.Data.DataTable[])">
             <summary>
             
             </summary>
             <param name="response"></param>
-            <param name="data"></param>
-            <param name="title"></param>
             <param name="fileName"></param>
+            <param name="tables">table.TableName 为ExcelSheet名</param>
         </member>
         <member name="T:Rsd.Dudu.Web.Log.WebApiLog">
             <summary>

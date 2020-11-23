@@ -9240,14 +9240,24 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.BeginWrite">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.BuildSheet(System.Data.DataTable,System.String,System.String)">
             <summary>
             
             </summary>
             <param name="dataTable"></param>
-            <param name="title"></param>
-            <param name="sheetName"></param>
+            <param name="title">sheet页内容标题</param>
+            <param name="sheetName">sheet页名称</param>
             <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.EndWrite">
+            <summary>
+            
+            </summary>
         </member>
         <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.GetFileBytes">
             <summary>
