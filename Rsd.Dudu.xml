@@ -9230,32 +9230,32 @@
             
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Helpers.DataTableForExcel">
+        <member name="T:Rsd.Dudu.Helpers.ExcelSheet">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Data">
+        <member name="P:Rsd.Dudu.Helpers.ExcelSheet.Data">
             <summary>
             要导出的数据
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.SheetName">
+        <member name="P:Rsd.Dudu.Helpers.ExcelSheet.SheetName">
             <summary>
             excel sheet 名称
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Title">
+        <member name="P:Rsd.Dudu.Helpers.ExcelSheet.Title">
             <summary>
             表格内容标题
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Columns">
+        <member name="P:Rsd.Dudu.Helpers.ExcelSheet.Columns">
             <summary>
             列集合
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Helpers.DataTableForExcel.#ctor">
+        <member name="M:Rsd.Dudu.Helpers.ExcelSheet.#ctor">
             <summary>
             
             </summary>
@@ -9340,7 +9340,13 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.BuildSheet(System.Data.DataTable,System.String,System.String,Rsd.Dudu.Helpers.ExcelColumn[])">
+        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.AddSheet(Rsd.Dudu.Helpers.ExcelSheet[])">
+            <summary>
+            
+            </summary>
+            <param name="excelSheets"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.AddSheet(System.Data.DataTable,System.String,System.String,Rsd.Dudu.Helpers.ExcelColumn[])">
             <summary>
             
             </summary>
@@ -9348,6 +9354,11 @@
             <param name="title">sheet页内容标题</param>
             <param name="sheetName">sheet页名称</param>
             <param name="columns">列集合</param>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.BuildSheet(Rsd.Dudu.Helpers.ExcelSheet)">
+            <summary>
+            构建sheet
+            </summary>
         </member>
         <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.EndWrite">
             <summary>
@@ -17187,6 +17198,11 @@
         <member name="F:Rsd.Dudu.ErrorCodes.S5002">
             <summary>
             反序列化失败。\r\n原类型（{0}）和目标类型（{1}）不一致。
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S5003">
+            <summary>
+            Excel创建失败。\r\n{0}。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S6000">
