@@ -9250,12 +9250,77 @@
             表格内容标题
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Style">
+        <member name="P:Rsd.Dudu.Helpers.DataTableForExcel.Columns">
+            <summary>
+            列集合
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.DataTableForExcel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Helpers.ExcelColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.ExcelColumn.Title">
+            <summary>
+            Excel列标题
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.ExcelColumn.ColumnName">
+            <summary>
+            数据源 列名称
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.ExcelColumn.ColumnExist">
+            <summary>
+            数据源 是否存在该列
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.ExcelColumn.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Helpers.ExcelColumn.Style">
             <summary>
             样式，按列名定义
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Helpers.DataTableForExcel.#ctor">
+        <member name="P:Rsd.Dudu.Helpers.ExcelColumn.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Helpers.ExcelColumn.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Helpers.ExcelDataType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Helpers.ExcelDataType.String">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Helpers.ExcelDataType.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Helpers.ExcelDataType.Number">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Helpers.ExcelDataType.Link">
             <summary>
             
             </summary>
@@ -9275,14 +9340,14 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.BuildSheet(System.Data.DataTable,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.BuildSheet(System.Data.DataTable,System.String,System.String,Rsd.Dudu.Helpers.ExcelColumn[])">
             <summary>
             
             </summary>
             <param name="dataTable"></param>
             <param name="title">sheet页内容标题</param>
             <param name="sheetName">sheet页名称</param>
-            <returns></returns>
+            <param name="columns">列集合</param>
         </member>
         <member name="M:Rsd.Dudu.Helpers.ExcelBuilder.EndWrite">
             <summary>
