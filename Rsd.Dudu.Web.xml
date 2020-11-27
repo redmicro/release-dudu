@@ -692,31 +692,31 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetBrowserId">
-            <summary>
-            浏览器指纹
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetHostAddress">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetClientHostAddress">
             <summary>
              获取远程客户端的 IP 主机地址
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetHostName">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetClientHostName">
             <summary>
             获取远程客户端的 DNS 名称
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetReferrer">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetRequestBrowserId">
+            <summary>
+            浏览器指纹
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetRequestReferrer">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetUserAgent">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetRequestUserAgent">
             <summary>
             
             </summary>
@@ -5110,17 +5110,17 @@
             <param name="path"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetClientIP(System.Web.HttpRequest)">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetBrowserId(System.Web.HttpRequest)">
             <summary>
             浏览器指纹
             </summary>
             <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetClientIP(System.Web.HttpRequest)">
+            <summary>
+            从服务端变量中获取请求客户端IP
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.HttpRequestExtend.GetHostAddress(System.Web.HttpRequest)">
