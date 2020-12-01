@@ -2672,12 +2672,6 @@
             </summary>
             <param name="message"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.GetData">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Core.ApiResult`1.ToString">
             <summary>
             
