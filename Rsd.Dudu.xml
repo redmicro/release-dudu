@@ -2586,6 +2586,13 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="success">API接口调用成功</param>
+            <param name="message"></param>
+        </member>
         <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.String,System.String,System.String,System.Boolean,System.String)">
             <summary>
             
@@ -2646,18 +2653,12 @@
             API接口返回的业务处理数据
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Boolean,System.String)">
             <summary>
             
             </summary>
             <param name="success">API接口调用成功</param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.String,System.Boolean)">
-            <summary>
-            
-            </summary>
             <param name="message"></param>
-            <param name="success">API接口调用成功</param>
         </member>
         <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Net.Http.HttpResponseMessage)">
             <summary>
