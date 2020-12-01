@@ -2622,7 +2622,17 @@
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.Message">
             <summary>
-            API接口调用 消息
+            API接口调用 返回http消息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult`1.Data">
+            <summary>
+            API接口调用 返回http数据包，进一步分解得到ReturnSuccess，ReturnMessage，ReturnCode，ReturnCode
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnSuccess">
+            <summary>
+            API接口返回的业务处理成功
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnMessage">
@@ -2635,14 +2645,9 @@
             API接口返回处理结果代码
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnSuccess">
-            <summary>
-            请求结果返回成功
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnData">
             <summary>
-            API接口返回数据
+            API接口返回的业务处理数据
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnJson">
@@ -2660,6 +2665,18 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.ApiResult`1.GetData">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.ApiResult`1.ToString">
             <summary>
