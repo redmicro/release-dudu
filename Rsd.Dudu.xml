@@ -2676,7 +2676,7 @@
             <param name="returnMsg"></param>
             <param name="returnData"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.SetReturnJosn(Rsd.Dudu.BizModel.JsonObject,System.String,System.String,`0,System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.ApiResult`1.SetReturnJson(Rsd.Dudu.BizModel.JsonObject,System.String,System.String,`0,System.Boolean)">
             <summary>
             
             </summary>
