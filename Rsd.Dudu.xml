@@ -2586,18 +2586,58 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.HelpUrl">
+            <summary>
+            帮助文档URL
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.Success">
+            <summary>
+            API接口调用成功
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.Message">
+            <summary>
+            API接口调用 返回http消息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.Data">
+            <summary>
+            API接口调用 返回http数据包，进一步分解得到ReturnSuccess，ReturnMessage，ReturnCode，ReturnCode
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.ReturnSuccess">
+            <summary>
+            API接口返回的业务处理成功
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.ReturnMessage">
+            <summary>
+            API接口返回处理结果信息
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.ReturnCode">
+            <summary>
+            API接口返回处理结果代码
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.ApiResult.ReturnData">
+            <summary>
+            API接口返回的业务处理数据
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.Boolean)">
             <summary>
             
             </summary>
-            <param name="success"></param>
+            <param name="success">API接口调用成功</param>
         </member>
         <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.String,System.Boolean)">
             <summary>
             
             </summary>
-            <param name="data"></param>
-            <param name="success"></param>
+            <param name="message"></param>
+            <param name="success">API接口调用成功</param>
         </member>
         <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.Net.Http.HttpResponseMessage)">
             <summary>
@@ -2605,74 +2645,31 @@
             </summary>
             <param name="message"></param>
         </member>
-        <member name="T:Rsd.Dudu.Core.ApiResult`1">
-            <summary>
-            API接口调用请求结果
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.HelpUrl">
-            <summary>
-            帮助文档URL
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.Success">
-            <summary>
-            API接口调用成功
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.Message">
-            <summary>
-            API接口调用 返回http消息
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.Data">
-            <summary>
-            API接口调用 返回http数据包，进一步分解得到ReturnSuccess，ReturnMessage，ReturnCode，ReturnCode
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnSuccess">
-            <summary>
-            API接口返回的业务处理成功
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnMessage">
-            <summary>
-            API接口返回处理结果信息
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnCode">
-            <summary>
-            API接口返回处理结果代码
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnData">
-            <summary>
-            API接口返回的业务处理数据
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnJson">
+        <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.String,System.String,System.Boolean,System.String,System.String)">
             <summary>
             
             </summary>
+            <param name="data"></param>
+            <param name="returnCode"></param>
+            <param name="returnSuccess"></param>
+            <param name="returnMsg"></param>
+            <param name="returnData"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.ApiResult.GetData``1">
             <summary>
             
             </summary>
-            <param name="success"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(`0,System.Boolean)">
+        <member name="M:Rsd.Dudu.Core.ApiResult.GetReturnData``1">
             <summary>
             
             </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Net.Http.HttpResponseMessage)">
-            <summary>
-            
-            </summary>
-            <param name="message"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult`1.ToString">
+        <member name="M:Rsd.Dudu.Core.ApiResult.ToString">
             <summary>
             
             </summary>
