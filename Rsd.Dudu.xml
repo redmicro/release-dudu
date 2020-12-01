@@ -2645,7 +2645,7 @@
             </summary>
             <param name="message"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.String,System.String,System.Boolean,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.String,System.String,System.String,System.Boolean,System.String)">
             <summary>
             
             </summary>
