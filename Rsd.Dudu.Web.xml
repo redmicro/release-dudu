@@ -1409,6 +1409,17 @@
             <param name="name"></param>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Web.Core.IResponseResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.IResponseResult.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Web.Core.ISession">
             <summary>
             
@@ -3697,6 +3708,28 @@
             <param name="checkSession"></param>
             <param name="apiLogEnable"></param>
         </member>
+        <member name="T:Rsd.Dudu.Web.ViewResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.ViewResult.Html">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ViewResult.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="html"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.ViewResult.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Web.ApplicationInitial">
             <summary>
             
@@ -4873,7 +4906,7 @@
             <param name="returnUrl"></param>
             <param name="logEnabled"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpContextExtend.ResponseData(System.Web.HttpContext,System.String,Rsd.Dudu.Web.IResponseResult,System.Boolean,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpContextExtend.ResponseData(System.Web.HttpContext,System.String,Rsd.Dudu.Web.Core.IResponseResult,System.Boolean,System.String,System.String)">
             <summary>
             
             </summary>
@@ -7221,17 +7254,6 @@
             
             </summary>
             <param name="value"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Web.IResponseResult">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.IResponseResult.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.DataResult">
             <summary>
