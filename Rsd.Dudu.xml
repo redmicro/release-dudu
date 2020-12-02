@@ -2554,7 +2554,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.GetObject``1(System.String,System.String[])">
             <summary>
-            
+            通过DbSession属性， 获取指定对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="key">主键</param>
@@ -2563,7 +2563,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.GetObject``1(System.Int64,System.String[])">
             <summary>
-            
+             通过DbSession属性， 获取指定对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="id">自增主键</param>
@@ -2581,7 +2581,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
             <summary>
-            
+             通过DbSession属性， 获取指定对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="expression"></param>
@@ -2590,7 +2590,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.GetObjects``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String[])">
             <summary>
-            
+             通过DbSession属性， 获取指定对象
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="T1"></typeparam>
@@ -2602,7 +2602,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.GetObjects``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String[])">
             <summary>
-            
+             通过DbSession属性， 获取指定对象
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="T1"></typeparam>
@@ -2616,7 +2616,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.SaveObjects``1(``0[])">
             <summary>
-            保存对象至数据，并将返回内存中的对象
+            通过DbSession属性， 保存对象至数据，并将返回内存中的对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="objs"></param>
@@ -2624,7 +2624,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.SaveObject``1(``0)">
             <summary>
-            保存对象至数据，并将返回内存中的对象
+            通过DbSession属性， 保存对象至数据，并将返回内存中的对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="obj"></param>
@@ -2632,7 +2632,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.SaveObject``1(Rsd.Dudu.BizModel.JsonObject,Rsd.Dudu.BizModel.ObjectStateType)">
             <summary>
-            保存对象至数据，并将返回内存中的对象
+            通过DbSession属性， 保存对象至数据，并将返回内存中的对象
             </summary>
             <param name="json"></param>
             <param name="objectState">当前对象状态</param>
@@ -2640,7 +2640,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObject(System.Type,System.String,Rsd.Dudu.BizModel.DeleteType)">
             <summary>
-            
+            通过DbSession属性， 删除对象
             </summary>
             <param name="type"></param>
             <param name="key"></param>
@@ -2648,7 +2648,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObject``1(System.String,Rsd.Dudu.BizModel.DeleteType)">
             <summary>
-            
+            通过DbSession属性， 删除对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="key"></param>
@@ -2656,7 +2656,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObject``1(``0,Rsd.Dudu.BizModel.DeleteType)">
             <summary>
-            
+            通过DbSession属性， 删除对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="obj"></param>
@@ -2664,14 +2664,14 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
             <summary>
-            
+            通过DbSession属性， 删除对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="where"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObjects``1(``0[])">
             <summary>
-            批量物理删除
+            通过DbSession属性， 批量物理删除对象
             </summary>
             <typeparam name="T"></typeparam>
             <param name="objs"></param>
