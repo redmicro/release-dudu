@@ -1924,7 +1924,7 @@
             <param name="category"></param>
             <param name="dbSession">数据库驱动</param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.Type,System.Type,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.Type,System.Type,System.String,System.String,Rsd.Dudu.Core.IDBSession)">
             <summary>
             
             </summary>
