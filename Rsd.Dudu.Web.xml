@@ -2033,18 +2033,24 @@
             Controller注册路径
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Core.PluginConfig.DbSession">
+            <summary>
+            数据库驱动
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Web.Core.PluginConfig._assembly">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.String,System.String,Rsd.Dudu.Core.IDBSession)">
             <summary>
             
             </summary>
             <param name="assembly"></param>
             <param name="path"></param>
             <param name="category"></param>
+            <param name="dbSession">数据库驱动</param>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.Type,System.Type,System.String,System.String)">
             <summary>
