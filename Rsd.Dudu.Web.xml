@@ -2068,14 +2068,7 @@
             </summary>
             <param name="operationType"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.InitialTables(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            初始化 数据表
-            </summary>
-            <param name="db"></param>
-            <param name="operationType"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.InitialTable``1">
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
