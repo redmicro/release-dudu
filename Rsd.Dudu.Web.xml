@@ -150,68 +150,6 @@
             <param name="objectState">当前对象状态</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SaveObjects``1(``0[])">
-            <summary>
-            保存对象至数据，并将返回内存中的对象
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="objs"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SaveObject``1(``0)">
-            <summary>
-            保存对象至数据，并将返回内存中的对象
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SaveObject``1(Rsd.Dudu.BizModel.JsonObject,Rsd.Dudu.BizModel.ObjectStateType)">
-            <summary>
-            保存对象至数据，并将返回内存中的对象
-            </summary>
-            <param name="json"></param>
-            <param name="objectState">当前对象状态</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject(System.Type,System.String,Rsd.Dudu.BizModel.DeleteType)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <param name="key"></param>
-            <param name="delType"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject``1(System.String,Rsd.Dudu.BizModel.DeleteType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key"></param>
-            <param name="delType"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObject``1(``0,Rsd.Dudu.BizModel.DeleteType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <param name="type"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="where"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.DeleteObjects``1(``0[])">
-            <summary>
-            批量物理删除
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="objs"></param>
-        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String)">
             <summary>
             
@@ -395,68 +333,6 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObject``1(System.String,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key">主键</param>
-            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObject``1(System.Int64,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="id">自增主键</param>
-            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObjects``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-            <param name="expression"></param>
-            <param name="orderBy"></param>
-            <param name="type"></param>
-            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObjects``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-            <param name="expression"></param>
-            <param name="pageIndex"></param>
-            <param name="pageSize"></param>
-            <param name="orderBy"></param>
-            <param name="type"></param>
-            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
@@ -565,15 +441,6 @@
             
             </summary>
             <param name="requestContext"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetService``1(System.String,``0)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="user"></param>
-            <param name="defaultValue"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.HttpRequest(Rsd.Dudu.Net.HttpRequestData)">

@@ -2542,6 +2542,144 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Core.BizBaseService">
+            <summary>
+            在BaseService基础上 ，拓展了数据库 CURD 操作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetObject``1(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key">主键</param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetObject``1(System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id">自增主键</param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="expression"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="expression"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetObjects``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <param name="expression"></param>
+            <param name="orderBy"></param>
+            <param name="type"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetObjects``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <param name="expression"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="orderBy"></param>
+            <param name="type"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.SaveObjects``1(``0[])">
+            <summary>
+            保存对象至数据，并将返回内存中的对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.SaveObject``1(``0)">
+            <summary>
+            保存对象至数据，并将返回内存中的对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.SaveObject``1(Rsd.Dudu.BizModel.JsonObject,Rsd.Dudu.BizModel.ObjectStateType)">
+            <summary>
+            保存对象至数据，并将返回内存中的对象
+            </summary>
+            <param name="json"></param>
+            <param name="objectState">当前对象状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObject(System.Type,System.String,Rsd.Dudu.BizModel.DeleteType)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="key"></param>
+            <param name="delType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObject``1(System.String,Rsd.Dudu.BizModel.DeleteType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="delType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObject``1(``0,Rsd.Dudu.BizModel.DeleteType)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="where"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.DeleteObjects``1(``0[])">
+            <summary>
+            批量物理删除
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objs"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetService``1(System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="user"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Core.TimerResult">
             <summary>
             
@@ -4754,7 +4892,17 @@
         </member>
         <member name="T:Rsd.Dudu.Core.BaseService">
             <summary>
-            
+            该类不含数据库操作，BizBaseService包含数据库操作
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Core.BaseService._sessionContext">
+            <summary>
+            会话级缓存 【需要使用会话级存储对象】
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Core.BaseService._singtonContext">
+            <summary>
+            单例缓存
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.Proxcy">
@@ -4793,19 +4941,6 @@
             </summary>
             <param name="isDebug"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.ClearData(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.ClearData(System.String,Rsd.Dudu.Core.ServiceProxcy)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="proxcy"></param>
-        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.SetData(System.String,System.Object)">
             <summary>
             
@@ -4832,6 +4967,19 @@
             <param name="key"></param>
             <param name="proxcy"></param>
             <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.ClearData(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.ClearData(System.String,Rsd.Dudu.Core.ServiceProxcy)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="proxcy"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Invoke(System.String,System.Object[])">
             <summary>
@@ -4873,24 +5021,6 @@
             <typeparam name="T"></typeparam>
             <param name="code"></param>
             <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.GetInternalIP">
-            <summary>
-            获取本机内网（网卡）IP
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.Clone(System.String)">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.GetService(System.Type,Rsd.Dudu.Core.IService)">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.UrlEncode(System.String,System.Text.Encoding)">
             <summary>
@@ -5032,6 +5162,24 @@
             </summary>
             <param name="base64String"></param>
             <param name="filePath"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.GetInternalIP">
+            <summary>
+            获取本机内网（网卡）IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.Clone(System.String)">
+            <summary>
+            当操作为会话级时，通过克隆当前对象，为会话提供服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.GetService(System.Type,Rsd.Dudu.Core.IService)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Dispose">
             <summary>
