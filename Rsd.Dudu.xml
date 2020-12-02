@@ -5156,6 +5156,14 @@
             <param name="stream"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.CopyStream(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.FileToStream(System.String)">
             <summary> 
             从文件读取 Stream 
