@@ -2547,6 +2547,11 @@
             在BaseService基础上 ，拓展了数据库 CURD 操作
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Core.BizBaseService.DbSession">
+            <summary>
+            指定该服务中CURD操作的数据库驱动
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Core.BizBaseService.GetObject``1(System.String,System.String[])">
             <summary>
             

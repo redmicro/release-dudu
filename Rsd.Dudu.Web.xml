@@ -363,6 +363,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.DbSession">
+            <summary>
+            获取系统默认 DbSession
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.DefaultAction">
             <summary>
             默认api
