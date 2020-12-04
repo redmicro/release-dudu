@@ -351,9 +351,9 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetAppSetting(System.String)">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetConfigAppSetting(System.String)">
             <summary>
-            获取配置项值
+            获取web.config文件的AppSettings配置项值
             </summary>
             <param name="key"></param>
             <returns></returns>
