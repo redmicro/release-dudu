@@ -1925,12 +1925,6 @@
             <param name="data"></param>
             <param name="timeSpan"></param>
         </member>
-        <member name="M:Rsd.Dudu.Cache.MemoryCacheProvider.CreateDeleteTimer(Rsd.Dudu.Cache.ICacheObject)">
-            <summary>
-            
-            </summary>
-            <param name="obj"></param>
-        </member>
         <member name="M:Rsd.Dudu.Cache.MemoryCacheProvider.Contains(System.String,System.String)">
             <summary>
             
@@ -10645,1839 +10639,6 @@
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="T:Rsd.Dudu.Job.IJobHost">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.NotifyFormatUrl">
-            <summary>
-            通知格式化url
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.ExpireTime">
-            <summary>
-            主机失效时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.LastHeartTime">
-            <summary>
-            最后一次心跳时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.HostId">
-            <summary>
-            主机标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.HostIP">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.LoadedWeight">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.Enabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobHost.IsManager">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.JobCodeType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.CSharp">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Sql">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.JavaScript">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Shell">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Bat">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobCodeType.Python">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.LogType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.LogType.Job">
-            <summary>
-            任务
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.LogType.Provider">
-            <summary>
-            驱动
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.ResultStatus">
-            <summary>
-            整体执行结果
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.None">
-            <summary>
-            未执行
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.Success">
-            <summary>
-            全部成功
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.Error">
-            <summary>
-            部分失败
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.ResultStatus.Failure">
-            <summary>
-            全部失败
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.RunHostType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.RunHostType.DBServer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.RunHostType.ComputeServer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.TimerJobStatus">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.None">
-            <summary>
-            未设置
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Created">
-            <summary>
-            已创建：任务已创建，等待分配主机，或等待执行主机加载
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Loaded">
-            <summary>
-            已加载：任务已加载到执行主机任务中等待执行
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Runing">
-            <summary>
-            正在运行
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Completed">
-            <summary>
-            已完成：本次计划已执行,等待驱动进一步处理（休眠或关闭）
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Sleep">
-            <summary>
-            已休眠：等待下次执行
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerJobStatus.Closed">
-            <summary>
-            已关闭(到期自动关闭) 无可执行计划
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.IJob">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.IJobService">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobService.DbSession">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobService.HostId">
-            <summary>
-            当前job服务设定的主机标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobService.Host">
-            <summary>
-            注册返回的对象
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.IJobService.HeartingInterval">
-            <summary>
-            心跳频率(单位:每次/N秒)
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean,Rsd.Dudu.Job.RunHostType)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="codeType"></param>
-            <param name="code"></param>
-            <param name="manualEnabled"></param>
-            <param name="hostType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
-             <summary>
-            新建并持久化定时任务 
-             </summary>
-             <typeparam name="T">唯一业务标识</typeparam>
-             <param name="key"></param>
-             <param name="title"></param>
-             <param name="group"></param>
-             <param name="schedule"></param>
-             <param name="methodName"></param> 
-             <param name="manualEnabled">是否允许手动执行</param>
-             <param name="args"></param>
-             <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[])">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="methodName"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewServiceJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="serviceType"></param>
-            <param name="methodName"></param>
-            <param name="manualEnabled"></param> 
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewApiJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="url"></param>
-            <param name="method"></param>
-            <param name="formData"></param>
-            <param name="manualEnabled"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewSqlJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Core.IDBOperator,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="dBOperator"></param>
-            <param name="manualEnabled"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewDbJobOperator(System.Type)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="modelType"></param> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewDbJobOperator``1">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <typeparam name="T"></typeparam> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewDbJobOperator(Rsd.Dudu.Core.IDBSession,System.Type)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="dbSession"></param>
-            <param name="modelType"></param> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.NewDbJobOperator``1(Rsd.Dudu.Core.IDBSession)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbSession"></param> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.AllocateJobs">
-            <summary>
-             管理节点尝试为所有TimerJob 分配 JobHost，仅管理节点可以分配
-            </summary> 
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.AllocateJob(System.String,System.String,System.Boolean)">
-            <summary>
-             将TimerJob 分配 制定JobHost 
-            </summary>
-            <param name="key"></param>
-            <param name="hostId"></param>
-            <param name="isFixed">是否绑定</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.SetJobSchedule(System.String,Rsd.Dudu.Core.ITimerSchedule)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="schedule"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.LoadJob(System.String)">
-            <summary>
-            启动 Job 驱动程序,只有分配的主机为当前主机才会被加载 
-            </summary>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(System.String,System.String)">
-            <summary>
-            立即卸载任务驱动：1.因job状态进入sleep而卸载；2.因job状态进入close而卸载
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="reason"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String,System.String)">
-            <summary>
-            提供外部卸载 数据库 定时Job的功能
-            </summary>
-            <param name="dbSession"></param>
-            <param name="key">唯一业务标识</param>
-            <param name="reason"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.EnableJob(System.String)">
-            <summary>
-            将Job设置为可用，并尝试加载(1个小时之内即将执行的Job 将会被加载)
-            </summary>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.EnableJob(Rsd.Dudu.Core.IDBSession,System.String)">
-            <summary>
-            将Job设置为可用
-            </summary>
-            <param name="dbSession"></param>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.DisableJob(System.String)">
-            <summary>
-            将Job设置为不可用，并将其卸载
-            </summary>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.DisableJob(Rsd.Dudu.Core.IDBSession,System.String)">
-            <summary>
-            将Job设置为禁用
-            </summary>
-            <param name="dbSession"></param>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.SetJobRefers(System.String,System.String[])">
-            <summary>
-            仅在job.Status == TimerStatus.Created 时，可操作
-            </summary>
-            <param name="key"></param>
-            <param name="refers"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.ExecuteJob(System.String)">
-            <summary>
-            用于手动执行Job
-            </summary>
-            <param name="key">唯一业务标识</param> 
-            <returns></returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.IJobService.RegisterHost(System.String,System.Boolean)" -->
-        <member name="M:Rsd.Dudu.Job.IJobService.SendJobNotify(System.String,Rsd.Dudu.Job.JobActionType)">
-            <summary>
-            通知Job所在主机
-            </summary>
-            <param name="key">Job唯一业务标识</param>
-            <param name="action"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.AddJobLog(System.String,System.String,System.String,Rsd.Dudu.Job.TimerJobStatus,System.Int64)">
-            <summary>
-            定时器驱动日志
-            </summary>
-            <param name="jobKey"></param>
-            <param name="jobTitle"></param>
-            <param name="log"></param>
-            <param name="status"></param>
-            <param name="time"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.AddTimerLog(System.String,System.String,System.String,Rsd.Dudu.Core.TimerStatus,System.Int64)">
-            <summary>
-            定时器驱动日志
-            </summary>
-            <param name="jobKey"></param>
-            <param name="jobTitle"></param>
-            <param name="log"></param>
-            <param name="status"></param>
-            <param name="time"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.GetObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.GetObject``1(System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.IJobService.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="drop"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Job.ITimerJob">
-            <summary>
-             定时任务
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Key">
-            <summary>
-             唯一业务标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Title">
-            <summary>
-            说明
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Status">
-             <summary>
-            状态的变迁由定时器驱动控制
-             </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Disabled">
-            <summary>
-            已禁用 由外部设置
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.HostExpireTime">
-            <summary>
-            主机分配失效时间与主机心态有效期一致，主机心跳时，同步更新分配失效时间
-            大于当前时间 表示已失效,需要重新分配
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostId">
-            <summary>
-            执行主机标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.IsFixed">
-            <summary>
-            绑定执行主机
-            </summary> 
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostIP">
-            <summary>
-            分配的执行主机IP
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.RunHostType">
-            <summary>
-            定时器运行服务器类型
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.ManualEnabled">
-            <summary>
-            允许手动触发执行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.CodeType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Code">
-            <summary>
-            执行代码 字符串压缩后内容
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Refers">
-            <summary>
-            其他引用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.Count">
-            <summary>
-            已执行次数
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.LastResult">
-            <summary>
-            最后一次代码运行结果
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJob.ResultStatus">
-            <summary>
-            成功标志
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.BindHost(System.String,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="hostId"></param>
-            <param name="isFixed"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetLoaded(System.Int64)">
-            <summary>
-            
-            </summary>
-            <param name="hostExpireAt"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetRunning(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="hostIp"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetSleep(System.String)">
-            <summary>
-            设置状态为休眠， 并记录入日志
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
-            <summary>
-            
-            </summary>
-            <param name="result"></param>
-            <param name="status"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.ITimerJob.SetClosed(System.String)">
-            <summary>
-            设置job为已关闭， 并记录入日志
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.ITimerJobLog">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.Type">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.LogTime">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.JobId">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.JobTitle">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.HostId">
-            <summary>
-            执行主机
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.Status">
-            <summary>
-            当前定时器状态
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.ITimerJobLog.Log">
-            <summary>
-            日志内容
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.JobService">
-            <summary>
-            通过关系数据库 来持久化 TimerJob信息
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.#cctor">
-            <summary>
-            缓存类型
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="_dbSession"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="_dbSession"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="drop"></param>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobService.DbSession">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.#ctor(Rsd.Dudu.Core.IDBSession,System.String,System.Int32,System.Int32)">
-            <summary>
-            下一版本 使用API 通讯
-            </summary> 
-            <param name="dBSession">数据库驱动</param>
-            <param name="hostKey">当前主机标识</param>
-            <param name="heartInterval">心跳频率(单位:每次/N秒)</param>
-            <param name="loadInterval">定时获取任务的时间间隔（单位：秒）</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.GetObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.GetObject``1(System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key">唯一业务主键</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.SaveObject``1(``0)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobService.SaveObjects``1(``0[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="objs"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Job.JobServiceBase">
-            <summary>
-            对个多个任务进行管理
-            定时任务Job
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobServiceBase._container">
-            <summary>
-            本机定时任务驱动程序容器
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.Proxcy">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.HostId">
-            <summary>
-            当前主机标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.IsRegisterHost">
-            <summary>
-            当前主机是否已注册(Host != null)
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.HeartingInterval">
-            <summary>
-            心跳时间间隔，间隔N秒与控制端通讯一次。(单位:1次/N秒)
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.LoadInterval">
-            <summary>
-            job周期加载时间间隔(单位:秒)
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Job.JobServiceBase.NotifyFormatUrl" -->
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.Host">
-            <summary>
-            主机信息
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobServiceBase.DbSession">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobServiceBase._heartTimer">
-            <summary>
-            心跳定时器
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.#cctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Boolean,System.Object[])">
-            <summary>
-            新建IService 定时任务
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="methodName"></param>
-            <param name="manualEnabled">是否允许手动执行</param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob``1(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.Object[])">
-            <summary>
-            新建IService 定时任务
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="methodName"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewServiceJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Type,System.String,System.Boolean,System.Object[])">
-            <summary>
-            新建IService 定时任务
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="serviceType"></param>
-            <param name="methodName"></param> 
-            <param name="manualEnabled"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewApiJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.String,System.String,Rsd.Dudu.BizModel.JsonObject,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="url"></param>
-            <param name="method"></param>
-            <param name="formData"></param>
-            <param name="manualEnabled"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.ApiRequest(System.String,System.String,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="url"></param>
-            <param name="method"></param>
-            <param name="formData"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewSqlJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Core.IDBOperator,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="dBOperator"></param>
-            <param name="manualEnabled"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewJob(System.String,System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean,Rsd.Dudu.Job.RunHostType)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="title"></param>
-            <param name="group"></param>
-            <param name="schedule"></param>
-            <param name="codeType"></param>
-            <param name="code"></param>
-            <param name="manualEnabled"></param>
-            <param name="hostType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewDbJobOperator(Rsd.Dudu.Core.IDBSession,System.Type)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="dbSession"></param>
-            <param name="modelType">要操作的业务对象</param> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewDbJobOperator``1(Rsd.Dudu.Core.IDBSession)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbSession"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewDbJobOperator(System.Type)">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <param name="modelType"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.NewDbJobOperator``1">
-            <summary>
-            新建并持久化定时任务 
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Rsd.Dudu.Job.JobServiceBase.RegisterHost(System.String,System.Boolean)" -->
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateHostHeartingTimer">
-            <summary>
-            该主机心跳保持执行程序（更新数据库记录中的过期时间） 
-            </summary> 
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.CreateLoadJobsTimer">
-            <summary>
-            并创建JOB加载定时器,并立即加载需要在一个时间间隔内执行的Job
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SendJobNotify(System.String,Rsd.Dudu.Job.JobActionType)">
-            <summary>
-            通知Job所在主机 处理指定job
-            </summary>
-            <param name="key">Job唯一业务标识</param>
-            <param name="action"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.AllocateJobs">
-            <summary>
-             为所有未分配的job和主机失效的job 分配给有效主机,仅管理节点可执行
-            </summary> 
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.AllocateJob(System.String,System.String,System.Boolean)">
-            <summary>
-            将TimerJob 分配 制定JobHost 
-            </summary>
-            <param name="key"></param>
-            <param name="hostId"></param>
-            <param name="isFixed">是否绑定主机</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.AllocateJob(Rsd.Dudu.Job.ITimerJob,System.String,System.Boolean)">
-            <summary>
-             将TimerJob 分配 制定JobHost 
-            </summary>
-            <param name="job"></param>
-            <param name="hostId"></param>
-            <param name="isFixed">是否绑定主机</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(System.String)">
-            <summary>
-             尝试加载指定key的TimeJob,只有分配的主机为当前主机且下次执行时间在一个时间间隔的周期内才会被加载 
-            </summary>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.LoadJob(Rsd.Dudu.Job.ITimerJob)">
-            <summary>
-            立即加载Job并，启动驱动程序,只有分配的主机为当前主机才会被加载 ,否则发送加载通知
-            </summary>
-            <param name="job"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(System.String,System.String)">
-            <summary>
-            立即卸载任务驱动：1.因job状态进入sleep而卸载；2.因job状态进入close而卸载;3.因job被禁用而卸载;4.因Job接受到管理节点卸载通知而卸载
-            </summary>
-            <param name="key">唯一业务标识</param>
-            <param name="reason"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Job.ITimerJob,System.String)">
-            <summary>
-            立即卸载Job驱动 ,Status=Colse或 ,Status=Sleep时，需要将 Job驱动 从该JobHost 卸载，并释放资源
-            </summary>
-            <param name="job"></param>
-            <param name="reason"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobSchedule(System.String,Rsd.Dudu.Core.ITimerSchedule)">
-            <summary>
-            修改任务执行计划
-            </summary>
-            <param name="key"></param>
-            <param name="schedule"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SetJobRefers(System.String,System.String[])">
-            <summary>
-            仅在job.Status == TimerStatus.Created 时，可操作
-            </summary>
-            <param name="key"></param>
-            <param name="refers"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.ExecuteJob(System.String)">
-            <summary>
-            用于手动执行Job
-            </summary>
-            <param name="key">唯一业务标识</param> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.EnableJob(System.String)">
-            <summary>
-            将Job设置为可用，并尝试加载(1个小时之内即将执行的Job 将会被加载)
-            </summary>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.DisableJob(System.String)">
-            <summary>
-            将Job设置为不可用，并将其卸载
-            </summary>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.UnloadJob(Rsd.Dudu.Core.IDBSession,System.String,System.String)">
-            <summary>
-            立即卸载数据库定时器任务 
-            </summary>
-            <param name="targetDbSession">数据库定时器的目标数据库驱动</param>
-            <param name="key">唯一业务标识</param>
-            <param name="reason"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.EnableJob(Rsd.Dudu.Core.IDBSession,System.String)">
-            <summary>
-            将数据库定时器job设置为可用
-            </summary>
-            <param name="targetDbSession"></param>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.DisableJob(Rsd.Dudu.Core.IDBSession,System.String)">
-            <summary>
-            将数据库定时器job设置为不可用
-            </summary>
-            <param name="targetDbSession"></param>
-            <param name="key">唯一业务标识</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.AddJobLog(System.String,System.String,System.String,Rsd.Dudu.Job.TimerJobStatus,System.Int64)">
-            <summary>
-            添加Job日志
-            </summary>
-            <param name="jobKey"></param>
-            <param name="jobTitle"></param>
-            <param name="log"></param>
-            <param name="status"></param>
-            <param name="time"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.AddTimerLog(System.String,System.String,System.String,Rsd.Dudu.Core.TimerStatus,System.Int64)">
-            <summary>
-            添加Job日志
-            </summary>
-            <param name="jobKey"></param>
-            <param name="jobTitle"></param>
-            <param name="log"></param>
-            <param name="status"></param>
-            <param name="time"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            持久化对象获取
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.GetObject``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            持久化对象获取
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.GetObject``1(System.String)">
-            <summary>
-            持久化对象获取
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="key"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SaveObject``1(``0)">
-            <summary>
-            持久化对象存储
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.SaveObjects``1(``0[])">
-            <summary>
-            持久化对象存储
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="objs"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.GenerateCSCode(System.String,System.String,System.Type,System.String,System.Object[])">
-            <summary>
-            生成C#代码
-            </summary>
-            <param name="nameSpace"></param>
-            <param name="className"></param>
-            <param name="serviceType"></param>
-            <param name="methodName"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.GetMonitorInfo">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobServiceBase.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="drop"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Job.JobActionType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobActionType.Load">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.JobActionType.UnLoad">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.JobProvider">
-            <summary>
-            对单个任务进行管理
-            接受ITimerJob对象，作为单个定时任务的封装对象
-            提供给JobService作为job驱动程序使用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.JobProvider.Job">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.#ctor(Rsd.Dudu.Job.ITimerJob,System.Boolean)">
-            <summary>
-            接受ITimerJob对象，作为单个定时任务的封装对象
-            提供给JobService作为job驱动程序使用
-            </summary>
-            <param name="job"></param>
-            <param name="autoReset"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Run(System.String[])">
-            <summary>
-            定时任务执行程序 
-            </summary>
-            <param name="referList">引用资源</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.Execute">
-            <summary>
-             提供给外部访问 手动执行定时任务(仅对可手动执行任务有效)
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.AddJobLog(System.String)">
-            <summary>
-            添加JOB日志 该类中使用AddJobLog
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.JobProvider.AddTimerLog(System.String)">
-            <summary>
-            添加定时器日志 重写父类 用于持久化
-            </summary> 
-            <param name="log"></param> 
-        </member>
-        <member name="T:Rsd.Dudu.Job.TimerJobHostModel">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostId">
-            <summary>
-            主机标识
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:Rsd.Dudu.Job.TimerJobHostModel.NotifyFormatUrl" -->
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.IsManager">
-            <summary>
-            是管理节点
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.ExpireTime">
-            <summary>
-            主机失效时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.LastHeartTime">
-            <summary>
-            最后一次心跳时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.LoadedWeight">
-            <summary>
-            负载：已分配的job的权重
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.Enabled">
-            <summary>
-            可用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobHostModel.HostIP">
-            <summary>
-            主机IP
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobHostModel.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.TimerJobModel">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Title">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Group">
-            <summary>
-            分组
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Disabled">
-            <summary>
-            已禁用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.StartTime">
-            <summary>
-            有效期起,job执行时间仅在有效期内 才可以执行
-            如果Job在指定时间未能执行，可在有效期内 重新被执行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.EndTime">
-            <summary>
-            有效期止,job执行时间仅在有效期内 才可以执行
-            如果Job在指定时间未能执行，可在有效期内 重新被执行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Status">
-            <summary>
-            定时器状态：表示定时器状态。
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.StatusChangeTime">
-            <summary>
-            最后更新时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.IsInterval">
-            <summary>
-            是否时固定时间间隔定时器 ,true 表示 Interval 值有效
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.IsOnce">
-            <summary>
-            一次性执行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Interval">
-            <summary>
-            固定间隔时间 单位：毫秒
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Second">
-             <summary>
-            执行时间 秒，0表示每秒
-             </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Minute">
-            <summary>
-            执行时间 分，0表示每分钟
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Hour">
-            <summary>
-            执行时间 小时，0表示每小时
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Day">
-            <summary>
-            IsWeek 等于ture 时表示星期几（0表示周期日），否则 表示一个月内的自然天
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.IsWeek">
-            <summary>
-            是否按星期为天的周期，true 表示Day的值为星期几（0表示周期日）
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Month">
-            <summary>
-            执行时间 月，0表示每月
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Year">
-            <summary>
-            执行时间 年，0表示每年
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.CodeType">
-            <summary>
-            代码
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Code">
-            <summary>
-            执行代码  字符串压缩后内容
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Refers">
-            <summary>
-            其他引用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.ReferString">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Count">
-            <summary>
-            已执行次数
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.LastResult">
-            <summary>
-            最后一次运行结果
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.LastExeTime">
-            <summary>
-            最后一次执行时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.ResultStatus">
-            <summary>
-            成功标志
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.ManualEnabled">
-            <summary>
-            该Job允许手动触发执行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.HostExpireTime">
-            <summary>
-            主机分配失效时间与主机心态有效期一致，主机心跳时，同步更新分配失效时间
-            大于当前时间 表示已失效,需要重新分配
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Weight">
-            <summary>
-            权重 1秒中执行一次的权重为：1000
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostId">
-            <summary>
-            执行主机标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.IsFixed">
-            <summary>
-            绑定执行主机
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostType">
-            <summary>
-            执行服务器类型
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.RunHostIP">
-            <summary>
-            执行服务器IP
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.Description">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobModel.NextTime">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.#ctor(System.String,System.String,System.DateTime,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="schedule"></param>
-            <param name="type"></param>
-            <param name="code"></param>
-            <param name="manualEnabled"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.#ctor(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,Rsd.Dudu.Job.JobCodeType,System.String,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="schedule"></param>
-            <param name="type"></param>
-            <param name="code"></param>
-            <param name="manualEnabled"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetSchedule(Rsd.Dudu.Core.ITimerSchedule)">
-            <summary>
-            
-            </summary>
-            <param name="schedule"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.BindHost(System.String,System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="hostId"></param>
-            <param name="isFixed"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetLoaded(System.Int64)">
-            <summary>
-            
-            </summary>
-            <param name="hostExpireAt"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetRunning(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="hostIp"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetSleep(System.String)">
-            <summary>
-            因距离下个执行时太长而进入Sleep状态
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetCompleted(System.String,Rsd.Dudu.Job.ResultStatus)">
-            <summary>
-            
-            </summary>
-            <param name="result"></param>
-            <param name="status"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.SetClosed(System.String)">
-            <summary>
-            1.因到期卸载；2.因距离下个执行时太长而卸载
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.AddJobLog(System.String)">
-            <summary>
-            添加JOB日志 该类中使用AddJobLog
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetWeight">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTimeList(System.Int64,System.Int32)">
-            <summary>
-            获取有效时间内的最近可执行时间列表
-            </summary>
-            <param name="current">当前时间</param>
-            <param name="count"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTime(System.Int64)">
-            <summary>
-             获取有效时间内的下一次执行具体时间(13位时间戳)
-            </summary>
-            <param name="current"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.GetNextTime">
-            <summary>
-            获取有效时间内的下一次执行时间(13位时间戳)
-            </summary> 
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobModel.ToString">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Job.TimerJobLogModel">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.LogTime">
-            <summary>
-            日志时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.JobId">
-            <summary>
-            任务ID
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.JobTitle">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Type">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.HostId">
-            <summary>
-            主机标识
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.HostIp">
-            <summary>
-            主机IP
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Status">
-            <summary>
-            job或驱动 当时状态
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerJobLogModel.Log">
-            <summary>
-            日志内容
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerJobLogModel.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Rsd.Dudu.Job.TimerProvider">
-            <summary>
-            单个定时任务处理程序
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Proxcy">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.OnAfterClosed">
-            <summary>
-            在定时器时钟后关闭后发生 
-            </summary>
-        </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.OnBeforeRun">
-            <summary>
-            每次任务执行完成后发生
-            </summary>
-        </member>
-        <member name="E:Rsd.Dudu.Job.TimerProvider.OnAfterRun">
-            <summary>
-            每次任务执行完成后发生
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Key">
-            <summary>
-            
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Title">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Refers">
-            <summary>
-            其他引用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.ScheduleDes">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.AutoReset">
-            <summary>
-            true 一直执行，false 只执行一次
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.MaxCount">
-            <summary>
-            允许同时执行的最大线程数量，默认值 0表示不限制,必须联合使用 BeginRun方法  和 EndRun方法一起使用
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.RunnerCount">
-            <summary>
-            当前线程数
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.StartTime">
-            <summary>
-            有效期 起始时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.EndTime">
-            <summary>
-            有效期 结束时间
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Schedule">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Status">
-            <summary>
-             定时器状态：表示定时器经历过的状态。可位运算  
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Job.TimerProvider.Weight">
-            <summary>
-            执行资源损耗权重
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerProvider.timer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerProvider._providerName">
-            <summary>
-            驱动程序名称
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
-            <summary>
-            定时计划
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="schedule"></param>
-            <param name="autoReset"></param>
-            <param name="refers">执行任务时需要的其他引用资源</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Finalize">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Dispose">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int64,System.String,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="interval">时间间隔，单位：毫秒</param>
-            <param name="title"></param>
-            <param name="refers">执行任务时需要的其他引用资源</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.DateTime,System.String[])">
-            <summary>
-            定时执行一次
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="time"></param> 
-            <param name="refers">执行任务时需要的其他引用资源</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="second">秒</param>
-            <param name="minute">分钟</param>
-            <param name="hour">小时</param>
-            <param name="autoReset">是否周期执行</param>
-            <param name="refers">执行任务时需要的其他引用资源</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="second">秒</param>
-            <param name="minute">分钟</param>
-            <param name="hour">小时</param>
-            <param name="day">天</param>
-            <param name="month">月</param>
-            <param name="year">年</param>
-            <param name="autoReset">是否周期执行</param>
-            <param name="refers">执行任务时需要的其他引用资源</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="key"></param>
-            <param name="title"></param>
-            <param name="second">秒</param>
-            <param name="minute">分钟</param>
-            <param name="hour">小时</param>
-            <param name="day">星期</param>
-            <param name="month">月</param>
-            <param name="year">年</param>
-            <param name="autoReset">是否周期执行</param>
-            <param name="refers">执行任务时需要的其他引用资源</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Start(System.Boolean)">
-            <summary>
-            启动驱动定时器：重新计算计数器时间间隔并启动
-            </summary>
-            <param name="atOnce">是否启动时立即执行一次</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Stop(System.String)">
-            <summary>
-            暂时停止驱动定时器
-            </summary>
-            <param name="reason"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Close(System.String)">
-            <summary>
-            关闭驱动定时器并释放资源(一般由程序操作)
-            </summary>
-            <param name="reason">原因</param>
-        </member>
-        <member name="F:Rsd.Dudu.Job.TimerProvider._runnerCount">
-            <summary>
-            线程计数器
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.BeginRun(System.Object)">
-            <summary>
-            线程计数器加1 该方法只能在最终run方法中引用，其他地方使用会导致计数不准
-            </summary>
-            <param name="args">执行参数</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.EndRun(Rsd.Dudu.Core.TimerResult)">
-            <summary>
-             线程计数器减1 该方法只能在最终run方法中引用，其他地方使用会导致计数不准
-            </summary>
-            <param name="result">执行结果</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.t_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="source"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.InvokeRun(System.String[])">
-            <summary>
-            根据执行资源限制条件， 控制线程执行
-            </summary>
-            <param name="referList">执行时需要的其他引用</param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteCSharpCode(System.String,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="dllList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteBatCode(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteShellCode(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteSqlCode(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecutePythonCode(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteJavaScriptCode(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.Run(System.String[])">
-            <summary>
-            线程中执行
-            </summary>
-            <param name="referList">引用资源</param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.GetScheduleList(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="count"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.AddTimerLog(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="log"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Job.TimerProvider.GetMonitorInfo">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:Rsd.Dudu.Ladder.ApiDocBase">
             <summary>
             
@@ -17403,16 +15564,6 @@
             Excel创建失败。\r\n{0}。
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.ErrorCodes.S6000">
-            <summary>
-            JobProvider写日志失败:{0}。
-            </summary>
-        </member>
-        <member name="F:Rsd.Dudu.ErrorCodes.S6001">
-            <summary>
-            JobProvider发送通知失败:{0}。
-            </summary>
-        </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S8000">
             <summary>
             获取服务器信息，获取本机IP失败，{0}
@@ -19438,6 +17589,295 @@
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ErrorCodesContainer.GetMonitorInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Job.TimerProvider">
+            <summary>
+            单个定时任务处理程序
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Job.TimerProvider.OnAfterClosed">
+            <summary>
+            在定时器时钟后关闭后发生 
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Job.TimerProvider.OnBeforeRun">
+            <summary>
+            每次任务执行完成后发生
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.Job.TimerProvider.OnAfterRun">
+            <summary>
+            每次任务执行完成后发生
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Key">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Refers">
+            <summary>
+            其他引用
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.ScheduleDes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.AutoReset">
+            <summary>
+            true 一直执行，false 只执行一次
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.MaxCount">
+            <summary>
+            允许同时执行的最大线程数量，默认值 0表示不限制,必须联合使用 BeginRun方法  和 EndRun方法一起使用
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.RunnerCount">
+            <summary>
+            当前线程数
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.StartTime">
+            <summary>
+            有效期 起始时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.EndTime">
+            <summary>
+            有效期 结束时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Schedule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Status">
+            <summary>
+             定时器状态：表示定时器经历过的状态。可位运算  
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Job.TimerProvider.Weight">
+            <summary>
+            执行资源损耗权重
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerProvider.timer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerProvider._providerName">
+            <summary>
+            驱动程序名称
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,Rsd.Dudu.Core.ITimerSchedule,System.Boolean,System.String[])">
+            <summary>
+            定时计划
+            </summary>
+            <param name="key"></param>
+            <param name="title"></param>
+            <param name="schedule"></param>
+            <param name="autoReset"></param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.Int64,System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="interval">时间间隔，单位：毫秒</param>
+            <param name="title"></param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.DateTime,System.String[])">
+            <summary>
+            定时执行一次
+            </summary>
+            <param name="key"></param>
+            <param name="title"></param>
+            <param name="time"></param> 
+            <param name="refers">执行任务时需要的其他引用资源</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="title"></param>
+            <param name="second">秒</param>
+            <param name="minute">分钟</param>
+            <param name="hour">小时</param>
+            <param name="autoReset">是否周期执行</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="title"></param>
+            <param name="second">秒</param>
+            <param name="minute">分钟</param>
+            <param name="hour">小时</param>
+            <param name="day">天</param>
+            <param name="month">月</param>
+            <param name="year">年</param>
+            <param name="autoReset">是否周期执行</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32,System.DayOfWeek,System.Int32,System.Int32,System.Boolean,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="title"></param>
+            <param name="second">秒</param>
+            <param name="minute">分钟</param>
+            <param name="hour">小时</param>
+            <param name="day">星期</param>
+            <param name="month">月</param>
+            <param name="year">年</param>
+            <param name="autoReset">是否周期执行</param>
+            <param name="refers">执行任务时需要的其他引用资源</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Start(System.Boolean)">
+            <summary>
+            启动驱动定时器：重新计算计数器时间间隔并启动
+            </summary>
+            <param name="atOnce">是否启动时立即执行一次</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Stop(System.String)">
+            <summary>
+            暂时停止驱动定时器
+            </summary>
+            <param name="reason"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Close(System.String)">
+            <summary>
+            关闭驱动定时器并释放资源(一般由程序操作)
+            </summary>
+            <param name="reason">原因</param>
+        </member>
+        <member name="F:Rsd.Dudu.Job.TimerProvider._runnerCount">
+            <summary>
+            线程计数器
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.BeginRun(System.Object)">
+            <summary>
+            线程计数器加1 该方法只能在最终run方法中引用，其他地方使用会导致计数不准
+            </summary>
+            <param name="args">执行参数</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.EndRun(Rsd.Dudu.Core.TimerResult)">
+            <summary>
+             线程计数器减1 该方法只能在最终run方法中引用，其他地方使用会导致计数不准
+            </summary>
+            <param name="result">执行结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.t_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.InvokeRun(System.String[])">
+            <summary>
+            根据执行资源限制条件， 控制线程执行
+            </summary>
+            <param name="referList">执行时需要的其他引用</param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteCSharpCode(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="dllList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteBatCode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteShellCode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteSqlCode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecutePythonCode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.ExecuteJavaScriptCode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.Run(System.String[])">
+            <summary>
+            线程中执行
+            </summary>
+            <param name="referList">引用资源</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.GetScheduleList(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.AddTimerLog(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Job.TimerProvider.GetMonitorInfo">
             <summary>
             
             </summary>

@@ -645,86 +645,172 @@
             <param name="url"></param>
             <param name="method"></param>
         </member>
+        <member name="T:Rsd.Dudu.Workflow.Controllers.WfController">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Workflow.ApiDispatcher">
             <summary>
             API 调度
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Workflow.WfDataStorage">
+        <member name="T:Rsd.Dudu.Workflow.Config">
             <summary>
-            
+            工作流组件化
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Workflow.WfDataStorage.DBSession">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.WfDataStorage.Proxcy">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.#cctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            初始化数据库表
-            </summary>
-            <param name="_dbSession"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="_dbSession"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.#ctor(Rsd.Dudu.Core.IDBSession)">
-            <summary>
-            
-            </summary>
-            <param name="_dbSession"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.GetObject``1(System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.GetObjects``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="expression"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.WfDataStorage.GetMonitorInfo">
+        <member name="M:Rsd.Dudu.Workflow.Config.GetConfig">
             <summary>
             
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Config.GetConfig(Rsd.Dudu.Core.IDBSession,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dbSession"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Core.IWfDispatcher">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.IsAction">
+            <summary>
+            当前事件正以Action方式执行
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.WfEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.Entity">
+            <summary>
+            工作流业务实体数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.EngineState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.SelfEngine">
+            <summary>
+            工作流自身引擎
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Load(System.Object)">
+            <summary>
+            加载工作流业务数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.End">
+            <summary>
+            流程正常结束
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Hangup">
+            <summary>
+            挂起流程
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Start">
+            <summary>
+            启动工作流，开始监听事件
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.ProcessBegin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.ProcessEnd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Stop">
+            <summary>
+            流程中止
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.DoAction(System.String,System.Object[])">
+            <summary>
+            执行后不主动更新状态
+            </summary>
+            <param name="actionName"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.UpdateState">
+            <summary>
+            更新状态
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.InvokeEvent(System.String,System.Object[])">
+            <summary>
+            执行触发事件
+            </summary>
+            <param name="eventCode"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.GetEntityKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.Core.IWfDispatcher`1">
+            <summary>
+            工作流调度器
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.Entity">
+            <summary>
+            工作流业务实体数据
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.WfBizEngine">
+            <summary>
+            业务工作流引擎
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.Load(`0)">
+            <summary>
+            加载工作流业务数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{`0})">
+            <summary>
+            
+            </summary>
+            <param name="eventCode"></param>
+            <param name="handler"></param>
         </member>
         <member name="T:Rsd.Dudu.Workflow.Engine.WfStateDbLoggerService">
             <summary>
@@ -1459,168 +1545,6 @@
             </summary>
             <param name="name"></param>
             <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Workflow.Core.IWfDispatcher">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.IsAction">
-            <summary>
-            当前事件正以Action方式执行
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.Key">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.WfEntity">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.Entity">
-            <summary>
-            工作流业务实体数据
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.State">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.EngineState">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher.SelfEngine">
-            <summary>
-            工作流自身引擎
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Load(System.Object)">
-            <summary>
-            加载工作流业务数据
-            </summary>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.End">
-            <summary>
-            流程正常结束
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Hangup">
-            <summary>
-            挂起流程
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Start">
-            <summary>
-            启动工作流，开始监听事件
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.ProcessBegin">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.ProcessEnd">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.Stop">
-            <summary>
-            流程中止
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.DoAction(System.String,System.Object[])">
-            <summary>
-            执行后不主动更新状态
-            </summary>
-            <param name="actionName"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.UpdateState">
-            <summary>
-            更新状态
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.InvokeEvent(System.String,System.Object[])">
-            <summary>
-            执行触发事件
-            </summary>
-            <param name="eventCode"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{System.Object})">
-            <summary>
-            
-            </summary>
-            <param name="eventCode"></param>
-            <param name="handler"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher.GetEntityKey">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Workflow.Core.IWfDispatcher`1">
-            <summary>
-            工作流调度器
-            </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.Entity">
-            <summary>
-            工作流业务实体数据
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.WfBizEngine">
-            <summary>
-            业务工作流引擎
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.Load(`0)">
-            <summary>
-            加载工作流业务数据
-            </summary>
-            <param name="data"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDispatcher`1.InvokeEventHandler(System.String,Rsd.Dudu.Workflow.Action.EventActionHandler{`0})">
-            <summary>
-            
-            </summary>
-            <param name="eventCode"></param>
-            <param name="handler"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Workflow.Core.IWfDataStorage">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Workflow.Core.IWfDataStorage.DBSession">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDataStorage.InitialTable(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Workflow.Core.IWfDataStorage.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="drop"></param>
         </member>
         <member name="T:Rsd.Dudu.Workflow.Model.WfModelBase">
             <summary>
@@ -2735,8 +2659,7 @@
         <member name="M:Rsd.Dudu.Workflow.WfDispatcher.AddEngine(Rsd.Dudu.Workflow.Core.IWfDispatcher)">
             <summary>
             
-            </summary>
-            <param name="key"></param>
+            </summary> 
             <param name="dispatcher"></param>
         </member>
         <member name="M:Rsd.Dudu.Workflow.WfDispatcher.RemoveEngine(System.String)">
@@ -3878,9 +3801,14 @@
             
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Workflow.WfSchedule">
+        <member name="T:Rsd.Dudu.Workflow.WfHandler">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:Rsd.Dudu.Workflow.WfSchedule">
+            <summary>
+            定时任务调度计划
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Workflow.WfSchedule.#ctor(System.Int64)">
