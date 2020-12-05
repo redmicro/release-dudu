@@ -1141,6 +1141,11 @@
             <param name="node"></param>
             <param name="textMemberName"></param>
         </member>
+        <member name="F:Rsd.Dudu.Win.ErrorCodes.Undefined">
+            <summary>
+            方法({0}),发生异常:{1}。
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Win.FormDataView.#ctor">
             <summary>
             

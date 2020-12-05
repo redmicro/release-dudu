@@ -4997,25 +4997,25 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Debug(System.String[])">
             <summary>
-            
+            记录调试日志
             </summary>
             <param name="msgList"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Info(System.String[])">
             <summary>
-            
+            记录普通日志
             </summary>
             <param name="msgList"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Warn(System.String[])">
             <summary>
-            
+            记录警告日志
             </summary>
             <param name="msgList"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Error``1(``0,System.String[])">
             <summary>
-            
+            记录错误日志
             </summary>
             <typeparam name="T"></typeparam>
             <param name="code"></param>
@@ -5031,7 +5031,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.HttpPost(System.String,System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32,System.String,System.Text.Encoding,System.String)">
             <summary>
-            
+            数据提交
             </summary>
             <param name="url"></param>
             <param name="data"></param> 
@@ -5071,7 +5071,7 @@
             带证书 提交 xml 或form表单数据
             </summary>
             <param name="url"></param>
-            <param name="data"></param>
+            <param name="data">xml 或form表单数据</param>
             <param name="certificate"></param>
             <param name="timeout">超时时间单位：秒</param>
             <param name="contentType"></param> 
@@ -5093,7 +5093,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.HttpGet(System.String,System.Int32,System.String,System.Text.Encoding,System.String)">
             <summary>
-            xml 或form表单数据
+             
             </summary>
             <param name="url"></param>
             <param name="timeout">超时时间单位：秒</param>
@@ -5144,11 +5144,11 @@
             </summary> 
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.StreamToBase64(System.IO.Stream)">
-            <summary>
+             <summary>
             
-            </summary>
-            <param name="stream"></param>
-            <returns></returns>
+             </summary>
+             <param name="stream"></param>
+             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.CopyStream(System.IO.Stream,System.IO.Stream)">
             <summary>
@@ -9080,7 +9080,12 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="M:Rsd.Dudu.Exception.MyException`1.#ctor(`0,System.Object[])">
+        <member name="P:Rsd.Dudu.Exception.MyException`1.Args">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Exception.MyException`1.#ctor(`0)">
             <summary>
             
             </summary>
@@ -9092,6 +9097,27 @@
             
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Exception.MyException`1.Submit(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Exception.MyException`1.Submit(Rsd.Dudu.Exception.OperationType,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="opType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Exception.MyException`1.Submit(Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String[])">
+            <summary>
+            提交错误 并记录 错误日志
+            </summary>
+            <param name="code"></param>
+            <param name="opType"></param>
+            <param name="sourceType"></param>
+            <param name="args"></param>
         </member>
         <member name="T:Rsd.Dudu.Exception.ExceptionHandleResult">
             <summary>
@@ -9227,7 +9253,7 @@
         </member>
         <member name="T:Rsd.Dudu.Exception.OperationType">
             <summary>
-             异常处理类型
+             异常处理方式
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Exception.OperationType.Throw">
@@ -9281,16 +9307,6 @@
             <summary>
             
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.IExceptionService.Submit``1(``0,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.Object[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="code"></param>
-            <param name="type"></param>
-            <param name="sourceType"></param>
-            <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Exception.IExceptionService.Submit(System.String,System.Int32,System.Exception,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
@@ -9363,16 +9379,6 @@
             <summary>
             构造函数
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.ExceptionService.Submit``1(``0,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.Object[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="code"></param>
-            <param name="type"></param>
-            <param name="sourceType"></param>
-            <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Exception.ExceptionService.Submit(System.String,System.Int32,System.Exception,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
@@ -15599,36 +15605,34 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.GetText(Rsd.Dudu.ErrorCodes,System.String[])">
+        <member name="M:Rsd.Dudu.ExtendMethods.Submit``1(System.Exception,``0,System.String[])">
             <summary>
             
             </summary>
-            <param name="code"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.SubmitError(Rsd.Dudu.ErrorCodes,System.String[])">
-            <summary>
-            
-            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="exception"></param>
             <param name="code"></param>
             <param name="args"></param>
         </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.SubmitError(Rsd.Dudu.ErrorCodes,Rsd.Dudu.Exception.OperationType,System.String[])">
+        <member name="M:Rsd.Dudu.ExtendMethods.Submit``1(System.Exception,``0,Rsd.Dudu.Exception.OperationType,System.String[])">
             <summary>
             
             </summary>
+            <typeparam name="T"></typeparam>
+            <param name="exception"></param>
             <param name="code"></param>
             <param name="opType"></param>
             <param name="args"></param>
         </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.SubmitError(Rsd.Dudu.ErrorCodes,Rsd.Dudu.Log.LogSourceType,Rsd.Dudu.Exception.OperationType,System.String[])">
+        <member name="M:Rsd.Dudu.ExtendMethods.Submit``1(System.Exception,``0,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String[])">
             <summary>
             
             </summary>
+            <typeparam name="T"></typeparam>
+            <param name="exception"></param>
             <param name="code"></param>
+            <param name="opType"></param>
             <param name="logSource"></param>
-            <param name="opType"></param>
             <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.ExtendMethods.GetReference(System.Object,System.String@,System.String@,System.Int32)">

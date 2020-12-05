@@ -820,6 +820,39 @@
             </summary>
             <param name="data"></param>
         </member>
+        <member name="T:Rsd.Dudu.Web.Core.IApiLogService">
+            <summary>
+            API 调用日志
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.IApiLogService.BeginCapture(System.String)">
+            <summary>
+            线程独立
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.IApiLogService.CancelCapture(System.String)">
+            <summary>
+            线程独立
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.IApiLogService.CommitCapture(System.Int32,System.String)">
+            <summary>
+            线程独立 提交所有捕获的日志
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.IApiLogService.WebApi(System.String,System.String,System.String,System.DateTime,System.DateTime,System.String,System.String,Rsd.Dudu.Web.Core.RequestClientInfo)">
+            <summary>
+            记录日志
+            </summary>
+            <param name="appId"></param>
+            <param name="user"></param>
+            <param name="bizFlag"></param>
+            <param name="requestTime"></param>
+            <param name="responeTime"></param>
+            <param name="reqData"></param>
+            <param name="repData"></param>
+            <param name="info"></param>
+        </member>
         <member name="T:Rsd.Dudu.Web.Core.IResponseResult">
             <summary>
             
@@ -3039,15 +3072,23 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadFile(System.Web.HttpResponse,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseFile(System.Web.HttpResponse,System.String,System.String)">
             <summary>
-            完整路径
+            
             </summary>
             <param name="response"></param>
-            <param name="filePath"></param>
+            <param name="filePath">完整路径</param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadFileFromMongo(System.Web.HttpResponse,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseFile(System.Web.HttpResponse,System.IO.Stream,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="response"></param>
+            <param name="stream"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseFileFromMongo(System.Web.HttpResponse,System.String,System.String)">
             <summary>
             
             </summary>
@@ -3055,7 +3096,7 @@
             <param name="fileId"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.DownloadExcel(System.Web.HttpResponse,System.String,Rsd.Dudu.Helpers.ExcelSheet[])">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseExcel(System.Web.HttpResponse,System.String,Rsd.Dudu.Helpers.ExcelSheet[])">
             <summary>
             
             </summary>
@@ -3212,53 +3253,6 @@
             <summary>
             
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.GetText(Rsd.Dudu.Web.ErrorCodes,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.SubmitInfo(Rsd.Dudu.Web.ErrorCodes,System.String[])">
-            <summary>
-            提交错误 并记录 操作日志
-            </summary>
-            <param name="code"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.SubmitWarn(Rsd.Dudu.Web.ErrorCodes,Rsd.Dudu.Log.LogSourceType,System.String[])">
-            <summary>
-            提交错误 并记录 警告日志
-            </summary>
-            <param name="code"></param>
-            <param name="sourceType"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.SubmitError(Rsd.Dudu.Web.ErrorCodes,System.String[])">
-            <summary>
-            提交错误 并记录 错误日志
-            </summary>
-            <param name="code"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.SubmitError(Rsd.Dudu.Web.ErrorCodes,Rsd.Dudu.Exception.OperationType,System.String[])">
-            <summary>
-            提交错误 并记录 错误日志
-            </summary>
-            <param name="code"></param>
-            <param name="type"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.SubmitError(Rsd.Dudu.Web.ErrorCodes,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String[])">
-            <summary>
-            提交错误 并记录 错误日志
-            </summary>
-            <param name="code"></param>
-            <param name="type"></param>
-            <param name="sourceType"></param>
-            <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Web.ExtendMethods.GetService``1(System.Web.Services.WebService,``0,System.String)">
             <summary>
