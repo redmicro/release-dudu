@@ -2679,6 +2679,11 @@
             <param name="defaultValue"></param>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Core.IBizService">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Core.TimerResult">
             <summary>
             
@@ -4911,7 +4916,7 @@
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.Token">
             <summary>
-            服务令牌
+            服务令牌 用于验证 服务的作用范围（全局，会话，线程）
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.ProjectId">
@@ -4926,7 +4931,7 @@
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.SessionId">
             <summary>
-            
+            仅有 服务策略为 Session时，该值有效,在服务内获取其他服务时，会被传递到 被获取的服务中
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.IsDebug">
@@ -9061,10 +9066,29 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Exception.MyException.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Exception.MyException.Message">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Exception.MyException.#ctor(System.String,System.String)">
             <summary>
             
             </summary>
+            <param name="code"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Exception.MyException.Submit(Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="opType"></param>
+            <param name="sourceType"></param>
             <param name="code"></param>
             <param name="message"></param>
         </member>
@@ -9080,6 +9104,11 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
+        <member name="P:Rsd.Dudu.Exception.MyException`1.Code">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Exception.MyException`1.Args">
             <summary>
             
@@ -9090,7 +9119,6 @@
             
             </summary>
             <param name="code"></param>
-            <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Exception.MyException`1.ToString">
             <summary>
@@ -9114,7 +9142,6 @@
             <summary>
             提交错误 并记录 错误日志
             </summary>
-            <param name="code"></param>
             <param name="opType"></param>
             <param name="sourceType"></param>
             <param name="args"></param>
@@ -9210,26 +9237,6 @@
             <param name="title"></param>
             <param name="message"></param>
             <param name="type"></param>
-            <param name="sourceType"></param>
-        </member>
-        <member name="T:Rsd.Dudu.Exception.ExceptionObject`1">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.ExceptionObject`1.#ctor(`0,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.ExceptionObject`1.SubmitError(Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
-            <summary>
-            提交错误信息
-            </summary>
-            <param name="operationType"></param>
             <param name="sourceType"></param>
         </member>
         <member name="T:Rsd.Dudu.Exception.IExceptionHandleService">
@@ -9372,7 +9379,7 @@
         </member>
         <member name="P:Rsd.Dudu.Exception.ExceptionService.Proxcy">
             <summary>
-            
+            Session 级管理
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Exception.ExceptionService.#ctor">
@@ -19227,9 +19234,29 @@
                       在Procxy值为Session时，根据sessionId返回直接返回实例的副本.
             </summary>
         </member>
-        <member name="E:Rsd.Dudu.ServicesContainer.AfterAddService">
+        <member name="F:Rsd.Dudu.ServicesContainer._projectId">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.ProjectId">
+            <summary>
+            项目ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.ExpireAt">
+            <summary>
+            授权到期时间
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.RegistMessage">
+            <summary>
+            注册信息
+            </summary>
+        </member>
+        <member name="E:Rsd.Dudu.ServicesContainer.AfterAddService">
+            <summary>
+            新服务注册后事件
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ServicesContainer._globalEntryContainer">
@@ -19239,30 +19266,10 @@
         </member>
         <member name="F:Rsd.Dudu.ServicesContainer._global">
             <summary>
-            存储服务信息关系列表
+            全局 服务存储信息关系列表
             </summary>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.#cctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.ServicesContainer.ProjectId">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.ServicesContainer.ExpireAt">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.ServicesContainer.RegistMessage">
-            <summary>
-            注册信息
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.ServicesContainer.User">
             <summary>
             
             </summary>
@@ -19283,81 +19290,6 @@
             <summary>
             销毁[线程共享级]服务会话容器，并提交日志：CommitCapture
             </summary>
-        </member>
-        <member name="P:Rsd.Dudu.ServicesContainer.SessionId">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.#ctor(System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="sessionid"></param>
-            <param name="user"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Add(Rsd.Dudu.Core.IService)">
-            <summary>
-            添加该会话私有服务
-            </summary>
-            <param name="service"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Remove(System.Type)">
-            <summary>
-            移除会话下服务实体
-            </summary>
-            <param name="serviceType"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Clear">
-            <summary>
-            清楚会话内所有服务
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Get``1">
-            <summary>
-            获取服务
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Get(System.Type)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Get(System.String)">
-            <summary>
-            获取会话内服务实体
-            </summary>
-            <param name="serviceId"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.Exist(System.Type)">
-            <summary>
-            判断服务实体是否存在
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.AddServiceEntry(Rsd.Dudu.Core.IService)">
-            <summary>
-            
-            </summary>
-            <param name="service"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.AddServiceMapping(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="name"></param>
-            <param name="entryId"></param>
-            <param name="serviceId"></param>
-            <param name="isInterface"></param>
-            <param name="proxcy"></param>
-            <param name="sessionid"></param>
-            <param name="user"></param>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.AddGlobalServiceEntry(Rsd.Dudu.Core.IService)">
             <summary>
@@ -19398,7 +19330,7 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetService``1(``0)">
             <summary>
-            获取单例服务
+            获取服务 仅服务管理策略为单例 时，可以被获取到
             </summary>
             <typeparam name="T"></typeparam>
             <param name="defaultValue"></param>
@@ -19410,16 +19342,16 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="defaultValue"></param>
-            <param name="sessionId"></param>
+            <param name="sessionId">Session</param>
             <param name="user"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.Type,System.String,System.String)">
             <summary>
-            获取服务，优先获取Session中的服务
+            获取服务，优先获取Session中的服务，只有服务管理策略为会话时，服务才会被采用会话管理
             </summary>
             <param name="service"></param>
-            <param name="sessionId"></param>
+            <param name="sessionId">Session</param>
             <param name="user"></param>
             <returns></returns>
         </member>
@@ -19515,6 +19447,96 @@
             获得服务监视数据
             </summary>
             <returns></returns>
+        </member>
+        <member name="F:Rsd.Dudu.ServicesContainer._sessionEntryContainer">
+            <summary>
+            会话级 服务存储
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ServicesContainer._session">
+            <summary>
+            会话级 服务管理
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.SessionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sessionid">会话ID</param>
+            <param name="user"></param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Add(Rsd.Dudu.Core.IService)">
+            <summary>
+            添加该会话私有服务
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Remove(System.Type)">
+            <summary>
+            移除会话下服务实体
+            </summary>
+            <param name="serviceType"></param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Clear">
+            <summary>
+            清楚会话内所有服务
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Get``1">
+            <summary>
+            获取服务
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Get(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Get(System.String)">
+            <summary>
+            获取会话内服务实体
+            </summary>
+            <param name="serviceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.Exist(System.Type)">
+            <summary>
+            判断服务实体是否存在
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.AddServiceEntry(Rsd.Dudu.Core.IService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.AddServiceMapping(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="entryId"></param>
+            <param name="serviceId"></param>
+            <param name="isInterface"></param>
+            <param name="proxcy"></param>
+            <param name="sessionid"></param>
+            <param name="user"></param>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.Dispose">
             <summary>

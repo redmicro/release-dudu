@@ -423,6 +423,18 @@
             </summary>
             <param name="context"></param>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.Application_BeginRequest(System.Object,System.EventArgs)">
+            
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.Application_EndRequest(System.Object,System.EventArgs)">
+            
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.Application_RequestCompleted(System.Object,System.EventArgs)">
+            
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.Application_Error(System.Object,System.EventArgs)">
+            
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.BeginBusying(System.String)">
             <summary>
             当前线程独占系统使用，阻止其他请求访问
@@ -1155,6 +1167,11 @@
             错误代码结束值
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Core.PluginConfig.IsReady">
+            <summary>
+            已经初始化完成
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Core.PluginConfig.Controllers">
             <summary>
             
@@ -1194,10 +1211,11 @@
             
             </summary>
             <param name="assembly">插件dll</param>
-            <param name="modelBase"></param>
-            <param name="controllerBase"></param>
+            <param name="modelBase">model基类</param>
+            <param name="controllerBase">controller基类</param>
             <param name="path">Controller注册路径</param>
             <param name="category"></param>
+            <param name="dbSession"></param>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.InitialTables(Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
@@ -1218,13 +1236,13 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.AddModelType``1">
             <summary>
-            
+            添加模型类
             </summary>
             <typeparam name="T"></typeparam>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.AddController``1">
             <summary>
-            
+            添加controller
             </summary>
             <typeparam name="T"></typeparam>
         </member>
@@ -3061,11 +3079,11 @@
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.HttpRequestExtend.IsAjaxRequest(System.Web.HttpRequest)">
-            <summary>
-            
-            </summary>
-            <param name="request"></param>
-            <returns></returns>
+             <summary>
+            判断当前请求是否时ajax请求
+             </summary>
+             <param name="request"></param>
+             <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.HttpResponseExtend">
             <summary>
