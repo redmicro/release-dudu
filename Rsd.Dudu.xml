@@ -4883,6 +4883,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Core.BaseService.IsError">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Core.BaseService.Token">
             <summary>
             服务令牌 用于验证 服务的作用范围（全局，会话，线程）
@@ -5640,6 +5645,11 @@
         <member name="P:Rsd.Dudu.Core.IService.Proxcy">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Core.IService.IsError">
+            <summary>
+            使用存在级别错误
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.IService.SessionId">
@@ -9041,11 +9051,6 @@
             <typeparam name="T"></typeparam>
         </member>
         <member name="P:Rsd.Dudu.Exception.MyException`1.Code">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Exception.MyException`1.Args">
             <summary>
             
             </summary>
@@ -15540,7 +15545,7 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9004">
              <summary>
-            服务({0})为会话级，获取时SessionId不予许未空。
+            获取服务时SessionId不允许为空（{0}）。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9005">
@@ -19274,14 +19279,14 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetServiceByTypeName(System.String)">
             <summary>
-            获取可用的服务
+            获取已注册的服务
             </summary>
             <param name="typeName"></param> 
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.String)">
             <summary>
-            获取可用的服务 仅可获得单例策略的服务
+            获取已注册的服务
             </summary>
             <param name="serviceId"></param> 
             <returns></returns>

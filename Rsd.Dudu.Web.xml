@@ -400,6 +400,11 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.IsReusable">
             <summary>
             您将需要在网站的 Web.config 文件中配置此处理程序 
@@ -1251,7 +1256,7 @@
             缓存MyType
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.RegistControllers(System.String)">
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.RegistControllers">
             <summary>
             
             </summary>
