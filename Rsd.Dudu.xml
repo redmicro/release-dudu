@@ -632,14 +632,6 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.BizModel.OperationBase.GetService(System.Type,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <param name="user"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.BizModel.OperationBase.LogicDelete">
             <summary>
             
@@ -995,13 +987,6 @@
             <param name="major"></param>
             <param name="values"></param>
         </member>
-        <member name="M:Rsd.Dudu.BizModel.CompositionObject`1.GetService``1(System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.BizModel.CompositionObject`1.SetValues(Rsd.Dudu.Core.IObject[])">
             <summary>
             
@@ -1283,14 +1268,6 @@
             <param name="name"></param>
             <param name="value"></param>
         </member>
-        <member name="M:Rsd.Dudu.BizModel.IOperation.GetService(System.Type,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <param name="user"></param>
-            <returns></returns>
-        </member>
         <member name="T:Rsd.Dudu.BizModel.DeleteType">
             <summary>
             
@@ -1342,15 +1319,8 @@
             <summary>
             
             </summary>
-            <param name="??"></param>
+            <param name="obj"></param>
             <param name="list"></param>
-        </member>
-        <member name="M:Rsd.Dudu.BizModel.MajorSubObject`2.GetService``1(System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.BizModel.MajorSubObject`2.AddSubs(`1[])">
             <summary>
@@ -2670,12 +2640,11 @@
             <typeparam name="T"></typeparam>
             <param name="objs"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.BizBaseService.GetService``1(System.String,``0)">
+        <member name="M:Rsd.Dudu.Core.BizBaseService.GetService``1(``0)">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="user"></param>
             <param name="defaultValue"></param>
             <returns></returns>
         </member>
@@ -4931,7 +4900,9 @@
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.SessionId">
             <summary>
-            仅有 服务策略为 Session时，该值有效,在服务内获取其他服务时，会被传递到 被获取的服务中
+             服务策略为 Session时，值为会话ID；
+             服务策略为 Sington时，值为 ProjectId；
+             获取Session和Thread级服务时，会被传递到新获取的服务中
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.IsDebug">
@@ -5238,12 +5209,6 @@
             <summary>
             提交sql脚本
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Core.IDBSession.CommitTransaction(Rsd.Dudu.Log.ILogService)">
-            <summary>
-            提交sql脚本，并指定日志服务
-            </summary>
-            <param name="logService"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.IDBSession.CreateDB(System.String)">
             <summary>
@@ -5662,41 +5627,44 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.IService.Clone(System.String)">
+        <member name="P:Rsd.Dudu.Core.IService.ProjectId">
             <summary>
             
             </summary>
-            <returns></returns>
+        </member>
+        <member name="P:Rsd.Dudu.Core.IService.Token">
+            <summary>
+            服務令牌 用于识别服务作用范围
+            </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.IService.Proxcy">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Core.IService.ProjectId">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Core.IService.SessionId">
             <summary>
-            仅在Proxcy=Session时有效。
+             服务策略为 Session时，值为会话ID；
+             服务策略为 Sington时，值为 ProjectId；
+             获取Session和Thread级服务时，会被传递到新获取的服务中
+             创建服务的会话，每个服务都有会话ID,单列策略 ，只有一个服务实例被创建，所以有且仅有一个SessionID（SessionId==ProjectId）。
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.IService.User">
             <summary>
-            当前操作人
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Core.IService.Token">
-            <summary>
-            服務令牌
+            服务当前操作人
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.IService.IsDebug">
             <summary>
             是否是调试状态
             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Core.IService.Clone(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IService.HttpRequest(System.String,System.String,System.IO.Stream,System.Int32,System.String,System.Text.Encoding,System.String)">
             <summary>
@@ -6447,6 +6415,11 @@
             线程级服务 ，支持多线程 ，线程内数据独立
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.DBServices.SqlBuilder.Proxcy">
+            <summary>
+            线程级服务
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.DBServices.SqlBuilder.TableNamePrefix">
             <summary>
             表名前缀
@@ -6460,11 +6433,6 @@
         <member name="P:Rsd.Dudu.DBServices.SqlBuilder.IsTransaction">
             <summary>
             在进行事物操作
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.DBServices.SqlBuilder.Proxcy">
-            <summary>
-            
             </summary>
         </member>
         <member name="P:Rsd.Dudu.DBServices.SqlBuilder.UsingParameter">
@@ -6550,11 +6518,10 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.SqlBuilder.CommitTransaction(Rsd.Dudu.Log.ILogService)">
+        <member name="M:Rsd.Dudu.DBServices.SqlBuilder.CommitTransaction">
             <summary>
             
-            </summary>
-            <param name="logService">sql异常日志服务</param>
+            </summary> 
         </member>
         <member name="M:Rsd.Dudu.DBServices.SqlBuilder.GetService``1(``0)">
             <summary>
@@ -7585,15 +7552,14 @@
             <param name="errorInfo"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.OpenConnection(Rsd.Dudu.Log.ILogService,System.String)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.OpenConnection(System.String)">
             <summary>
             
-            </summary>
-            <param name="logger"></param>
+            </summary> 
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.CloseConnection(Rsd.Dudu.Log.ILogService,System.Data.IDbConnection)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.CloseConnection(System.Data.IDbConnection)">
             <summary>
             
             </summary>
@@ -7610,11 +7576,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDataReader(Rsd.Dudu.Log.ILogService,System.String,System.Data.Common.DbParameter[])">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDataReader(System.String,System.Data.Common.DbParameter[])">
             <summary>
             
             </summary>
             <param name="commandText"></param>
+            <param name="paras"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDataAdapter">
@@ -7623,7 +7590,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDataAdapter(Rsd.Dudu.Log.ILogService,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.GetDataAdapter(System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -7677,22 +7644,20 @@
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.CreateTable(Rsd.Dudu.Log.ILogService,Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.CreateTable(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
-            <param name="logService"></param>
             <param name="tableSchema"></param>
             <param name="tableNamePrefix"></param>
             <param name="tableNameSuffix"></param>
             <param name="drop"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.CreateView(Rsd.Dudu.Log.ILogService,Rsd.Dudu.ORM.TableViewSchema,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.CreateView(Rsd.Dudu.ORM.TableViewSchema,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
-            <param name="logService"></param>
             <param name="tableView"></param>
             <param name="prefix"></param>
             <param name="drop"></param>
@@ -7723,16 +7688,7 @@
         <member name="M:Rsd.Dudu.DBServices.DatabaseService.Execute(System.String[],System.Int32)">
             <summary>
             
-            </summary>
-            <param name="commandTextList"></param>
-            <param name="frequency"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.Execute(Rsd.Dudu.Log.ILogService,System.String[],System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="logService"></param>
+            </summary> 
             <param name="commandTextList"></param>
             <param name="frequency"></param>
             <returns></returns>
@@ -7740,16 +7696,7 @@
         <member name="M:Rsd.Dudu.DBServices.DatabaseService.Execute(System.String,System.Data.Common.DbParameter[])">
             <summary>
             
-            </summary>
-            <param name="commandText"></param>
-            <param name="paras"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.Execute(Rsd.Dudu.Log.ILogService,System.String,System.Data.Common.DbParameter[])">
-            <summary>
-            
-            </summary>
-            <param name="logService"></param>
+            </summary> 
             <param name="commandText"></param>
             <param name="paras"></param>
             <returns></returns>
@@ -7761,7 +7708,7 @@
             <param name="commandList"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.ExecuteByTransaction(Rsd.Dudu.Log.ILogService,Rsd.Dudu.DBServices.SqlCommand[])">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.ExecuteByTransaction(Rsd.Dudu.DBServices.SqlCommand[])">
             <summary>
             事务提交
             </summary>
@@ -7769,11 +7716,10 @@
             <param name="commandList"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.DatabaseService.ExecuteByTransaction(Rsd.Dudu.Log.ILogService,System.String,System.Data.Common.DbParameter[])">
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.ExecuteByTransaction(System.String,System.Data.Common.DbParameter[])">
             <summary>
             
-            </summary>
-            <param name="logService"></param>
+            </summary> 
             <param name="commandText"></param>
             <param name="paras"></param>
             <returns></returns>
@@ -7884,6 +7830,17 @@
             <param name="containFields">包含字段信息</param>
             <param name="tableNames"></param>
             <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.DBServices.DatabaseService.DbSql(System.String,Rsd.Dudu.DBServices.SqlQueryTypes,Rsd.Dudu.Log.SqlOpType,System.String,System.Int64,System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="table"></param>
+            <param name="sqlType"></param>
+            <param name="opType"></param>
+            <param name="sql"></param>
+            <param name="start"></param>
+            <param name="end"></param>
         </member>
         <member name="M:Rsd.Dudu.DBServices.DatabaseService.Dispose">
             <summary>
@@ -8428,7 +8385,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.GetDataReader(Rsd.Dudu.Log.ILogService,System.String,System.Data.Common.DbParameter[])">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.GetDataReader(System.String,System.Data.Common.DbParameter[])">
             <summary>
             
             </summary>
@@ -8440,7 +8397,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.GetDataAdapter(Rsd.Dudu.Log.ILogService,System.String,System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.GetDataAdapter(System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -8488,7 +8445,7 @@
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.CreateTable(Rsd.Dudu.Log.ILogService,Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.CreateTable(Rsd.Dudu.ORM.TableSchema,System.String,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             true:表示如果表存在则删除;false:不判断表是否存在。
             </summary>
@@ -8498,7 +8455,7 @@
             <param name="drop"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.CreateView(Rsd.Dudu.Log.ILogService,Rsd.Dudu.ORM.TableViewSchema,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.CreateView(Rsd.Dudu.ORM.TableViewSchema,System.String,Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             
             </summary>
@@ -8507,7 +8464,7 @@
             <param name="drop"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.Execute(Rsd.Dudu.Log.ILogService,System.String[],System.Int32)">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.Execute(System.String[],System.Int32)">
             <summary>
             
             </summary>
@@ -8572,16 +8529,15 @@
             <param name="enable"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.Execute(Rsd.Dudu.Log.ILogService,System.String,System.Data.Common.DbParameter[])">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.Execute(System.String,System.Data.Common.DbParameter[])">
             <summary>
             
             </summary>
-            <param name="logService"></param>
             <param name="commandText"></param>
             <param name="paras"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.ExecuteByTransaction(Rsd.Dudu.Log.ILogService,Rsd.Dudu.DBServices.SqlCommand[])">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.ExecuteByTransaction(Rsd.Dudu.DBServices.SqlCommand[])">
             <summary>
             
             </summary>
@@ -8596,11 +8552,10 @@
             <param name="commandList"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.ExecuteByTransaction(Rsd.Dudu.Log.ILogService,System.String,System.Data.Common.DbParameter[])">
+        <member name="M:Rsd.Dudu.DBServices.IDatabaseService.ExecuteByTransaction(System.String,System.Data.Common.DbParameter[])">
             <summary>
             
             </summary>
-            <param name="logService"></param>
             <param name="commandText"></param>
             <param name="paras"></param>
             <returns></returns>
@@ -9074,43 +9029,6 @@
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Exception.ConsoleExceptionHandleService.GetMonitorInfo">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:Rsd.Dudu.Exception.MyException">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Exception.MyException.Code">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Exception.MyException.Message">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.MyException.#ctor(System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="code"></param>
-            <param name="message"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.MyException.Submit(Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="opType"></param>
-            <param name="sourceType"></param>
-            <param name="code"></param>
-            <param name="message"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Exception.MyException.ToString">
             <summary>
             
             </summary>
@@ -14208,13 +14126,17 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.#ctor(Rsd.Dudu.Log.LogLevelTypes,System.Boolean,Rsd.Dudu.Log.ILogService)">
+        <member name="P:Rsd.Dudu.Log.ConsoleLogService.Proxcy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.#ctor(Rsd.Dudu.Log.LogLevelTypes,System.Boolean)">
             <summary>
             
             </summary>
             <param name="logLevel"></param>
-            <param name="isDebug"></param>
-            <param name="logService">日志异常时记录的日志服务</param>
+            <param name="isDebug"></param> 
         </member>
         <member name="M:Rsd.Dudu.Log.ConsoleLogService.DbSql(System.String,Rsd.Dudu.DBServices.SqlQueryTypes,Rsd.Dudu.Log.SqlOpType,System.String,System.Int64,System.Int64)">
             <summary>
@@ -14261,7 +14183,7 @@
             <param name="logTime"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
@@ -14313,26 +14235,15 @@
             缓存MyType
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Log.LogServiceBase.Proxcy">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Log.LogServiceBase.LogLevel">
             <summary>
             
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.Log.LogServiceBase._logService">
-            <summary>
-            日志处理异常时日志服务
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.#ctor(Rsd.Dudu.Log.ILogService)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.#ctor">
             <summary>
             
-            </summary>
-            <param name="logService">日志处理异常时日志服务</param>
+            </summary> 
         </member>
         <member name="M:Rsd.Dudu.Log.LogServiceBase.GetData``1(System.String)">
             <summary>
@@ -14351,22 +14262,20 @@
             <param name="proxcy"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,System.String,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
-            <param name="msg"></param>
-            <param name="user"></param>
+            <param name="msg"></param> 
             <param name="errorCode"></param>
             <param name="operation"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error``1(System.String,``0,Rsd.Dudu.Log.LogSourceType,System.String[])">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error``1(``0,Rsd.Dudu.Log.LogSourceType,System.String[])">
             <summary>
             
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="user"></param>
+            <typeparam name="T"></typeparam> 
             <param name="code"></param>
             <param name="type"></param>
             <param name="args"></param>
@@ -14385,6 +14294,18 @@
             提交日志
             </summary>
             <param name="key"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Clone(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Dispose">
+            <summary>
+            提交日志 并 销毁
+            </summary>
         </member>
         <member name="M:Rsd.Dudu.Log.LogServiceBase.BeginCapture(System.String)">
             <summary>
@@ -14431,12 +14352,11 @@
             <param name="logTime"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
-            <param name="msg"></param>
-            <param name="user"></param>
+            <param name="msg"></param> 
             <param name="errorCode"></param>
             <param name="logTime"></param>
             <param name="operation"></param>
@@ -14552,14 +14472,13 @@
             <typeparam name="T"></typeparam>
             <param name="drop"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.#ctor(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.Log.LogLevelTypes,System.Boolean,Rsd.Dudu.Log.ILogService)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.#ctor(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.Log.LogLevelTypes,System.Boolean)">
             <summary>
             
             </summary>
             <param name="dbSession"></param>
             <param name="logLevel"></param>
-            <param name="isDebug"></param>
-            <param name="logService">日志异常时记录的日志服务</param>
+            <param name="isDebug"></param> 
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.CheckTableExists(Rsd.Dudu.Log.LogLevelTypes)">
             <summary>
@@ -14612,12 +14531,11 @@
             <param name="logTime"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
             <param name="msg"></param>
-            <param name="user"></param>
             <param name="errorCode"></param>
             <param name="logTime"></param>
             <param name="operation"></param>
@@ -14819,13 +14737,12 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.#ctor(Rsd.Dudu.Log.LogLevelTypes,System.Boolean,Rsd.Dudu.Log.ILogService)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.#ctor(Rsd.Dudu.Log.LogLevelTypes,System.Boolean)">
             <summary>
             
             </summary>
             <param name="logLevel"></param>
-            <param name="isDebug"></param>
-            <param name="logService">日志异常时记录的日志服务</param>
+            <param name="isDebug"></param> 
         </member>
         <member name="M:Rsd.Dudu.Log.FileLogService.WriteXml(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
             <summary>
@@ -14916,12 +14833,11 @@
             <param name="logTime"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
             <param name="msg"></param>
-            <param name="user"></param>
             <param name="errorCode"></param>
             <param name="logTime"></param>
             <param name="operation"></param>
@@ -15116,7 +15032,7 @@
         </member>
         <member name="T:Rsd.Dudu.Log.ILogService">
             <summary>
-            
+            会话级 日志服务，在会话结束后 会自动提交日志
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Log.ILogService.LogLevel">
@@ -15167,43 +15083,39 @@
             <param name="logTime"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
             <param name="msg"></param>
-            <param name="user"></param>
             <param name="errorCode"></param>
             <param name="logTime"></param>
             <param name="operation"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,System.String,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
             <param name="msg"></param>
-            <param name="user"></param>
             <param name="errorCode"></param>
             <param name="operation"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(System.String,``0,Rsd.Dudu.Log.LogSourceType,System.String[])">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(``0,Rsd.Dudu.Log.LogSourceType,System.String[])">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="user"></param>
             <param name="code"></param>
             <param name="type"></param>
             <param name="args"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(System.String,``0,System.String[])">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error``1(``0,System.String[])">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="user"></param>
             <param name="code"></param>
             <param name="args"></param>
         </member>
@@ -15248,13 +15160,12 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.#ctor(Rsd.Dudu.Log.LogLevelTypes,System.Boolean,Rsd.Dudu.Log.ILogService)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.#ctor(Rsd.Dudu.Log.LogLevelTypes,System.Boolean)">
             <summary>
             
             </summary>
             <param name="logLevel"></param>
-            <param name="isDebug"></param>
-            <param name="logService">日志异常时记录的日志服务</param>
+            <param name="isDebug"></param> 
         </member>
         <member name="M:Rsd.Dudu.Log.WindowsLogService.DbSql(System.String,Rsd.Dudu.DBServices.SqlQueryTypes,Rsd.Dudu.Log.SqlOpType,System.String,System.Int64,System.Int64)">
             <summary>
@@ -15301,12 +15212,11 @@
             <param name="logTime"></param>
             <param name="type"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
-            <param name="msg"></param>
-            <param name="user"></param>
+            <param name="msg"></param> 
             <param name="errorCode"></param>
             <param name="logTime"></param>
             <param name="operation"></param>
@@ -15456,6 +15366,11 @@
         <member name="F:Rsd.Dudu.ErrorCodes.S0202">
             <summary>
             删除对象（{0}）失败：{1}
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S0203">
+            <summary>
+            分表存储对象的字段（{0}）为空，无法保存。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S0301">
@@ -15626,6 +15541,11 @@
         <member name="F:Rsd.Dudu.ErrorCodes.S9004">
              <summary>
             服务({0})为会话级，获取时SessionId不予许未空。
+             </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S9005">
+             <summary>
+            该服务{0}为Session或Thread级 ,无法访问。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">
@@ -18253,7 +18173,7 @@
         </member>
         <member name="M:Rsd.Dudu.Container`1.Dispose">
             <summary>
-            
+            Dispose 所有服务
             </summary>
         </member>
         <member name="T:Rsd.Dudu.DatabaseType">
@@ -18958,13 +18878,7 @@
         <member name="M:Rsd.Dudu.DBSession.CommitTransaction">
             <summary>
             
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.DBSession.CommitTransaction(Rsd.Dudu.Log.ILogService)">
-            <summary>
-            
-            </summary>
-            <param name="logService">sql异常日志服务</param>
+            </summary> 
         </member>
         <member name="M:Rsd.Dudu.DBSession.GetObject(Rsd.Dudu.ORM.TableSchema,System.Int64,System.Boolean,System.String[])">
             <summary>
@@ -19148,7 +19062,7 @@
             <summary>
             
             </summary>
-            <typeparam name="T"></typeparam>
+            <typeparam name="T"></typeparam> 
             <param name="defaultValue"></param>
             <returns></returns>
         </member>
@@ -19284,13 +19198,19 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.DestroySession">
             <summary>
-            
+            销毁当前线程上的Session
             </summary>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.DestroySession(System.String)">
             <summary>
             销毁[线程共享级]服务会话容器，并提交日志：CommitCapture
             </summary>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.AddService(Rsd.Dudu.Core.IService[])">
+            <summary>
+            添加服务
+            </summary>
+            <param name="services"></param>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.AddGlobalServiceEntry(Rsd.Dudu.Core.IService)">
             <summary>
@@ -19320,56 +19240,51 @@
             <param name="isInterface"></param>
             <param name="proxcy"></param>
         </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.GetServiceFromPool``1(``0,System.String)">
-            <summary>
-            从服务池获取取服务
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="defaultValue"></param>
-            <param name="user"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetService``1(``0)">
             <summary>
-            获取服务 仅服务管理策略为单例 时，可以被获取到
+            获取服务：获取当前线程上所在会话的服务；如果会话不存在，则获取单例服务
             </summary>
             <typeparam name="T"></typeparam>
             <param name="defaultValue"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.GetService``1(``0,System.String,System.String)">
+        <member name="M:Rsd.Dudu.ServicesContainer.GetService``1(``0,System.String)">
             <summary>
             获取服务，优先获取Session中的服务
             </summary>
             <typeparam name="T"></typeparam>
             <param name="defaultValue"></param>
-            <param name="sessionId">Session</param>
-            <param name="user"></param>
+            <param name="sessionId">指定SessionId</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.Type,System.String,System.String)">
+        <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.Type,System.String)">
             <summary>
             获取服务，优先获取Session中的服务，只有服务管理策略为会话时，服务才会被采用会话管理
             </summary>
             <param name="service"></param>
-            <param name="sessionId">Session</param>
-            <param name="user"></param>
+            <param name="sessionId">Session</param> 
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.GetServiceByTypeName(System.String,System.String)">
+        <member name="M:Rsd.Dudu.ServicesContainer.GetServiceByTypeName(System.String)">
             <summary>
             获取可用的服务
             </summary>
-            <param name="typeName"></param>
-            <param name="user"></param>
+            <param name="typeName"></param> 
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.String,System.String)">
+        <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.String)">
             <summary>
-            获取可用的服务
+            获取可用的服务 仅可获得单例策略的服务
             </summary>
-            <param name="serviceId"></param>
-            <param name="user"></param>
+            <param name="serviceId"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.GetServiceFromPool``1">
+            <summary>
+            服务为有限资源时，可通过服务池的模式进行管理。
+            从服务池获取取服务  
+            </summary>
+            <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.ExistService(System.String)">
@@ -19436,12 +19351,6 @@
             <param name="projectId"></param>
             <param name="key"></param>
             <param name="code"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ServicesContainer.AddService(Rsd.Dudu.Core.IService[])">
-            <summary>
-            添加服务
-            </summary>
-            <param name="services"></param>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetMonitorInfo">
             <summary>
@@ -19541,7 +19450,7 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.Dispose">
             <summary>
-            
+            Dispose 容器内所有服务
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Tool.Win32API">

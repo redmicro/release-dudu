@@ -205,6 +205,11 @@
             Internet 组管理协议称为IGMP协议（Internet Group Management Protocol），是因特网协议家族中的一个组播协议。该协议运行在主机和组播路由器之间。IGMP协议共有三个版本，即IGMPv1、v2 和v3
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Net.IPHeader">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Net.IPHeader.ip_verlen">
             <summary>
             
@@ -259,6 +264,22 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Net.Logger.LogEvents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Net.Logger.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Net.Logger.Log(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Text"></param>
         </member>
         <member name="M:Rsd.Dudu.Net.MailService.SendTest">
             <summary>
