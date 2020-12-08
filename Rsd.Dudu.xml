@@ -14650,8 +14650,7 @@
         <member name="M:Rsd.Dudu.Log.DbLogService.CommitCapture(Rsd.Dudu.Log.LogBase[])">
             <summary>
             
-            </summary>
-            <param name="logService"></param>
+            </summary> 
             <param name="list"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.ThreadInvoke(Rsd.Dudu.Log.LogBase[])">
