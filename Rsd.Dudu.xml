@@ -19257,9 +19257,16 @@
             <param name="sessionId">指定SessionId</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.Type)">
+            <summary>
+            获取服务，优先获取当前Session中的服务，只有服务管理策略为会话时，服务才会被采用会话管理
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetService(System.Type,System.String)">
             <summary>
-            获取服务，优先获取Session中的服务，只有服务管理策略为会话时，服务才会被采用会话管理
+            获取服务，优先获取当前Session中的服务，只有服务管理策略为会话时，服务才会被采用会话管理
             </summary>
             <param name="service"></param>
             <param name="sessionId">Session</param> 

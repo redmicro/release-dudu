@@ -3272,14 +3272,13 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.ExtendMethods.GetService``1(System.Web.Services.WebService,``0,System.String)">
+        <member name="M:Rsd.Dudu.Web.ExtendMethods.GetService``1(System.Web.Services.WebService,``0)">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
             <param name="service"></param>
-            <param name="defaultValue"></param>
-            <param name="user"></param>
+            <param name="defaultValue"></param> 
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.ExtendMethods.AddService(System.Web.Services.WebService,Rsd.Dudu.Core.IService)">
