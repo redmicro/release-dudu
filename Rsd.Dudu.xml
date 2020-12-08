@@ -8576,6 +8576,7 @@
             <summary>
             
             </summary>
+            <param name="logService"></param>
             <param name="commandText"></param>
             <param name="paras"></param>
             <returns></returns>
@@ -8599,6 +8600,7 @@
             <summary>
             
             </summary>
+            <param name="logService"></param>
             <param name="commandText"></param>
             <param name="paras"></param>
             <returns></returns>
