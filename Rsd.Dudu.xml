@@ -15644,36 +15644,6 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.Submit``1(System.Exception,``0,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="exception"></param>
-            <param name="code"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.Submit``1(System.Exception,``0,Rsd.Dudu.Exception.OperationType,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="exception"></param>
-            <param name="code"></param>
-            <param name="opType"></param>
-            <param name="args"></param>
-        </member>
-        <member name="M:Rsd.Dudu.ExtendMethods.Submit``1(System.Exception,``0,Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="exception"></param>
-            <param name="code"></param>
-            <param name="opType"></param>
-            <param name="logSource"></param>
-            <param name="args"></param>
-        </member>
         <member name="M:Rsd.Dudu.ExtendMethods.GetReference(System.Object,System.String@,System.String@,System.Int32)">
             <summary>
             获取当前对象 被引用的层级。
