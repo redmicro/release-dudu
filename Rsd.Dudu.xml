@@ -15447,6 +15447,11 @@
             清除Object缓存失败，发生异常：{0} 
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S0502">
+             <summary>
+            当前服务({0})DbSession为空，请在服务所在组件注册时，通过Config.GetConfig设置。
+             </summary>
+        </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S1001">
             <summary>
             系统初始化错误，数据库表与模型同步错误，表【{0}】中不存在字段【{1}】。
