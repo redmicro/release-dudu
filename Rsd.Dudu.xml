@@ -14264,11 +14264,10 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.CommitCapture(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.CommitCapture(Rsd.Dudu.Log.LogBase[])">
             <summary>
             
             </summary>
-            <param name="logService"></param>
             <param name="list"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.ConsoleLogService.GetMonitorInfo">
@@ -14372,11 +14371,10 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.CommitCapture(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.CommitCapture(Rsd.Dudu.Log.LogBase[])">
             <summary>
              线程独立 提交所有捕获的日志
             </summary>
-            <param name="logService">指定日志提交过程中发生异常处理的日志服务</param>
             <param name="list"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.LogServiceBase.DbSql(System.String,Rsd.Dudu.DBServices.SqlQueryTypes,Rsd.Dudu.Log.SqlOpType,System.String,System.Int64,System.Int64)">
@@ -14622,18 +14620,17 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.CommitCapture(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.DbLogService.CommitCapture(Rsd.Dudu.Log.LogBase[])">
             <summary>
             
             </summary>
             <param name="logService"></param>
             <param name="list"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.ThreadInvoke(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.DbLogService.ThreadInvoke(Rsd.Dudu.Log.LogBase[])">
             <summary>
             
-            </summary>
-            <param name="logService"></param>
+            </summary> 
             <param name="list"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.CheckReference(System.String@,System.String@)">
@@ -14923,11 +14920,10 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.CommitCapture(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.FileLogService.CommitCapture(Rsd.Dudu.Log.LogBase[])">
             <summary>
             
-            </summary>
-            <param name="logService"></param>
+            </summary> 
             <param name="list"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.FileLogService.GetMonitorInfo">
@@ -15309,11 +15305,10 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.CommitCapture(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Log.LogBase[])">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.CommitCapture(Rsd.Dudu.Log.LogBase[])">
             <summary>
             线程独立 提交所有捕获的日志
-            </summary> 
-            <param name="logService"></param>
+            </summary>  
             <param name="list"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.WindowsLogService.GetMonitorInfo">
