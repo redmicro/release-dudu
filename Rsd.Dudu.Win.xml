@@ -1601,6 +1601,29 @@
             <param name="list"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.Do(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Exception.ExceptionObject[])">
+            <summary>
+            
+            </summary>
+            <param name="logService">指定日志处理程序</param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.DoSomeOne(Rsd.Dudu.Exception.ExceptionObject)">
+            <summary>
+            
+            </summary>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.GetService``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Win.WinExceptionHandleService.GetMonitorInfo">
             <summary>
             

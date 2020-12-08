@@ -9050,11 +9050,27 @@
             <param name="list"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Exception.ConsoleExceptionHandleService.Do(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Exception.ExceptionObject[])">
+            <summary>
+            
+            </summary>
+            <param name="logService">指定日志处理程序</param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Exception.ConsoleExceptionHandleService.DoSomeOne(Rsd.Dudu.Exception.ExceptionObject)">
             <summary>
             
             </summary>
             <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Exception.ConsoleExceptionHandleService.GetService``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="defaultValue"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Exception.ConsoleExceptionHandleService.GetMonitorInfo">
@@ -9139,6 +9155,7 @@
             
             </summary>
             <param name="opType"></param>
+            <param name="args"></param>
         </member>
         <member name="M:Rsd.Dudu.Exception.MyException`1.Submit(Rsd.Dudu.Exception.OperationType,Rsd.Dudu.Log.LogSourceType,System.String[])">
             <summary>
@@ -9253,6 +9270,14 @@
             <param name="list"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Exception.IExceptionHandleService.Do(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Exception.ExceptionObject[])">
+            <summary>
+            
+            </summary>
+            <param name="logService">指定日志处理程序</param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Exception.IExceptionHandleService.DoSomeOne(Rsd.Dudu.Exception.ExceptionObject)">
             <summary>
             
@@ -9356,7 +9381,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Exception.IExceptionService.Handle">
+        <member name="M:Rsd.Dudu.Exception.IExceptionService.Handle(Rsd.Dudu.Log.ILogService)">
             <summary>
             
             </summary>
@@ -9433,7 +9458,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Exception.ExceptionService.Handle">
+        <member name="M:Rsd.Dudu.Exception.ExceptionService.Handle(Rsd.Dudu.Log.ILogService)">
             <summary>
             
             </summary>
@@ -15597,6 +15622,11 @@
         <member name="F:Rsd.Dudu.ErrorCodes.S9003">
              <summary>
             Service未注册:{0}
+             </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S9004">
+             <summary>
+            服务({0})为会话级，获取时SessionId不予许未空。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">

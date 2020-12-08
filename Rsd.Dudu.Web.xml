@@ -4054,6 +4054,14 @@
             <param name="list"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.ExceptionHandleService.Do(Rsd.Dudu.Log.ILogService,Rsd.Dudu.Exception.ExceptionObject[])">
+            <summary>
+            
+            </summary>
+            <param name="logService"></param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.ExceptionHandleService.DoSomeOne(Rsd.Dudu.Exception.ExceptionObject)">
             <summary>
             
