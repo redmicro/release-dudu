@@ -15652,12 +15652,12 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9004">
              <summary>
-            获取服务时SessionId不允许为空（{0}）。
+            获取（{0}）服务时SessionId不允许为空。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9005">
              <summary>
-            该服务{0}为Session或Thread级 ,无法访问。
+            服务{0}(token:{1})为Session或Thread级 ,无法访问。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">
