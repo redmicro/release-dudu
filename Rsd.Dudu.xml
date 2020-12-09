@@ -5023,6 +5023,14 @@
             <param name="source"></param>
             <param name="args"></param>
         </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.Error(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="code"></param>
+            <param name="source"></param>
+        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
@@ -14369,6 +14377,14 @@
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="code"></param>
+            <param name="source"></param>
+        </member>
         <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
@@ -15078,6 +15094,14 @@
             <typeparam name="T"></typeparam>
             <param name="code"></param>
             <param name="args"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="code"></param>
+            <param name="source"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
