@@ -19345,7 +19345,7 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.AddService(Rsd.Dudu.Core.IService[])">
             <summary>
-            添加服务
+            添加服务 未注册前，无法添加服务
             </summary>
             <param name="services"></param>
         </member>
