@@ -2782,7 +2782,7 @@
             <param name="logEnabled"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpContextExtend.HandleException(System.Web.HttpContext,System.String,System.String,Rsd.Dudu.Exception.ExceptionHandle,System.Boolean)">
+        <member name="M:Rsd.Dudu.Web.HttpContextExtend.HandleException(System.Web.HttpContext,System.String,System.String,Rsd.Dudu.Exception.ExceptionHandleDelegate,System.Boolean)">
             <summary>
             异常处理
             </summary>
