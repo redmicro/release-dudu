@@ -15652,7 +15652,7 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9004">
              <summary>
-            获取（{0}）服务时SessionId不允许为空。
+            获取服务（{0}）时SessionId不允许为空。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9005">
