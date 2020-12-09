@@ -4120,35 +4120,7 @@
             
             </summary>
             <param name="type"></param>
-            <param name="width"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Web.SchemasContainer.GetEnumInfo(System.String)">
-            <summary>
-            获取枚举结构
-            </summary>
-            <param name="typeName"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.SchemasContainer.InitialEnum``1">
-            <summary>
-            缓存枚举结构
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Rsd.Dudu.Web.SchemasContainer.InitialEnum(System.Type)">
-            <summary>
-            缓存枚举结构
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.SchemasContainer.GetEnumItemJsonList(System.Type,Rsd.Dudu.StringFormatType)">
-            <summary>
-            
-            </summary>
-            <param name="type"></param>
-            <param name="formatType"></param>
-            <returns></returns>
+            <param name="width">label标签宽度</param>
         </member>
         <member name="M:Rsd.Dudu.Web.SchemasContainer.RemoveAll">
             <summary>

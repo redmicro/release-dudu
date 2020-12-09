@@ -9054,6 +9054,65 @@
             <param name="commandTextList"></param>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.EnumType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.EnumType.GUID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.EnumType.TypeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.EnumType.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.EnumType._items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.EnumType.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.EnumType.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.EnumType.GetEnumItem(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.EnumType`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.EnumType`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.EnumType`1.GetEnumItem(`0)">
+            <summary>
+            获取枚举值对象
+            </summary> 
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Exception.ConsoleExceptionHandleService">
             <summary>
             
@@ -18628,6 +18687,18 @@
             <typeparam name="T"></typeparam>
             <param name="objs"></param>
         </member>
+        <member name="M:Rsd.Dudu.MyType.InitialEnum``1">
+            <summary>
+            解析并缓存枚举类型
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.InitialEnum(System.Type)">
+            <summary>
+            解析并缓存枚举类型
+            </summary>
+            <param name="type"></param>
+        </member>
         <member name="M:Rsd.Dudu.MyType.GetEnumItems``1">
             <summary>
             获取枚举对象值集合
@@ -18650,11 +18721,24 @@
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.MyType.GetEnumItemsFromCache(System.Type)">
+        <member name="M:Rsd.Dudu.MyType.GetEnumType(System.String)">
             <summary>
-            
+            获取枚举 对象
+            </summary>
+            <param name="typeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.GetEnumType(System.Type)">
+            <summary>
+            获取枚举 对象
             </summary>
             <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType.GetEnumTypes">
+            <summary>
+            获取系统内所有枚举类型
+            </summary> 
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.MyType.InitialDb(System.String,System.String)">
