@@ -162,19 +162,6 @@
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson``2(Rsd.Dudu.Core.IDBSession,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Rsd.Dudu.DBServices.SortType,System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T">对象类型</typeparam>
-            <typeparam name="T1">排序字段类型</typeparam>
-            <param name="dbSession"></param>
-            <param name="expression"></param>
-            <param name="orderBy"></param>
-            <param name="type"></param>
-            <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson``1(Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
             <summary>
             
@@ -187,36 +174,10 @@
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbSession"></param>
-            <param name="where"></param>
-            <param name="sort"></param>
-            <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="bizFormat">先转化为业务对象模型,再格式化为Json</param>
-            <param name="fields"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson(Rsd.Dudu.Core.IMyType,Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
             <summary>
             
-            </summary>
-            <param name="myType"></param>
-            <param name="where"></param>
-            <param name="sort"></param>
-            <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="bizFormat">先转化为业务对象模型,再格式化为Json</param>
-            <param name="fields"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetListJson(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.Core.IMyType,Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="dbSession"></param>
+            </summary> 
             <param name="myType"></param>
             <param name="where"></param>
             <param name="sort"></param>
@@ -239,41 +200,11 @@
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetPaggingJson(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.Core.IMyType,System.Int32,System.Int32,Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="dbSession"></param>
-            <param name="myType"></param>
-            <param name="pageIndex"></param>
-            <param name="pageSize"></param>
-            <param name="where"></param>
-            <param name="sort"></param>
-            <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="bizFormat">先转化为业务对象模型,再格式化为Json</param>
-            <param name="fields"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetPaggingJson``1(Rsd.Dudu.Core.IDBSession,System.Int32,System.Int32,Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbSession"></param>
-            <param name="pageIndex"></param>
-            <param name="pageSize"></param>
-            <param name="where"></param>
-            <param name="sort"></param>
-            <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="bizFormat">先转化为业务对象模型,再格式化为Json</param>
-            <param name="fields"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetPaggingJson``1(System.Int32,System.Int32,Rsd.Dudu.DBServices.WhereCondition[],Rsd.Dudu.DBServices.SortCondition[],System.String,System.Boolean,System.String[])">
             <summary>
             
             </summary>
-            <typeparam name="T"></typeparam>
+            <typeparam name="T"></typeparam> 
             <param name="pageIndex"></param>
             <param name="pageSize"></param>
             <param name="where"></param>
@@ -281,21 +212,6 @@
             <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
             <param name="bizFormat">先转化为业务对象模型,再格式化为Json</param>
             <param name="fields"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetPaggingJson``2(Rsd.Dudu.Core.IDBSession,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Int32,Rsd.Dudu.DBServices.SortType,System.String)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-            <param name="dbSession"></param>
-            <param name="expression"></param>
-            <param name="orderBy"></param>
-            <param name="pageIndex"></param>
-            <param name="pageSize"></param>
-            <param name="tableNameSuffix">分表存储对象，表名称后缀</param>
-            <param name="type"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetPaggingJson``2(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Int32,Rsd.Dudu.DBServices.SortType,System.String)">
@@ -303,7 +219,7 @@
             
             </summary>
             <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
+            <typeparam name="T1"></typeparam> 
             <param name="expression"></param>
             <param name="orderBy"></param>
             <param name="pageIndex"></param>
@@ -610,6 +526,36 @@
             
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Web.Controllers.BizBaseController">
+            <summary>
+             提供对对象的CURD操作
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BizBaseController.Save">
+            <summary>
+            json 结构:
+            {
+            modelType:'Rsd.xxx.xxx',
+            record:{name:'',age:20}
+            }
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BizBaseController.Delete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BizBaseController.GetObject">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BizBaseController.GetList">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:Rsd.Dudu.Web.BaseWebPage">
             <summary>
@@ -3376,6 +3322,16 @@
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W0004">
             <summary>
             请求API失败,API方法{0}（不含父类）失败：{1}。
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W0005">
+            <summary>
+            保存对象（模型：{0}），发生异常：{1}
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W0006">
+            <summary>
+            删除对象（模型：{0}），发生异常：{1}
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W1000">
