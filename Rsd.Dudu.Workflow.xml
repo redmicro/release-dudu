@@ -1122,6 +1122,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Workflow.Controllers.WfController.DbSession">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Workflow.ApiDispatcher">
             <summary>
             API 调度

@@ -111,7 +111,7 @@
         </member>
         <member name="T:Rsd.Dudu.Web.Controllers.BaseController">
             <summary>
-            
+            在BaseBizService提供的CURD操作基础上 添加CURD 支持json的处理
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.Index">
@@ -276,12 +276,7 @@
         </member>
         <member name="T:Rsd.Dudu.Web.Controllers.BaseHttpHandler">
             <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.DbSession">
-            <summary>
-            获取系统默认 DbSession
+            每个 子类 都要实现自己的DBSession ,以提供给 该类进行CURD操作时的驱动
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Controllers.BaseHttpHandler.DefaultAction">
