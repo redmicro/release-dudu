@@ -4981,13 +4981,6 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.InvokeInLog(Rsd.Dudu.Core.InvokeInLogHandler)">
-            <summary>
-            在日志记录的环境下执行
-            </summary>
-            <param name="method"></param>
-            <returns></returns>
-        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.LogDebug(System.String[])">
             <summary>
             记录调试日志
@@ -5733,13 +5726,6 @@
             </summary>
             <param name="methodName"></param>
             <param name="args"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Core.IService.InvokeInLog(Rsd.Dudu.Core.InvokeInLogHandler)">
-            <summary>
-            动态调用外部方法
-            </summary>
-            <param name="method"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.IService.GetMonitorInfo">
