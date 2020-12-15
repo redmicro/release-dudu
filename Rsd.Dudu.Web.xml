@@ -1457,7 +1457,7 @@
         </member>
         <member name="P:Rsd.Dudu.Web.Core.RequestClientInfo.ClientIp">
             <summary>
-            网络参数总获取
+            远程客户端外网IP，从网络参数中获取
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Core.RequestClientInfo.BrowserType">
