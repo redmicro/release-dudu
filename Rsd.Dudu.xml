@@ -14710,7 +14710,7 @@
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.CheckReference(System.String@,System.String@)">
             <summary>
-            检查应用位置
+            检查应用位置,是否为LogService 内部调用,如果是内部调用不记录日志
             </summary>
             <param name="refType"></param>
             <param name="refMethod"></param>
