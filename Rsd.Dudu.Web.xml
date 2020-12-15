@@ -3061,7 +3061,7 @@
         </member>
         <member name="T:Rsd.Dudu.Web.Prama.LoggerAttribute">
             <summary>
-            日志服务参数特性标识
+            独立日志服务参数特性标识
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.Prama.LoggerAttribute.#ctor">
