@@ -32,6 +32,11 @@
             <param name="cookies"></param>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Web.Authorization.Header">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Web.Authorization.Header.#ctor">
             <summary>
             
@@ -84,6 +89,11 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Authorization.Header.UnauthorizedResponseHeader">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.Web.Authorization.Header.ToString">
             <summary>
             
@@ -112,6 +122,11 @@
         <member name="T:Rsd.Dudu.Web.Controllers.BaseController">
             <summary>
             在BaseBizService提供的CURD操作基础上 添加CURD 支持json的处理
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Controllers.BaseController.DbSession">
+            <summary>
+            
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.Index">
@@ -996,6 +1011,11 @@
             
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.Web.Core.NullKeyPramaTypes.None">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Web.Core.NullKeyPramaTypes.QueryString">
             <summary>
             
@@ -1201,8 +1221,6 @@
             <summary>
             
             </summary>
-            <param name="path">Controller注册路径</param>
-            <returns></returns>
         </member>
         <member name="T:Rsd.Dudu.Web.Core.SchemasCacheService">
             <summary>
@@ -1859,6 +1877,11 @@
             指定加密方法
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Web.Service.IServiceBindIP">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Service.IServiceBindIP.Allowed">
             <summary>
             
@@ -1894,6 +1917,11 @@
             <param name="appToken"></param>
             <param name="ip"></param>
             <returns></returns>
+        </member>
+        <member name="T:Rsd.Dudu.Web.Service.IServiceCrossDomain">
+            <summary>
+            
+            </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Service.IServiceCrossDomain.Allowed">
             <summary>
@@ -2148,6 +2176,41 @@
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Service.ApiDescription.IsWebMethod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.Level">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.ApiLogEnable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.InThread">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.IsBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.BlockMsg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.EncryptKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Service.ApiDescription.EncryptHandler">
             <summary>
             
             </summary>
@@ -3936,8 +3999,7 @@
             <summary>
              重置Session 并延长有效时间
             </summary>
-            <param name="key"></param>
-            <param name=""></param>
+            <param name="key"></param> 
             <param name="host"></param>
             <param name="referer"></param>
             <param name="userAgent"></param>
