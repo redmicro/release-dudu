@@ -4912,7 +4912,7 @@
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.Logger">
             <summary>
-            指定日志服务，
+            指定日志服务 
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.IsDebug">
@@ -5016,14 +5016,6 @@
             <param name="source"></param>
             <param name="args"></param>
         </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.LogError(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
-            <summary>
-            
-            </summary>
-            <param name="msg"></param>
-            <param name="code"></param>
-            <param name="source"></param>
-        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.LogError(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
@@ -5031,6 +5023,14 @@
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
+            <param name="source"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.LogError(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="code"></param>
             <param name="source"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.UrlEncode(System.String,System.Text.Encoding)">
@@ -19285,6 +19285,16 @@
         <member name="P:Rsd.Dudu.ServicesContainer.ProjectId">
             <summary>
             项目ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.IsLicenseError">
+            <summary>
+            授权过期已报警
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.ServicesContainer.IsLicenseWarn">
+            <summary>
+            授权即将到期已警告
             </summary>
         </member>
         <member name="P:Rsd.Dudu.ServicesContainer.ExpireAt">
