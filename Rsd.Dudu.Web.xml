@@ -2722,7 +2722,7 @@
             <param name="context"></param>
             <param name="bizFlag"></param>
             <param name="returnMsg"></param>
-            <param name="returnHtml"></param>
+            <param name="returnData"></param>
             <param name="returnUrl"></param>
             <param name="logEnabled"></param>
         </member>
