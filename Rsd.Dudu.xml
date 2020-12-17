@@ -19560,6 +19560,11 @@
             <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
+        <member name="F:Rsd.Dudu.ServicesContainer._cache">
+            <summary>
+            热数据 缓存
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.ServicesContainer.Get(System.Type)">
             <summary>
             
