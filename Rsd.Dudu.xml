@@ -15576,7 +15576,12 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S3006">
             <summary>
-            属性赋值错误，对象{0}属性{1}赋值发生异常：{2}
+            Json属性赋值错误，对象{0}属性{1}取值发生参数错误：{2}
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S3007">
+            <summary>
+            Json属性赋值错误，对象{0}属性{1}赋值发生异常：{2}
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S3999">
