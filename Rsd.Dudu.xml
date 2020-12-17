@@ -15647,9 +15647,9 @@
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9005">
-             <summary>
-            服务{0}(token:{1})为Session或Thread级 ,无法访问。
-             </summary>
+            <summary>
+            服务{0}(token:{1})为{2}级 ,无法访问。
+            </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">
             <summary>
