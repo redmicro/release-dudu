@@ -4890,7 +4890,7 @@
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.Token">
             <summary>
-            服务令牌 用于验证 服务的作用范围（全局，会话，线程）
+            服务令牌 对象唯一； 用于验证 服务的作用范围（全局，会话，线程）
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.ProjectId">
@@ -4905,7 +4905,8 @@
         </member>
         <member name="P:Rsd.Dudu.Core.BaseService.SessionId">
             <summary>
-             服务策略为 Session时，值为会话ID；
+            会话唯一
+            服务策略为 Session时，值为会话ID；
              服务策略为 Sington时，值为 ProjectId；
              获取Session和Thread级服务时，会被传递到新获取的服务中
             </summary>
@@ -14379,7 +14380,7 @@
         </member>
         <member name="M:Rsd.Dudu.Log.LogServiceBase.BeginCapture(System.String)">
             <summary>
-            开始日志收集
+            开始日志收集 并将数据存于当前线程中
             </summary>
             <param name="key"></param>
         </member>
@@ -15162,17 +15163,18 @@
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.BeginCapture(System.String)">
             <summary>
-            线程独立
+            开始日志收集 并将数据以指定的键值存于当前线程中 线程独立
             </summary>
+            <param name="key">键值</param>
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.CancelCapture(System.String)">
             <summary>
-            线程独立
+            取消日志收集 线程独立
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Log.ILogService.CommitCapture(System.String)">
             <summary>
-            
+            提交日志 将存于当前线程中数据 提交存储
             </summary>
             <param name="key"></param>
         </member>
