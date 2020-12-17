@@ -15609,7 +15609,7 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S5000">
             <summary>
-            JSON数据转化失败（值类型：{0}，值：{1}），错误信息：{2}
+            实例化JSON失败（值类型：{0}，值：{1}），错误信息：{2}
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S5001">
@@ -15649,22 +15649,22 @@
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9004">
              <summary>
-            获取服务（{0}）时SessionId不允许为空。
+            获取服务异常|服务（{0}）时SessionId不允许为空。
              </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9005">
             <summary>
-            服务{0}(token:{1})为{2}级 ,无法访问。
+            获取服务异常|服务{0}(token:{1})为{2}级 ,无法访问。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9998">
             <summary>
-            授权即将到期提示，该项目使用的Rsd.Dudu框架相关服务即将到期（{0}），请及时联系厂家购买授权。
+            授权即将到期提示|该项目使用的Rsd.Dudu框架相关服务即将到期（{0}），请及时联系厂家购买授权。
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S9999">
             <summary>
-            授权过期提示，该项目使用的Rsd.Dudu框架相关服务已到期（{0}），请联系厂家购买授权。
+            授权过期提示|该项目使用的Rsd.Dudu框架相关服务已到期（{0}），请联系厂家购买授权。
             </summary>
         </member>
         <member name="T:Rsd.Dudu.ExtendMethods">
