@@ -15795,10 +15795,10 @@
         </member>
         <member name="M:Rsd.Dudu.ExtendMethods.ToJsonList(System.Data.DataTable,System.Type[])">
             <summary>
-            遇到同名字段放弃
+            支持联合查询，遇到同名字段放弃
             </summary>
-            <param name="dt"></param>
-            <param name="types">遇到同名字段放弃</param>
+            <param name="dt">查询（支持联合查询）得到的表格</param>
+            <param name="types"> 遇到同名字段放弃（支持联合查询）</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.ExtendMethods.ToJsonList``2(System.Data.DataTable)">
