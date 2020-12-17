@@ -14270,36 +14270,40 @@
             <param name="start"></param>
             <param name="end"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Debug(System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Debug(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Info(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Info(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             写日志到文件
-            </summary>
+            </summary> 
+            <param name="title"></param>
             <param name="msg">操作代码</param>
             <param name="operationCode">日志描述</param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ConsoleLogService.Warn(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             警告日志
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="operationCode"></param>
             <param name="logTime"></param>
@@ -14408,19 +14412,21 @@
             </summary>
             <param name="list"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Info(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Info(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Warn(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
@@ -14437,10 +14443,11 @@
             <param name="start"></param>
             <param name="end"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Debug(System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Debug(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="logTime"></param>
             <param name="source"></param>
@@ -14465,15 +14472,16 @@
         <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
-            </summary>
+            </summary> 
             <param name="msg"></param>
             <param name="code"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.LogServiceBase.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
@@ -14533,6 +14541,7 @@
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
@@ -14590,38 +14599,8 @@
         </member>
         <member name="P:Rsd.Dudu.Log.DbLogService.DbSession">
             <summary>
-            
+            数据库驱动
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.InitialTable(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.Log.LogLevelTypes,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="dbSession"></param>
-            <param name="logLevel"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.InitialTable``1(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            初始化日志数据库表
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbSession"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.InitialTable(Rsd.Dudu.Log.LogLevelTypes,Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <param name="logLevel"></param>
-            <param name="drop"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.InitialTable``1(Rsd.Dudu.DBServices.TableExistOperationType)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="drop"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.#ctor(Rsd.Dudu.Core.IDBSession,Rsd.Dudu.Log.LogLevelTypes,System.Boolean)">
             <summary>
@@ -14630,6 +14609,12 @@
             <param name="dbSession"></param>
             <param name="logLevel"></param>
             <param name="isDebug"></param> 
+        </member>
+        <member name="M:Rsd.Dudu.Log.DbLogService.InitialTables(Rsd.Dudu.DBServices.TableExistOperationType)">
+            <summary>
+            根据服务初始化时设置的日志级别，初始化日志数据库表
+            </summary> 
+            <param name="drop"></param>
         </member>
         <member name="M:Rsd.Dudu.Log.DbLogService.CheckTableExists(Rsd.Dudu.Log.LogLevelTypes)">
             <summary>
@@ -14648,36 +14633,40 @@
             <param name="start"></param>
             <param name="end"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.Debug(System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.Debug(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.Info(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.Info(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
-            <param name="msg"></param>
-            <param name="code"></param>
-            <param name="logTime"></param>
-            <param name="source"></param>
-        </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
-            <summary>
-            
-            </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.DbLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.DbLogService.Warn(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
+            <param name="msg"></param>
+            <param name="code"></param>
+            <param name="logTime"></param>
+            <param name="source"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Log.DbLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+            <summary>
+            
+            </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
@@ -14930,36 +14919,40 @@
             <param name="start"></param>
             <param name="end"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.Debug(System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.Debug(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.Info(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.Info(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             写日志到文件
             </summary>
+            <param name="title"></param>
             <param name="msg">操作代码</param>
             <param name="operationCode">日志描述</param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.Warn(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
-            警告日志
+            
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="operationCode"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.FileLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.FileLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
@@ -15044,6 +15037,11 @@
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Log.LogBase.LogLevel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Log.LogBase.Title">
             <summary>
             
             </summary>
@@ -15189,10 +15187,11 @@
             <param name="start"></param>
             <param name="end"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Debug(System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ILogService.Debug(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             调试输出
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="logTime"></param>
             <param name="source"></param>
@@ -15222,28 +15221,31 @@
             <param name="code"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ILogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ILogService.Warn(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             警告日志
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.ILogService.Info(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.ILogService.Info(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             普通信息
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
@@ -15290,36 +15292,40 @@
             <param name="start"></param>
             <param name="end"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.Debug(System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.Debug(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.Error(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.Error(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="code"></param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.Info(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.Info(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             写日志到文件
             </summary>
+            <param name="title"></param>
             <param name="msg">操作代码</param>
             <param name="operationCode">日志描述</param>
             <param name="logTime"></param>
             <param name="source"></param>
         </member>
-        <member name="M:Rsd.Dudu.Log.WindowsLogService.Warn(System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
+        <member name="M:Rsd.Dudu.Log.WindowsLogService.Warn(System.String,System.String,System.String,System.Int64,Rsd.Dudu.Log.LogSourceType)">
             <summary>
             警告日志
             </summary>
+            <param name="title"></param>
             <param name="msg"></param>
             <param name="operationCode"></param>
             <param name="logTime"></param>
