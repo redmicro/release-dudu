@@ -350,9 +350,16 @@
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.ProcessRequest(System.Web.HttpContext)">
             <summary>
-            
+            安全验证，初始化请求，反射处理方法，执行请求方法
             </summary>
             <param name="context"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetActionMethod(System.String)">
+            <summary>
+            获取api 接口对应的方法
+            </summary>
+            <param name="actionName"></param>
+            <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.Application_BeginRequest(System.Object,System.EventArgs)">
             
