@@ -1172,17 +1172,6 @@
             <param name="category"></param>
             <param name="dbSession">数据库驱动</param>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.Type,System.Type,System.String,System.String,Rsd.Dudu.Core.IDBSession)">
-            <summary>
-            
-            </summary>
-            <param name="assembly">插件dll</param>
-            <param name="modelBase">model基类</param>
-            <param name="controllerBase">controller基类</param>
-            <param name="path">Controller注册路径</param>
-            <param name="category"></param>
-            <param name="dbSession"></param>
-        </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.InitialTables(Rsd.Dudu.DBServices.TableExistOperationType)">
             <summary>
             初始化 数据表
@@ -1199,18 +1188,6 @@
             <summary>
             插件初始化：遍历ModelType 和Controller
             </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.AddModelType``1">
-            <summary>
-            添加模型类
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.AddController``1">
-            <summary>
-            添加controller
-            </summary>
-            <typeparam name="T"></typeparam>
         </member>
         <member name="M:Rsd.Dudu.Web.Core.PluginConfig.CacheModelTypes">
             <summary>
@@ -2780,7 +2757,7 @@
         </member>
         <member name="M:Rsd.Dudu.Web.HttpContextExtend.ResponseMsg(System.Web.HttpContext,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
-            
+            返回 提示信息（html 标签 或js 脚本 ）
             </summary>
             <param name="context"></param>
             <param name="bizFlag"></param>
@@ -3080,7 +3057,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseFile(System.Web.HttpResponse,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.WriteFile(System.Web.HttpResponse,System.String,System.String)">
             <summary>
             
             </summary>
@@ -3088,7 +3065,7 @@
             <param name="filePath">完整路径</param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseFile(System.Web.HttpResponse,System.IO.Stream,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.WriteFile(System.Web.HttpResponse,System.IO.Stream,System.String)">
             <summary>
             
             </summary>
@@ -3096,7 +3073,7 @@
             <param name="stream"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseFileFromMongo(System.Web.HttpResponse,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.WriteFileFromMongo(System.Web.HttpResponse,System.String,System.String)">
             <summary>
             
             </summary>
@@ -3104,7 +3081,7 @@
             <param name="fileId"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.ResponseExcel(System.Web.HttpResponse,System.String,Rsd.Dudu.Helpers.ExcelSheet[])">
+        <member name="M:Rsd.Dudu.Web.HttpResponseExtend.WriteExcel(System.Web.HttpResponse,System.String,Rsd.Dudu.Helpers.ExcelSheet[])">
             <summary>
             
             </summary>
