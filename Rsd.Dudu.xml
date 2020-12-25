@@ -2621,6 +2621,16 @@
             <param name="data"></param>
             <param name="success"></param>
         </member>
+        <member name="M:Rsd.Dudu.Core.ApiResult`1.ConvertJsonResult(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+             解析返回数据的json 结构
+            </summary>
+            <param name="codeMember">错误代码 字段</param>
+            <param name="valueMember">错误代码值 字段</param>
+            <param name="msgMember">错误消息</param>
+            <param name="dataMember">返回数据</param>
+            <param name="successValue">成功标识值</param>
+        </member>
         <member name="M:Rsd.Dudu.Core.ApiResult`1.ToString">
             <summary>
             
