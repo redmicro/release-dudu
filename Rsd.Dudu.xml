@@ -2550,7 +2550,7 @@
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.Success">
             <summary>
-            API接口调用成功
+            API接口调用成功 ，HTTP 请求结果
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.Message">
@@ -2560,32 +2560,33 @@
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.Data">
             <summary>
-            API接口调用 返回http数据包，进一步分解得到ReturnSuccess，ReturnMessage，ReturnCode，ReturnCode
+            API接口调用 返回http原始数据包，
+            进一步分解得到ReturnSuccess，ReturnMessage，ReturnCode，ReturnCode
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnJson">
             <summary>
-            API接口返回的业务结果可能包含:ReturnCode,ReturnMessage,ReturnSuccess,ReturnData
+            API接口返回的业务结果（Data字段）的JSON结构可能包含:ReturnCode,ReturnMessage,ReturnSuccess,ReturnData
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnCode">
-            <summary>
-            API接口返回处理结果代码
-            </summary>
+             <summary>
+            ReturnJson 中的 code 数据
+             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnSuccess">
             <summary>
-            API接口返回的业务处理成功
+            ReturnJson 中的 success数据
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnMessage">
             <summary>
-            API接口返回处理结果信息
+            ReturnJson 中的 msg数据
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Core.ApiResult`1.ReturnData">
             <summary>
-            API接口返回的业务处理数据
+            ReturnJson 中的data 数据
             </summary>
         </member>
         <member name="M:Rsd.Dudu.Core.ApiResult`1.#ctor(System.Boolean,System.String)">
