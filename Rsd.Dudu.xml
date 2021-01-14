@@ -14823,9 +14823,9 @@
             
             </summary>
         </member>
-        <member name="F:Rsd.Dudu.ErrorCodes.S0000">
+        <member name="F:Rsd.Dudu.ErrorCodes.None">
             <summary>
-            未知异常:{0}
+            处理成功
             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S0001">
