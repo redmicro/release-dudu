@@ -147,6 +147,13 @@
             </summary>
             <returns>Session信息不存在</returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.NotImplemented(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SaveObject(System.Type,Rsd.Dudu.BizModel.JsonObject,Rsd.Dudu.BizModel.ObjectStateType)">
             <summary>
             保存对象至数据，并将返回内存中的对象
@@ -3429,6 +3436,11 @@
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W1010">
             <summary>
             解析错误代码({0})失败。\r\n{1}
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W1011">
+            <summary>
+            API处理失败：({0}) 
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W2000">
