@@ -2600,6 +2600,16 @@
             <param name="data"></param>
             <param name="success"></param>
         </member>
+        <member name="M:Rsd.Dudu.Core.ApiResult.ConvertJsonResult(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="codeMember"></param>
+            <param name="valueMember"></param>
+            <param name="msgMember"></param>
+            <param name="dataMember"></param>
+            <param name="successValue"></param>
+        </member>
         <member name="M:Rsd.Dudu.Core.ApiResult.ConvertJsonResult``1(System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
              解析返回数据的json 结构
