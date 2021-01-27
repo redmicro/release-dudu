@@ -4992,6 +4992,13 @@
             <param name="clientIp">伪造的客户端IP</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Core.BaseService.WebRequest(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Core.BaseService.StreamToBytes(System.IO.Stream)">
             <summary> 
             将 Stream 转成 byte[] 
@@ -15055,6 +15062,11 @@
             <summary>
             Excel创建失败。\r\n{0}。
             </summary>
+        </member>
+        <member name="F:Rsd.Dudu.ErrorCodes.S6001">
+             <summary>
+            请求地址{0}失败\r\n原因：{1}
+             </summary>
         </member>
         <member name="F:Rsd.Dudu.ErrorCodes.S8000">
             <summary>
