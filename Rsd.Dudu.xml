@@ -4982,7 +4982,7 @@
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.HttpRequest(System.String,System.String,System.IO.Stream,System.Int32,System.String,System.String)">
             <summary>
-            
+            使用 System.Net.WebRequest  对象进行请求
             </summary>
             <param name="url"></param>
             <param name="method"></param>
@@ -4992,11 +4992,16 @@
             <param name="clientIp">伪造的客户端IP</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Core.BaseService.WebRequest(System.String)">
+        <member name="M:Rsd.Dudu.Core.BaseService.HttpRequestByte(System.String,System.String,System.IO.Stream,System.Int32,System.String,System.String)">
             <summary>
-            
+            使用 System.Net.WebRequest 对象进行请求，返回数据流
             </summary>
             <param name="url"></param>
+            <param name="method"></param>
+            <param name="postStream"></param>
+            <param name="timeout"></param>
+            <param name="contentType"></param>
+            <param name="clientIp"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Core.BaseService.StreamToBytes(System.IO.Stream)">
