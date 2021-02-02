@@ -1031,19 +1031,19 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Web.Core.ISessionData.Key">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:Rsd.Dudu.Web.Core.ISessionData.Id">
             <summary>
-            
+            当前会话的用户ID
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISessionData.Key">
+            <summary>
+            当前会话的用户Key
             </summary>
         </member>
         <member name="P:Rsd.Dudu.Web.Core.ISessionData.UserName">
             <summary>
-            
+            当前会话的用户名
             </summary>
         </member>
         <member name="T:Rsd.Dudu.Web.Core.NullKeyPramaTypes">
