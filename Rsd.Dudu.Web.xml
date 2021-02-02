@@ -271,7 +271,7 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,Rsd.Dudu.Web.Core.ISessionData,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
             </summary>
@@ -495,6 +495,12 @@
             获取指定类型的Session数据。类型不一致时，返回null
             </summary>
             <typeparam name="T">Session数据类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.GetSessionData">
+            <summary>
+            获取指定类型的Session数据
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseHttpHandler.ResetSession(System.Int32)">
@@ -3957,7 +3963,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,Rsd.Dudu.Web.Core.ISessionData,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
              添加一个session
             </summary>
@@ -3970,7 +3976,7 @@
             <param name="minutes">过期时间（分钟），默认30分钟</param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.String,System.Object,System.String,System.String,System.String,System.String,System.Int32)">
+        <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.String,Rsd.Dudu.Web.Core.ISessionData,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             添加一个session
             </summary>
