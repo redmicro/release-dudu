@@ -1020,6 +1020,26 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Rsd.Dudu.Web.Core.ISessionData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISessionData.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISessionData.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Rsd.Dudu.Web.Core.ISessionData.Name">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Web.Core.NullKeyPramaTypes">
             <summary>
             
