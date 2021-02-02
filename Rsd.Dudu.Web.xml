@@ -1035,7 +1035,7 @@
             
             </summary>
         </member>
-        <member name="P:Rsd.Dudu.Web.Core.ISessionData.Name">
+        <member name="P:Rsd.Dudu.Web.Core.ISessionData.UserName">
             <summary>
             
             </summary>
