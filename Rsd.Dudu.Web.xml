@@ -284,6 +284,15 @@
             <param name="minutes">过期时间（分钟），默认30分钟</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,Rsd.Dudu.Web.Core.ISessionData,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <param name="data"></param>
+            <param name="minutes">过期时间（分钟），默认30分钟</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignOut">
             <summary>
             
