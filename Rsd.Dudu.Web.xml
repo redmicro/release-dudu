@@ -2728,6 +2728,16 @@
             该扩展类所有方法，只上报异常，不对异常做任何处理
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Web.HttpContextExtend.SignIn(System.Web.HttpContext,System.String,Rsd.Dudu.Web.Core.ISessionData,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="userName"></param>
+            <param name="data"></param>
+            <param name="minutes">过期时间（分钟），默认30分钟</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.HttpContextExtend.ValidateIPBlackList(System.Web.HttpContext,System.String[])">
             <summary>
             验证黑名单
@@ -3974,7 +3984,7 @@
             <param name="referer"></param>
             <param name="userAgent"></param>
             <param name="minutes">过期时间（分钟），默认30分钟</param>
-            <returns></returns>
+            <returns>返回SessionId</returns>
         </member>
         <member name="M:Rsd.Dudu.Web.SessionContainer.AddSession(System.String,System.String,Rsd.Dudu.Web.Core.ISessionData,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
@@ -4000,7 +4010,7 @@
             <summary>
             
             </summary>
-            <param name="key"></param>
+            <param name="key">SessionId</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.SessionContainer.GetSessionData``1(System.String)">
@@ -4014,14 +4024,14 @@
             <summary>
              验证是否存在有效的访问授权Token
             </summary>
-            <param name="key"></param>
+            <param name="key">SessionId</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.Web.SessionContainer.ResetSession(System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
              重置Session 并延长有效时间
             </summary>
-            <param name="key"></param> 
+            <param name="key">SessionId</param> 
             <param name="host"></param>
             <param name="referer"></param>
             <param name="userAgent"></param>
@@ -4032,7 +4042,7 @@
             <summary>
             删除一个session
             </summary>
-            <param name="key"></param>
+            <param name="key">SessionId</param>
         </member>
         <member name="M:Rsd.Dudu.Web.SessionContainer.RemoveAll">
             <summary>

@@ -13587,7 +13587,7 @@
             AES加密
             </summary>
             <param name="encryptStr">明文</param>
-            <param name="key">密钥</param>
+            <param name="key">长度为32字符的密钥</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.EncryptService.AesEncrypt(System.Byte[],System.Byte[])">
@@ -13603,7 +13603,7 @@
             AES解密
             </summary>
             <param name="decryptStr">密文</param>
-            <param name="key">密钥</param>
+            <param name="key">长度为32字符的密钥</param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.EncryptService.AesDecrypt(System.Byte[],System.Byte[])">
