@@ -636,17 +636,23 @@
             
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.Web.Core.ControllerAttribute.Level">
+            <summary>
+            API服务访问级别
+            </summary>
+        </member>
         <member name="P:Rsd.Dudu.Web.Core.ControllerAttribute.Description">
             <summary>
             描述
             </summary> 
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.ControllerAttribute.#ctor(System.String,System.String,System.String)">
+        <member name="M:Rsd.Dudu.Web.Core.ControllerAttribute.#ctor(System.String,System.String,Rsd.Dudu.Web.Service.ServiceAccessLevel,System.String)">
             <summary>
             
             </summary>
             <param name="path">路径</param>
             <param name="name">名称</param>
+            <param name="level">API服务访问级别</param>
             <param name="description"></param>
         </member>
         <member name="T:Rsd.Dudu.Web.Core.DBMemorySessionCacheService">
