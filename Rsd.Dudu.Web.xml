@@ -2144,17 +2144,17 @@
         </member>
         <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.Admin">
             <summary>
-            管理端接口，仅管理端可以访问
+            管理端接口，仅管理端可以使用
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.Client">
             <summary>
-            前端接口，仅提供给前端业务使
+            前端接口，仅提供给前端业务管理使用
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.Console">
             <summary>
-            商户端
+            商户端，仅提供给商户后台业务管理使用
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.CustomizedAndPermssion">
