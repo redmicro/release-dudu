@@ -2954,16 +2954,16 @@
             <param name="type"></param>
             <returns></returns>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpContextExtend.SetResponsed(System.Web.HttpContext,System.Boolean)">
+        <member name="M:Rsd.Dudu.Web.HttpContextExtend.SetResponseCompleted(System.Web.HttpContext,System.Boolean)">
             <summary>
-            
+            设置Response 内容 是否已返回
             </summary>
             <param name="context"></param>
             <param name="value"></param>
         </member>
-        <member name="M:Rsd.Dudu.Web.HttpContextExtend.HasResponsed(System.Web.HttpContext)">
+        <member name="M:Rsd.Dudu.Web.HttpContextExtend.IsResponseCompleted(System.Web.HttpContext)">
             <summary>
-            
+            判断 Response内容是否已经返回
             </summary>
             <param name="context"></param>
             <returns></returns>
