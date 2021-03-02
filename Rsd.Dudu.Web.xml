@@ -653,7 +653,14 @@
             <param name="path">路径</param>
             <param name="name">名称</param>
             <param name="level">API服务访问级别</param>
-            <param name="description"></param>
+            <param name="description">描述</param>
+        </member>
+        <member name="M:Rsd.Dudu.Web.Core.ControllerAttribute.#ctor(Rsd.Dudu.Web.Service.ServiceAccessLevel,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="level">API服务访问级别</param>
+            <param name="description">描述</param>
         </member>
         <member name="T:Rsd.Dudu.Web.Core.DBMemorySessionCacheService">
             <summary>
