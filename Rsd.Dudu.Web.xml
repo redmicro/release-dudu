@@ -2146,6 +2146,11 @@
             前端接口，仅提供给前端业务使
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.Console">
+            <summary>
+            商户端
+            </summary>
+        </member>
         <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.CustomizedAndPermssion">
             <summary>
             定制有权限限制接口
