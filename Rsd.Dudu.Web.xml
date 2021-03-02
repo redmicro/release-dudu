@@ -2166,6 +2166,11 @@
             前端有权限限制接口
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.Web.Service.ServiceAccessLevel.ConsoleAndPermssion">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Web.Service.ApiDescription">
             <summary>
             
