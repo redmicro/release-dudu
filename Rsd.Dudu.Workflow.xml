@@ -1127,6 +1127,12 @@
             
             </summary>
         </member>
+        <member name="M:Rsd.Dudu.Workflow.Controllers.WfController.GetWfMonitor">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Rsd.Dudu.Workflow.ApiDispatcher">
             <summary>
             API 调度

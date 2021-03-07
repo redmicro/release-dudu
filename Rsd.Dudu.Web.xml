@@ -1093,6 +1093,46 @@
             
             </summary>
         </member>
+        <member name="T:Rsd.Dudu.Web.Core.ServerPluginCategory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Public">
+            <summary>
+            通用组件
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Framework">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Tool">
+            <summary>
+            工具类：快递助手，短信
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Biz">
+            <summary>
+            业务类：订单，商品，代理商，商户
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Marketing">
+            <summary>
+            营销：砍价，拼团，秒杀
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Wechat">
+            <summary>
+            微信接口
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.Core.ServerPluginCategory.Aliyun">
+            <summary>
+            阿里云接口
+            </summary>
+        </member>
         <member name="T:Rsd.Dudu.Web.Core.ISchemaCacheServcie">
             <summary>
             
@@ -1225,7 +1265,7 @@
             
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.String,System.String,Rsd.Dudu.Core.IDBSession)">
+        <member name="M:Rsd.Dudu.Web.Core.PluginConfig.#ctor(System.Reflection.Assembly,System.String,Rsd.Dudu.Web.Core.ServerPluginCategory,Rsd.Dudu.Core.IDBSession)">
             <summary>
             
             </summary>
