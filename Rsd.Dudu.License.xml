@@ -38,6 +38,11 @@
             到期时间
             </summary>
         </member>
+        <member name="P:Rsd.Dudu.License.Permission.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.License.Permission.#ctor(System.String,System.String,System.String)">
             <summary>
             注册码注册
@@ -46,17 +51,24 @@
             <param name="key"></param>
             <param name="code">注册码</param>
         </member>
-        <member name="M:Rsd.Dudu.License.Permission.AesDecrypt(System.String,System.String)">
+        <member name="M:Rsd.Dudu.License.Permission.AesDecrypt(System.String,System.String,System.String@)">
             <summary>
             AES解密
             </summary>
             <param name="decryptStr">密文</param>
             <param name="key">密钥</param>
+            <returns>解密文件</returns>
+        </member>
+        <member name="M:Rsd.Dudu.License.Permission.IsBase64(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
             <returns></returns>
         </member>
         <member name="M:Rsd.Dudu.License.Permission.GetKey(System.String,System.String)">
             <summary>
-            
+             获取加密key
             </summary>
             <param name="appId"></param>
             <param name="appKey"></param>

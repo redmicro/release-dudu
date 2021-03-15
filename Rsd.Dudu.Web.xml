@@ -271,6 +271,15 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Web.Controllers.BaseController.GetObject(System.Type,System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="id"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Web.Controllers.BaseController.SignIn(System.String,Rsd.Dudu.Web.Core.ISessionData,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             
@@ -3674,6 +3683,11 @@
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W3010">
             <summary>
             参数错误，参数【{0}】不是目标类型{1}。
+            </summary>
+        </member>
+        <member name="F:Rsd.Dudu.Web.ErrorCodes.W3011">
+            <summary>
+            参数错误|参数【{0}】值({1})不是目标类型({2})的有效值。{3}
             </summary>
         </member>
         <member name="F:Rsd.Dudu.Web.ErrorCodes.W5002">

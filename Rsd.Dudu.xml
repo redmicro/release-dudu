@@ -2567,7 +2567,7 @@
             ReturnJson 中的data 数据
             </summary>
         </member>
-        <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.Boolean,System.String)">
+        <member name="M:Rsd.Dudu.Core.ApiResult.#ctor(System.Boolean,System.String,System.String)">
             <summary>
             
             </summary>
@@ -2609,6 +2609,14 @@
             <param name="msgMember"></param>
             <param name="dataMember"></param>
             <param name="successValue"></param>
+        </member>
+        <member name="M:Rsd.Dudu.Core.ApiResult.ConvertJsonResult(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="successMember"></param>
+            <param name="msgMember"></param>
+            <param name="dataMember"></param>
         </member>
         <member name="M:Rsd.Dudu.Core.ApiResult.ConvertJsonResult``1(System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
@@ -3079,6 +3087,23 @@
             </summary>
             <param name="key"></param>
             <param name="cache"></param>
+            <param name="tableNameSuffixList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.IMyType.GetObject(Rsd.Dudu.Core.IDBSession,System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="dbSession"></param>
+            <param name="id"></param>
+            <param name="tableNameSuffixList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.Core.IMyType.GetObject(System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
             <param name="tableNameSuffixList"></param>
             <returns></returns>
         </member>
@@ -9715,6 +9740,13 @@
             <param name="biz"></param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.Helpers.JsonHelper.ConvertToDataTable(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.Helpers.JsonHelper.GetOrderConditions(System.Type,Rsd.Dudu.BizModel.JsonObject[])">
             <summary>
             
@@ -15861,6 +15893,23 @@
             <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
             <returns></returns>
         </member>
+        <member name="M:Rsd.Dudu.MyType`1.Rsd#Dudu#Core#IMyType#GetObject(Rsd.Dudu.Core.IDBSession,System.Int64,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="dbSession"></param> 
+            <param name="id"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rsd.Dudu.MyType`1.Rsd#Dudu#Core#IMyType#GetObject(System.Int64,System.String[])">
+            <summary>
+            
+            </summary> 
+            <param name="key"></param>
+            <param name="tableNameSuffixList">分表存储对象，表名称后缀</param>
+            <returns></returns>
+        </member>
         <member name="M:Rsd.Dudu.MyType`1.GetObject(Rsd.Dudu.Core.IDBSession,System.String,System.Boolean,System.String[])">
             <summary>
             
@@ -18774,6 +18823,11 @@
             全局 服务存储信息关系列表
             </summary>
         </member>
+        <member name="F:Rsd.Dudu.ServicesContainer._v_flag">
+            <summary>
+            系统启动时间 延时20分钟
+            </summary>
+        </member>
         <member name="M:Rsd.Dudu.ServicesContainer.#cctor">
             <summary>
             
@@ -18943,11 +18997,12 @@
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.DeCode(System.String,System.String,System.String)">
             <summary>
-            解析注册码
+            解析注册码 返回到期时间
             </summary>
             <param name="projectId"></param>
             <param name="key"></param>
             <param name="code"></param>
+            <returns>到期时间</returns>
         </member>
         <member name="M:Rsd.Dudu.ServicesContainer.GetMonitorInfo">
             <summary>
