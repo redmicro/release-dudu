@@ -14,24 +14,6 @@
             
             </summary>
         </member>
-        <member name="T:Rsd.Dudu.Web.Authorization.FormAuthenticationFilterAttribute">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Authorization.FormAuthenticationFilterAttribute.Authorization">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Rsd.Dudu.Web.Authorization.FormAuthenticationFilterAttribute.GetTicket(System.Web.HttpCookieCollection)">
-            <summary>
-            
-            </summary>
-            <param name="cookies"></param>
-            <returns></returns>
-        </member>
         <member name="T:Rsd.Dudu.Web.Authorization.Header">
             <summary>
             
